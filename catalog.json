@@ -139,6 +139,51 @@
           "note": "App name and runtime not yet established."
         }
       }
+    },
+    {
+      "id": "shelfbridge-mobilism-v1",
+      "name": "ShelfBridge — Mobilism Releases",
+      "version": "1.0.0",
+      "file": "mobilism.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/mobilism.json",
+      "sha256": "25566bcd6d59448fb8c4704ec29d271fc3a3fed5b9c654a2eca494f6b8e3acfa",
+      "status": "pilot",
+      "contentTypes": [
+        "ebook",
+        "audiobook"
+      ],
+      "downloadMethod": "direct",
+      "requiresDebrid": false,
+      "language": "en",
+      "languageMode": "strict",
+      "providers": [
+        "mobilism"
+      ],
+      "verification": {
+        "checkedOn": "2026-10-30",
+        "presetFetch": "pending",
+        "search": "failed",
+        "searchFixture": "One by One",
+        "searchResultCount": 0,
+        "nativeApp": "not-tested",
+        "continuousMonitoring": false,
+        "note": "Hosted backend returned 0 results for sources=mobilism; the collected-index source is not yet deployed to the VPS. Downloads are unverified third-party file-host links."
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested",
+          "note": "App name and runtime not yet established."
+        }
+      }
     }
   ]
 }

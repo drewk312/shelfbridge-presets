@@ -1,0 +1,209 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "search",
+  "id": "shelfbridge-mobilism-v1",
+  "name": "ShelfBridge — Mobilism Releases",
+  "version": "1.0.0",
+  "description": "Pilot: Mobilism latest-release listings (ebooks, audiobooks, comics) as direct-download links to third-party file hosts. Downloads are NOT verified and require a manual visit to the host. Backed by a collected index (Mobilism search is login-gated), not a live query. Deployment pending.",
+  "trustLabel": "User Added",
+  "lawfulNote": "Use sources only for content you are legally entitled to access.",
+  "provides": [
+    "source",
+    "search"
+  ],
+  "contentType": "all",
+  "contentTypes": [
+    "ebook",
+    "audiobook"
+  ],
+  "debrid": "direct",
+  "debridChoice": "direct",
+  "debridServices": [
+    "direct"
+  ],
+  "selectedDebridService": "direct",
+  "downloadService": "direct",
+  "resolverCompatibility": {
+    "directResults": [
+      "direct"
+    ],
+    "torrentResults": [],
+    "usenetResults": [],
+    "note": "Direct file-host listings only. Never torrent. Downloads are unverified and require a manual visit."
+  },
+  "discover": {
+    "sections": []
+  },
+  "meta": {
+    "sourceContract": "typed-media-v2",
+    "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/mobilism.json",
+    "sourceId": "mobilism",
+    "indexOnly": true,
+    "downloadVerified": false,
+    "note": "Search covers collected releases only; Mobilism’s own search is login-gated. Every result is a direct DDL listing on a third-party host, never a torrent, and downloads are never verified."
+  },
+  "rateLimit": {
+    "requestsPerMinute": 60,
+    "retryAfterMs": 1000
+  },
+  "matching": {
+    "algorithm": "fuzzy",
+    "threshold": 0.3
+  },
+  "adapters": {
+    "source": {
+      "request": {
+        "method": "POST",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=mobilism&lang=en&languageMode=strict&profile=best&cacheBust=mobilism-v1",
+        "timeout": 30000,
+        "headers": {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "title": "{TITLE}",
+          "author": "{AUTHOR}",
+          "limit": 40,
+          "contentType": "all"
+        }
+      },
+      "response": {
+        "type": "json",
+        "resultsPath": "results",
+        "mapping": {
+          "title": "title",
+          "author": "author",
+          "narrator": "narrator",
+          "cover": "artworkUrl",
+          "synopsis": "description",
+          "tags": "tags",
+          "pages": "pageCount",
+          "ebookUrl": "ebookUrl",
+          "audioUrl": "audioUrl",
+          "downloadService": "downloadService",
+          "fileFormat": "fileType",
+          "sourcePageUrl": "sourcePageUrl",
+          "sourceLabel": "sourceLabel",
+          "mediaKind": "mediaKind",
+          "accessType": "accessType",
+          "size": "sizeLabel",
+          "language": "language",
+          "containerType": "containerType",
+          "isbn": "isbn"
+        }
+      }
+    },
+    "search": {
+      "request": {
+        "method": "POST",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=mobilism&lang=en&languageMode=strict&profile=best&cacheBust=mobilism-v1",
+        "timeout": 30000,
+        "headers": {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "title": "{TITLE}",
+          "author": "{AUTHOR}",
+          "limit": 40,
+          "contentType": "all"
+        }
+      },
+      "response": {
+        "type": "json",
+        "resultsPath": "results",
+        "mapping": {
+          "title": "title",
+          "author": "author",
+          "narrator": "narrator",
+          "cover": "artworkUrl",
+          "synopsis": "description",
+          "tags": "tags",
+          "pages": "pageCount",
+          "ebookUrl": "ebookUrl",
+          "audioUrl": "audioUrl",
+          "downloadService": "downloadService",
+          "fileFormat": "fileType",
+          "sourcePageUrl": "sourcePageUrl",
+          "sourceLabel": "sourceLabel",
+          "mediaKind": "mediaKind",
+          "accessType": "accessType",
+          "size": "sizeLabel",
+          "language": "language",
+          "containerType": "containerType",
+          "isbn": "isbn"
+        }
+      }
+    }
+  },
+  "search": {
+    "request": {
+      "method": "POST",
+      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=mobilism&lang=en&languageMode=strict&profile=best&cacheBust=mobilism-v1",
+      "timeout": 30000,
+      "headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "title": "{TITLE}",
+        "author": "{AUTHOR}",
+        "limit": 40,
+        "contentType": "all"
+      }
+    },
+    "response": {
+      "type": "json",
+      "resultsPath": "results",
+      "mapping": {
+        "title": "title",
+        "author": "author",
+        "narrator": "narrator",
+        "cover": "artworkUrl",
+        "synopsis": "description",
+        "tags": "tags",
+        "pages": "pageCount",
+        "ebookUrl": "ebookUrl",
+        "audioUrl": "audioUrl",
+        "downloadService": "downloadService",
+        "fileFormat": "fileType",
+        "sourcePageUrl": "sourcePageUrl",
+        "sourceLabel": "sourceLabel",
+        "mediaKind": "mediaKind",
+        "accessType": "accessType",
+        "size": "sizeLabel",
+        "language": "language",
+        "containerType": "containerType",
+        "isbn": "isbn"
+      }
+    }
+  },
+  "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/mobilism.json",
+  "excludeTerms": [
+    "1080p",
+    "720p",
+    "2160p",
+    "480p",
+    "x264",
+    "x265",
+    "h264",
+    "h265",
+    "hevc",
+    "bluray",
+    "blu-ray",
+    "bdrip",
+    "brrip",
+    "web-dl",
+    "webrip",
+    "hdtv",
+    "hdrip",
+    "dvdrip",
+    "dvdscr",
+    "camrip",
+    "hdcam",
+    "telesync",
+    "xvid",
+    "divx",
+    "remux"
+  ]
+}
