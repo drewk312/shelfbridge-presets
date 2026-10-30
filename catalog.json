@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "shelfbridge-catalog",
+  "name": "ShelfBridge",
+  "appImportable": false,
+  "instructions": "Import an individual preset URL, not this catalog. Client catalog support is not implemented.",
+  "integrityNote": "Checksums detect mismatched releases. They are not signatures and do not protect against compromise of this repository.",
+  "presets": [
+    {
+      "id": "shared-library-direct-ebooks-v1",
+      "name": "ShelfBridge — Direct Ebooks",
+      "version": "1.0.1",
+      "file": "direct-ebooks.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/direct-ebooks.json",
+      "sha256": "f16eac6c199510f2971aab569dddb443ff59cb86eacd843ee6d452d88138dd3e",
+      "status": "pilot",
+      "contentTypes": ["ebook"],
+      "downloadMethod": "direct",
+      "requiresDebrid": false,
+      "language": "en",
+      "languageMode": "strict",
+      "providers": ["annas", "libgenli", "standardebooks", "gutenberg"],
+      "verification": {
+        "checkedOn": "2026-10-29",
+        "presetFetch": "passed",
+        "search": "passed",
+        "searchFixture": "Frankenstein / Mary Shelley",
+        "searchResultCount": 10,
+        "observedProviders": ["standardebooks", "libgenli"],
+        "allProvidersVerified": false,
+        "continuousMonitoring": false,
+        "note": "Point-in-time aggregate backend test, not proof that every provider works or that any native app can import it."
+      },
+      "compatibility": {
+        "lantern-and-leaf": {"status": "not-tested"},
+        "ink-and-echo": {"status": "not-tested"},
+        "bokumi": {"status": "not-tested"},
+        "manga-comics-app": {"status": "not-tested", "note": "App name and runtime not yet established."}
+      }
+    }
+  ]
+}
