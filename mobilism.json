@@ -3,8 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-mobilism-v1",
   "name": "ShelfBridge — Mobilism Releases",
-  "version": "1.1.0",
-  "description": "Candidate: Mobilism release listings from a collected index (their own search is login-gated). Every row is a third-party DDL host; downloads are unverified and need a manual visit. Backend source not yet deployed.",
+  "version": "1.2.0",
+  "description": "Mobilism release listings from a collected index; their own search is login-gated. Third-party DDL hosts only, downloads unverified. Backend source not yet deployed.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
@@ -55,13 +55,13 @@
   },
   "matching": {
     "algorithm": "fuzzy",
-    "threshold": 0.3
+    "threshold": 0.35
   },
   "adapters": {
     "source": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=mobilism&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-mobilism-v1-v1.1.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=mobilism&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-mobilism-v1-v1.2.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -189,7 +189,7 @@
     "search": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=mobilism&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-mobilism-v1-v1.1.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=mobilism&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-mobilism-v1-v1.2.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -318,7 +318,7 @@
   "search": {
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=mobilism&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-mobilism-v1-v1.1.0",
+      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=mobilism&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-mobilism-v1-v1.2.0",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",
@@ -457,13 +457,19 @@
     "divx",
     "dvdrip",
     "dvdscr",
+    "excerpt",
     "h264",
     "h265",
     "hdcam",
     "hdrip",
     "hdtv",
     "hevc",
+    "ocr",
+    "preview",
     "remux",
+    "retail",
+    "sample",
+    "scanned",
     "telesync",
     "web-dl",
     "webrip",

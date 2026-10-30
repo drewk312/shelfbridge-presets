@@ -3,8 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-librivox-audiobooks-v1",
   "name": "ShelfBridge — LibriVox Audiobook Archives",
-  "version": "1.1.0",
-  "description": "Pilot: English public-domain LibriVox audiobooks as ZIP bundles. Requires archive extraction; not a single playable stream. No TorBox required.",
+  "version": "1.2.0",
+  "description": "Public-domain LibriVox audiobooks as ZIP bundles. Requires extraction; not a single playable stream. No TorBox required.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
@@ -52,13 +52,13 @@
   },
   "matching": {
     "algorithm": "fuzzy",
-    "threshold": 0.3
+    "threshold": 0.45
   },
   "adapters": {
     "source": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=librivox&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-librivox-audiobooks-v1-v1.1.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=librivox&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-librivox-audiobooks-v1-v1.2.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -186,7 +186,7 @@
     "search": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=librivox&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-librivox-audiobooks-v1-v1.1.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=librivox&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-librivox-audiobooks-v1-v1.2.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -315,7 +315,7 @@
   "search": {
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=librivox&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-librivox-audiobooks-v1-v1.1.0",
+      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=librivox&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-librivox-audiobooks-v1-v1.2.0",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",
@@ -463,6 +463,7 @@
     "dvdrip",
     "dvdscr",
     "epub",
+    "excerpt",
     "fb2",
     "h264",
     "h265",
@@ -472,10 +473,15 @@
     "hevc",
     "lit",
     "mobi",
+    "ocr",
     "pdb",
     "pdf",
+    "preview",
     "remux",
+    "retail",
     "rtf",
+    "sample",
+    "scanned",
     "telesync",
     "txt",
     "web-dl",

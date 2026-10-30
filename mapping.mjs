@@ -116,10 +116,24 @@ const AUDIO = ["mp3", "m4b", "m4a", "flac", "ogg", "aac", "wav", "opus", "mp4", 
 
 const TEXT = ["epub", "pdf", "mobi", "azw", "azw3", "djvu", "fb2", "lit", "pdb", "cbz", "cbr", "cb7", "txt", "rtf", "doc", "docx"];
 
-// Ebook presets must not hand back audio; audiobook presets must not hand back text.
-export function exclusionsFor(contentType) {
-  const set = new Set(VIDEO);
+// Junk that clutters results: samples, previews, OCR text dumps, retail metadata.
+const JUNK = ["sample", "preview", "excerpt", "scanned", "ocr", "retail"];
+
+// Accepted language labels per preset language, for health validation.
+export const LANGUAGE_LABELS = {
+  "en": "^(en(-[a-z]+)?|english)$",
+  "es": "^(es(-[a-z]+)?|spanish|español)$",
+  "fr": "^(fr(-[a-z]+)?|french|français)$",
+  "de": "^(de(-[a-z]+)?|german|deutsch)$"
+};
+
+// content type and optional format target decide what gets filtered.
+export function exclusionsFor(contentType, format) {
+  const set = new Set([...VIDEO, ...JUNK]);
   if (contentType === 'ebook') AUDIO.forEach(t => set.add(t));
-  else if (contentType === 'audiobook') TEXT.forEach(t => set.add(t));
+  if (contentType === 'audiobook') TEXT.forEach(t => set.add(t));
+  if (format === 'kindle') TEXT.forEach(t => { if (!['mobi', 'azw', 'azw3'].includes(t)) set.add(t); });
+  if (format === 'pdf') TEXT.forEach(t => { if (t !== 'pdf') set.add(t); });
+  if (format === 'm4b') AUDIO.forEach(t => { if (t !== 'm4b') set.add(t); });
   return [...set].sort();
 }

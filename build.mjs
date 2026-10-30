@@ -45,9 +45,10 @@ const catalog = {
     contentTypes: spec.contentTypes,
     downloadMethod: spec.downloadMethod,
     requiresDebrid: spec.downloadMethod !== 'direct',
-    language: 'en',
+    language: spec.language,
     languageMode: 'strict',
     providers: spec.sources,
+    ...(spec.format ? { format: spec.format } : {}),
     verification: {
       checkedOn: new Date().toISOString().slice(0, 10),
       search: spec.status === 'candidate' ? 'unverified' : 'pending',

@@ -3,8 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-public-domain-ebooks-v1",
   "name": "ShelfBridge — Public-domain Ebooks",
-  "version": "1.1.0",
-  "description": "Pilot: English public-domain ebooks from Standard Ebooks and Project Gutenberg only. Permanent, high-quality typesetting, no legal ambiguity. No TorBox required.",
+  "version": "1.2.0",
+  "description": "English public-domain ebooks only. Professionally typeset, permanently hosted, zero legal ambiguity. No TorBox required.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
@@ -53,13 +53,13 @@
   },
   "matching": {
     "algorithm": "fuzzy",
-    "threshold": 0.3
+    "threshold": 0.4
   },
   "adapters": {
     "source": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=standardebooks%2Cgutenberg&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-public-domain-ebooks-v1-v1.1.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=standardebooks%2Cgutenberg&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-public-domain-ebooks-v1-v1.2.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -187,7 +187,7 @@
     "search": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=standardebooks%2Cgutenberg&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-public-domain-ebooks-v1-v1.1.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=standardebooks%2Cgutenberg&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-public-domain-ebooks-v1-v1.2.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -316,7 +316,7 @@
   "search": {
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=standardebooks%2Cgutenberg&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-public-domain-ebooks-v1-v1.1.0",
+      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=standardebooks%2Cgutenberg&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-public-domain-ebooks-v1-v1.2.0",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",
@@ -457,6 +457,7 @@
     "divx",
     "dvdrip",
     "dvdscr",
+    "excerpt",
     "flac",
     "h264",
     "h265",
@@ -469,9 +470,14 @@
     "m4v",
     "mp3",
     "mp4",
+    "ocr",
     "ogg",
     "opus",
+    "preview",
     "remux",
+    "retail",
+    "sample",
+    "scanned",
     "telesync",
     "wav",
     "web-dl",

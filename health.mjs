@@ -1,16 +1,23 @@
 import { pathToFileURL } from 'node:url';
 import { readFileSync } from 'node:fs';
-import { PROVIDERS } from './sources.mjs';
+import { PROVIDERS, PRESETS } from './sources.mjs';
+import { LANGUAGE_LABELS } from './mapping.mjs';
 
-const isEnglish = v => /^(en(-[a-z]+)?|english)$/i.test(v || '');
+const RETRIES = 2;
 
-export function validateProbe(payload, source) {
+function languageMatches(value, language) {
+  const pattern = LANGUAGE_LABELS[language];
+  if (!pattern) throw new Error('Unknown preset language ' + language);
+  return new RegExp(pattern, 'i').test(value || '');
+}
+
+export function validateProbe(payload, source, language = 'en') {
   const cfg = PROVIDERS[source];
   if (!cfg) throw new Error('Unknown provider');
   if (!Array.isArray(payload?.results) || payload.results.length === 0) throw new Error('No search results');
   for (const row of payload.results) {
     if (cfg.rowSource && row.source && row.source !== cfg.rowSource) throw new Error('Unexpected source ' + row.source);
-    if (!isEnglish(row.language)) throw new Error('Unverified English language');
+    if (!languageMatches(row.language, language)) throw new Error('Unverified language: ' + (row.language || 'unknown'));
     if (row.downloadService !== cfg.method) throw new Error('Wrong download method');
     const raw = row.ebookUrl || row.audioUrl || row.url || row.downloadUrl;
     if (!raw) throw new Error('No destination URL');
@@ -35,59 +42,89 @@ export async function verifyDownload(url) {
   return { type, length: len };
 }
 
-export async function runHealth({ downloadCheck = true, only } = {}) {
+async function withRetry(fn) {
+  let last;
+  for (let attempt = 0; attempt <= RETRIES; attempt++) {
+    try {
+      return await fn();
+    } catch (error) {
+      last = error;
+      const transient = /timeout|aborted|HTTP 5\d\d|fetch failed|ECONNRESET/i.test(String(error.message));
+      if (!transient || attempt === RETRIES) break;
+      await new Promise(r => setTimeout(r, 1000 * (attempt + 1)));
+    }
+  }
+  throw last;
+}
+
+// Probes every (source, language) pair once, regardless of how many presets use it.
+export async function runHealth({ downloadCheck = true, all = false, only } = {}) {
   const catalog = JSON.parse(readFileSync(new URL('./catalog.json', import.meta.url)));
-  const targets = catalog.presets
-    .filter(p => p.status !== 'candidate')
-    .flatMap(p => p.providers.map(source => ({ p, source })))
-    .filter(t => !only || only.includes(t.source));
+  const picked = catalog.presets.filter(p => all || p.status !== 'candidate');
+
+  const pairs = new Map();
+  for (const p of picked) {
+    for (const source of p.providers) {
+      const key = source + '|' + p.language;
+      if (!pairs.has(key)) pairs.set(key, { source, language: p.language, preset: p.file, contentType: p.searchBody ?? null });
+    }
+  }
+  const targets = [...pairs.values()].filter(t => !only || only.includes(t.source));
 
   const checks = [];
-  for (const { p, source } of targets) {
+  for (const target of targets) {
+    const { source, language, preset } = target;
     const started = Date.now();
     try {
-      const preset = JSON.parse(readFileSync(new URL(p.file, import.meta.url)));
-      const url = new URL(preset.search.request.url);
+      const doc = JSON.parse(readFileSync(new URL(preset, import.meta.url)));
+      const url = new URL(doc.search.request.url);
       url.searchParams.set('sources', source);
-      const res = await fetch(url, {
-        method: 'POST',
-        redirect: 'error',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          title: 'Frankenstein',
-          author: 'Mary Shelley',
-          contentType: preset.search.request.body.contentType,
-          limit: 3
-        }),
-        signal: AbortSignal.timeout(20000)
+      const payload = await withRetry(async () => {
+        const res = await fetch(url, {
+          method: 'POST',
+          redirect: 'error',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            title: language === 'en' ? 'Frankenstein' : 'Frankenstein',
+            author: language === 'en' ? 'Mary Shelley' : '',
+            contentType: doc.search.request.body.contentType,
+            limit: 3
+          }),
+          signal: AbortSignal.timeout(20000)
+        });
+        if (!res.ok) { await res.body?.cancel(); throw new Error('HTTP ' + res.status); }
+        const text = await res.text();
+        if (text.length > 2000000) throw new Error('Oversized response');
+        return JSON.parse(text);
       });
-      if (!res.ok) { await res.body?.cancel(); throw new Error('HTTP ' + res.status); }
-      const text = await res.text();
-      if (text.length > 2000000) throw new Error('Oversized response');
-      const payload = JSON.parse(text);
-      const count = validateProbe(payload, source);
+      const count = validateProbe(payload, source, language);
       let download = 'skipped';
       if (downloadCheck) {
         const row = payload.results[0];
         await verifyDownload(row.ebookUrl || row.audioUrl || row.url || row.downloadUrl);
         download = 'passed';
       }
-      checks.push({ preset: p.file, source, status: 'passed', resultCount: count, download, elapsedMs: Date.now() - started });
+      checks.push({ source, language, preset, status: 'passed', resultCount: count, download, elapsedMs: Date.now() - started });
     } catch (error) {
-      checks.push({ preset: p.file, source, status: 'failed', error: String(error.message).slice(0, 200), elapsedMs: Date.now() - started });
+      checks.push({ source, language, preset, status: 'failed', error: String(error.message).slice(0, 200), elapsedMs: Date.now() - started });
     }
   }
   const failed = checks.filter(c => c.status === 'failed');
   return {
     checkedAt: new Date().toISOString(),
-    scope: 'Per-source search contract + one real download HEAD per source',
+    scope: 'One search contract probe and one real download HEAD per source/language pair',
+    probed: checks.length,
     failedSources: [...new Set(failed.map(c => c.source))],
+    failedPairs: failed.map(c => `${c.source}|${c.language}`),
     checks
   };
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
-  const report = await runHealth({ downloadCheck: !process.argv.includes('--no-download') });
+  const report = await runHealth({
+    downloadCheck: !process.argv.includes('--no-download'),
+    all: process.argv.includes('--all')
+  });
   console.log(JSON.stringify(report, null, 2));
   if (report.failedSources.length) process.exitCode = 1;
 }

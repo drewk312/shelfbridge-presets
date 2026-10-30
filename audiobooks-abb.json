@@ -3,8 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-audiobooks-abb-v1",
   "name": "ShelfBridge — AudioBookBay",
-  "version": "1.1.0",
-  "description": "Pilot: AudioBookBay in isolation, with seeders, size and magnet retained on every row.",
+  "version": "1.2.0",
+  "description": "AudioBookBay in isolation, with seeders, size, magnet and info hash retained on every row.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
@@ -58,13 +58,13 @@
   },
   "matching": {
     "algorithm": "fuzzy",
-    "threshold": 0.3
+    "threshold": 0.4
   },
   "adapters": {
     "source": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=audiobookbay&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-audiobooks-abb-v1-v1.1.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=audiobookbay&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-audiobooks-abb-v1-v1.2.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -192,7 +192,7 @@
     "search": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=audiobookbay&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-audiobooks-abb-v1-v1.1.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=audiobookbay&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-audiobooks-abb-v1-v1.2.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -321,7 +321,7 @@
   "search": {
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=audiobookbay&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-audiobooks-abb-v1-v1.1.0",
+      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=audiobookbay&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-audiobooks-abb-v1-v1.2.0",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",
@@ -469,6 +469,7 @@
     "dvdrip",
     "dvdscr",
     "epub",
+    "excerpt",
     "fb2",
     "h264",
     "h265",
@@ -478,10 +479,15 @@
     "hevc",
     "lit",
     "mobi",
+    "ocr",
     "pdb",
     "pdf",
+    "preview",
     "remux",
+    "retail",
     "rtf",
+    "sample",
+    "scanned",
     "telesync",
     "txt",
     "web-dl",

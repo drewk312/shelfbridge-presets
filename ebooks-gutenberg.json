@@ -3,8 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-gutenberg-v1",
   "name": "ShelfBridge — Project Gutenberg",
-  "version": "1.1.0",
-  "description": "Pilot: Project Gutenberg only. Broadest public-domain catalogue, EPUB-only.",
+  "version": "1.2.0",
+  "description": "Project Gutenberg only. Broadest public-domain catalogue in existence. EPUB only.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
@@ -52,13 +52,13 @@
   },
   "matching": {
     "algorithm": "fuzzy",
-    "threshold": 0.3
+    "threshold": 0.45
   },
   "adapters": {
     "source": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=gutenberg&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-gutenberg-v1-v1.1.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=gutenberg&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-gutenberg-v1-v1.2.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -186,7 +186,7 @@
     "search": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=gutenberg&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-gutenberg-v1-v1.1.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=gutenberg&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-gutenberg-v1-v1.2.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -315,7 +315,7 @@
   "search": {
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=gutenberg&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-gutenberg-v1-v1.1.0",
+      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=gutenberg&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-gutenberg-v1-v1.2.0",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",
@@ -456,6 +456,7 @@
     "divx",
     "dvdrip",
     "dvdscr",
+    "excerpt",
     "flac",
     "h264",
     "h265",
@@ -468,9 +469,14 @@
     "m4v",
     "mp3",
     "mp4",
+    "ocr",
     "ogg",
     "opus",
+    "preview",
     "remux",
+    "retail",
+    "sample",
+    "scanned",
     "telesync",
     "wav",
     "web-dl",

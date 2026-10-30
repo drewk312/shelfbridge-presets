@@ -14,11 +14,13 @@ test('catalog pins exact bytes and never overclaims verification', () => {
     assert.ok(!ids.has(entry.id), 'duplicate id');
     ids.add(entry.id);
     assert.match(entry.file, /^[a-z0-9-]+\.json$/);
+    assert.ok(entry.language, 'catalog entry must record language');
     const bytes = readFileSync(new URL(entry.file, import.meta.url));
     assert.equal(entry.sha256, createHash('sha256').update(bytes).digest('hex'), 'stale bytes for ' + entry.file);
     const preset = JSON.parse(bytes);
     assert.equal(entry.id, preset.id);
     assert.equal(entry.url, preset.hostedProviderUrl);
+    assert.equal(entry.language, preset.meta.language);
     assert.ok(['pilot', 'stable', 'candidate'].includes(entry.status));
 
     for (const app of ['lantern-and-leaf', 'ink-and-echo', 'bokumi', 'manga-comics-app']) {

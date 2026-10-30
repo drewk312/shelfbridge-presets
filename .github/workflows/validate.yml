@@ -26,9 +26,9 @@ jobs:
         run: node build.mjs --check
       - name: Contract tests
         run: node --test *.test.mjs
-      - name: Per-source search and download probes
+      - name: Probe pilots and candidates
         if: github.event_name != 'pull_request'
-        run: node health.mjs > health-report.json || echo "HEALTH_FAILED=1" >> "$GITHUB_ENV"
+        run: node health.mjs --all > health-report.json || echo "HEALTH_FAILED=1" >> "$GITHUB_ENV"
       - name: File or update a tracking issue for dead sources
         if: env.HEALTH_FAILED == '1'
         env:
@@ -37,8 +37,8 @@ jobs:
           node -e '
             const r = require("./health-report.json");
             const body = ["Automated source health failure.", "",
-              "Failed: " + r.failedSources.join(", "), "",
-              ...r.checks.filter(c => c.status === "failed").map(c => `- \`${c.source}\` (${c.preset}): ${c.error}`),
+              "Failed pairs: " + r.failedPairs.join(", "), "",
+              ...r.checks.filter(c => c.status === "failed").map(c => `- \`${c.source}\` (${c.language}, ${c.preset}): ${c.error}`),
               "", "Full report is attached to this run."].join("\n");
             require("fs").writeFileSync("issue.md", body);
           '
