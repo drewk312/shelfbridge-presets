@@ -1,6 +1,6 @@
 # Coverage and release gates
 
-ShelfBridge is not yet broader than Cinder. The live Cinder catalog inspected on 2026-10-29 contains 33 extensions. ShelfBridge currently publishes one pilot preset. Extension counts are not verified-download success rates.
+ShelfBridge is not yet broader than Cinder. The live Cinder catalog inspected on 2026-10-29 contains 33 extensions. ShelfBridge has three pilot presets; two reuse providers from the broader ebook preset, so preset count is not unique source count. Extension counts are not verified-download success rates.
 
 Reference: https://raw.githubusercontent.com/TrexxyMon/cinder-extensions/main/repo.json
 
@@ -31,4 +31,4 @@ Audio/Atmos coverage requires verified audio-format metadata. A title appearing 
 
 ## Validation
 
-Run `node --test *.test.mjs`. The catalog check detects preset-byte/version/routing drift and rejects stable entries without recorded per-app evidence. It does not execute native apps. No scheduled monitor or automatic failover is installed by these files.
+Run `node --test *.test.mjs`. The catalog check detects preset-byte/version/routing drift and rejects stable entries without recorded per-app evidence. It does not execute native apps. The supplied GitHub Actions workflow schedules search/result-contract checks; see Actions for actual execution status. Automatic failover is not implemented.

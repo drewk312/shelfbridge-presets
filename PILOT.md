@@ -19,6 +19,6 @@ Native app import, search, download, and refresh still need testing in each app:
 - Before promotion, test an import, English search, full lawful download, and refresh on every supported client.
 - Use GitHub commit history to restore the prior JSON if a release regresses. A commit-pinned raw URL can be used for a fixed pilot version.
 - Never auto-approve a replacement domain based only on search results or redirects. Review its provenance first.
-- No scheduled health monitor has been installed yet. A successful test is not a permanent uptime guarantee.
+- The supplied GitHub Actions workflow schedules source-search checks; see Actions for actual execution status. A successful test is not a permanent uptime guarantee or a complete download test.
 
 Use sources only for content you are legally entitled to access.

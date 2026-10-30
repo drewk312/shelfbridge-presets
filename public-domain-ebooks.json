@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "1.0.0",
+  "kind": "search",
+  "id": "shelfbridge-public-domain-ebooks-v1",
+  "name": "ShelfBridge — Public-domain Ebooks",
+  "version": "1.0.0",
+  "description": "Pilot: English public-domain ebooks from Standard Ebooks and Project Gutenberg. No TorBox required. Native app import/download testing pending.",
+  "trustLabel": "User Added",
+  "lawfulNote": "Use sources only for content you are legally entitled to access.",
+  "provides": [
+    "source",
+    "search"
+  ],
+  "contentType": "ebook",
+  "contentTypes": [
+    "ebook"
+  ],
+  "debrid": "direct",
+  "debridChoice": "direct",
+  "debridServices": [
+    "direct"
+  ],
+  "selectedDebridService": "direct",
+  "downloadService": "direct",
+  "resolverCompatibility": {
+    "directResults": [
+      "direct"
+    ],
+    "torrentResults": [],
+    "usenetResults": [],
+    "note": "Direct files only. No TorBox or other debrid subscription required."
+  },
+  "discover": {
+    "sections": []
+  },
+  "meta": {
+    "sourceContract": "typed-media-v2",
+    "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/public-domain-ebooks.json"
+  },
+  "rateLimit": {
+    "requestsPerMinute": 10,
+    "retryAfterMs": 6000
+  },
+  "matching": {
+    "algorithm": "fuzzy",
+    "threshold": 0.3
+  },
+  "adapters": {
+    "source": {
+      "request": {
+        "method": "POST",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=standardebooks%2Cgutenberg&lang=en&languageMode=strict&profile=best&cacheBust=public-domain-ebooks-v1",
+        "timeout": 30000,
+        "headers": {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "title": "{TITLE}",
+          "author": "{AUTHOR}",
+          "limit": 20,
+          "contentType": "ebook"
+        }
+      },
+      "response": {
+        "type": "json",
+        "resultsPath": "results",
+        "mapping": {
+          "title": "title",
+          "author": "author",
+          "narrator": "narrator",
+          "cover": "artworkUrl",
+          "synopsis": "description",
+          "tags": "tags",
+          "pages": "pageCount",
+          "ebookUrl": "ebookUrl",
+          "audioUrl": "audioUrl",
+          "downloadService": "downloadService",
+          "fileFormat": "fileType",
+          "sourcePageUrl": "sourcePageUrl",
+          "isbn": "isbn"
+        }
+      }
+    },
+    "search": {
+      "request": {
+        "method": "POST",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=standardebooks%2Cgutenberg&lang=en&languageMode=strict&profile=best&cacheBust=public-domain-ebooks-v1",
+        "timeout": 30000,
+        "headers": {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "title": "{TITLE}",
+          "author": "{AUTHOR}",
+          "limit": 20,
+          "contentType": "ebook"
+        }
+      },
+      "response": {
+        "type": "json",
+        "resultsPath": "results",
+        "mapping": {
+          "title": "title",
+          "author": "author",
+          "narrator": "narrator",
+          "cover": "artworkUrl",
+          "synopsis": "description",
+          "tags": "tags",
+          "pages": "pageCount",
+          "ebookUrl": "ebookUrl",
+          "audioUrl": "audioUrl",
+          "downloadService": "downloadService",
+          "fileFormat": "fileType",
+          "sourcePageUrl": "sourcePageUrl",
+          "isbn": "isbn"
+        }
+      }
+    }
+  },
+  "search": {
+    "request": {
+      "method": "POST",
+      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=standardebooks%2Cgutenberg&lang=en&languageMode=strict&profile=best&cacheBust=public-domain-ebooks-v1",
+      "timeout": 30000,
+      "headers": {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "title": "{TITLE}",
+        "author": "{AUTHOR}",
+        "limit": 20,
+        "contentType": "ebook"
+      }
+    },
+    "response": {
+      "type": "json",
+      "resultsPath": "results",
+      "mapping": {
+        "title": "title",
+        "author": "author",
+        "narrator": "narrator",
+        "cover": "artworkUrl",
+        "synopsis": "description",
+        "tags": "tags",
+        "pages": "pageCount",
+        "ebookUrl": "ebookUrl",
+        "audioUrl": "audioUrl",
+        "downloadService": "downloadService",
+        "fileFormat": "fileType",
+        "sourcePageUrl": "sourcePageUrl",
+        "isbn": "isbn"
+      }
+    }
+  },
+  "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/public-domain-ebooks.json",
+  "excludeTerms": [
+    "1080p",
+    "720p",
+    "2160p",
+    "480p",
+    "x264",
+    "x265",
+    "h264",
+    "h265",
+    "hevc",
+    "bluray",
+    "blu-ray",
+    "bdrip",
+    "brrip",
+    "web-dl",
+    "webrip",
+    "hdtv",
+    "hdrip",
+    "dvdrip",
+    "dvdscr",
+    "camrip",
+    "hdcam",
+    "telesync",
+    "xvid",
+    "divx",
+    "remux"
+  ]
+}
