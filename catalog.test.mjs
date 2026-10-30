@@ -1,35 +1,38 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {existsSync,readFileSync} from 'node:fs';
-import {createHash} from 'node:crypto';
+import { readFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 
-test('catalog identifies the exact published preset without claiming untested app support',()=>{
- const path=new URL('./catalog.json',import.meta.url);
- assert.ok(existsSync(path),'Catalog must exist');
- const catalog=JSON.parse(readFileSync(path));
- assert.equal(catalog.kind,'shelfbridge-catalog');
- assert.equal(catalog.appImportable,false);
- assert.ok(catalog.presets.length>0);
- const ids=new Set();
- for(const entry of catalog.presets){
-  assert.ok(!ids.has(entry.id),'Duplicate preset ID');ids.add(entry.id);
-  assert.match(entry.file,/^[a-z0-9-]+\.json$/);
-  const bytes=readFileSync(new URL(entry.file,import.meta.url));
-  const preset=JSON.parse(bytes);
-  assert.equal(entry.sha256,createHash('sha256').update(bytes).digest('hex'),'Catalog has stale preset bytes');
-  assert.equal(entry.id,preset.id);assert.equal(entry.version,preset.version);
-  assert.equal(entry.url,preset.hostedProviderUrl);
-  assert.equal(entry.downloadMethod,preset.downloadService);
-  assert.equal(entry.language,new URL(preset.search.request.url).searchParams.get('lang'));
-  assert.equal(entry.languageMode,new URL(preset.search.request.url).searchParams.get('languageMode'));
-  assert.ok(['pilot','stable'].includes(entry.status));
-  for(const app of ['lantern-and-leaf','ink-and-echo','bokumi','manga-comics-app']){
-   const verification=entry.compatibility[app];assert.ok(verification);
-   assert.ok(['not-tested','passed','failed'].includes(verification.status));
-   if(entry.status==='stable'){
-    assert.equal(verification.status,'passed');
-    assert.ok(verification.appVersion&&verification.evidence);
-   }
+test('catalog pins exact bytes and never overclaims verification', () => {
+  const catalog = JSON.parse(readFileSync(new URL('./catalog.json', import.meta.url)));
+  assert.equal(catalog.kind, 'shelfbridge-catalog');
+  assert.equal(catalog.appImportable, false);
+  assert.ok(catalog.presets.length > 0);
+
+  const ids = new Set();
+  for (const entry of catalog.presets) {
+    assert.ok(!ids.has(entry.id), 'duplicate id');
+    ids.add(entry.id);
+    assert.match(entry.file, /^[a-z0-9-]+\.json$/);
+    const bytes = readFileSync(new URL(entry.file, import.meta.url));
+    assert.equal(entry.sha256, createHash('sha256').update(bytes).digest('hex'), 'stale bytes for ' + entry.file);
+    const preset = JSON.parse(bytes);
+    assert.equal(entry.id, preset.id);
+    assert.equal(entry.url, preset.hostedProviderUrl);
+    assert.ok(['pilot', 'stable', 'candidate'].includes(entry.status));
+
+    for (const app of ['lantern-and-leaf', 'ink-and-echo', 'bokumi', 'manga-comics-app']) {
+      const v = entry.compatibility[app];
+      assert.ok(v && ['not-tested', 'passed', 'failed'].includes(v.status));
+      if (entry.status === 'stable') {
+        assert.equal(v.status, 'passed');
+        assert.ok(v.appVersion && v.evidence);
+      }
+    }
+    if (entry.status === 'candidate') {
+      assert.equal(entry.verification.search, 'unverified');
+      assert.equal(entry.verification.download, 'unverified');
+    }
+    if (entry.status === 'pilot') assert.notEqual(entry.verification.search, 'failed');
   }
- }
 });

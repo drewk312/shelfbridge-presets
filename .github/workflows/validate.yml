@@ -1,4 +1,4 @@
-name: ShelfBridge validation and source health
+name: Validate and health-check sources
 on:
   push:
   pull_request:
@@ -7,13 +7,14 @@ on:
     - cron: '23 9 * * *'
 permissions:
   contents: read
+  issues: write
 concurrency:
   group: shelfbridge-${{ github.ref }}
   cancel-in-progress: true
 jobs:
   validate:
     runs-on: ubuntu-24.04
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
@@ -21,8 +22,34 @@ jobs:
       - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
         with:
           node-version: '22'
-      - name: Check preset and catalog contracts
+      - name: Generated output must match committed output
+        run: node build.mjs --check
+      - name: Contract tests
         run: node --test *.test.mjs
-      - name: Check each public-domain search provider
+      - name: Per-source search and download probes
         if: github.event_name != 'pull_request'
-        run: node health.mjs
+        run: node health.mjs > health-report.json || echo "HEALTH_FAILED=1" >> "$GITHUB_ENV"
+      - name: File or update a tracking issue for dead sources
+        if: env.HEALTH_FAILED == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          node -e '
+            const r = require("./health-report.json");
+            const body = ["Automated source health failure.", "",
+              "Failed: " + r.failedSources.join(", "), "",
+              ...r.checks.filter(c => c.status === "failed").map(c => `- \`${c.source}\` (${c.preset}): ${c.error}`),
+              "", "Full report is attached to this run."].join("\n");
+            require("fs").writeFileSync("issue.md", body);
+          '
+          existing=$(gh issue list --search 'Source health failing in:title' --state open --json number --jq '.[0].number')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body-file issue.md
+          else
+            gh issue create --title "Source health failing" --body-file issue.md
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: health-report
+          path: health-report.json
