@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-standardebooks-v1",
   "name": "ShelfBridge — Standard Ebooks",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Standard Ebooks only. Curated, professionally typeset public-domain editions with real covers and clean typography. EPUB only.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
@@ -58,7 +58,7 @@
     "source": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=standardebooks&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-standardebooks-v1-v1.2.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=standardebooks&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-standardebooks-v1-v1.3.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -186,7 +186,7 @@
     "search": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=standardebooks&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-standardebooks-v1-v1.2.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=standardebooks&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-standardebooks-v1-v1.3.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -315,7 +315,7 @@
   "search": {
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=standardebooks&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-standardebooks-v1-v1.2.0",
+      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=standardebooks&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-standardebooks-v1-v1.3.0",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",

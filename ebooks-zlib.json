@@ -3,8 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-zlib-v1",
   "name": "ShelfBridge — Z-Library",
-  "version": "1.2.0",
-  "description": "Z-Library in isolation, as direct downloads. Strong on recent trade and academic titles. Credentials are never stored in the preset.",
+  "version": "1.3.0",
+  "description": "Z-Library in isolation. Search works anonymously but downloads need an account or session key, so expect some rows to fail until the backend holds a session. Kept out of all.json for that reason.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
@@ -30,7 +30,7 @@
       "direct"
     ],
     "usenetResults": [],
-    "note": "Direct files only. Anonymous rate limits apply."
+    "note": "Direct files only. Downloads are account-gated. Anonymous rate limits apply."
   },
   "discover": {
     "sections": []
@@ -58,7 +58,7 @@
     "source": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=zlib&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-zlib-v1-v1.2.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=zlib&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-zlib-v1-v1.3.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -186,7 +186,7 @@
     "search": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=zlib&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-zlib-v1-v1.2.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=zlib&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-zlib-v1-v1.3.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -315,7 +315,7 @@
   "search": {
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=zlib&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-zlib-v1-v1.2.0",
+      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=zlib&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-zlib-v1-v1.3.0",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",

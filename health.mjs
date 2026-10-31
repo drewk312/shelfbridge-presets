@@ -4,6 +4,7 @@ import { PROVIDERS, PRESETS } from './sources.mjs';
 import { LANGUAGE_LABELS } from './mapping.mjs';
 
 const RETRIES = 2;
+const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 function languageMatches(value, language) {
   const pattern = LANGUAGE_LABELS[language];
@@ -19,8 +20,12 @@ export function validateProbe(payload, source, language = 'en') {
     if (cfg.rowSource && row.source && row.source !== cfg.rowSource) throw new Error('Unexpected source ' + row.source);
     if (!languageMatches(row.language, language)) throw new Error('Unverified language: ' + (row.language || 'unknown'));
     if (row.downloadService !== cfg.method) throw new Error('Wrong download method');
-    const raw = row.ebookUrl || row.audioUrl || row.url || row.downloadUrl;
+    const raw = row.ebookUrl || row.audioUrl || row.url || row.downloadUrl || row.magnetUrl || row.magnet;
     if (!raw) throw new Error('No destination URL');
+    if (raw.startsWith('magnet:')) {
+      if (cfg.method !== 'torbox') throw new Error('Magnet from a direct source');
+      continue;
+    }
     const url = new URL(raw);
     if (url.protocol !== 'https:' || url.username || url.password || url.port) throw new Error('Unreviewed destination');
     if (cfg.hosts && !cfg.hosts.some(h => url.hostname === h || url.hostname.endsWith('.' + h))) throw new Error('Unreviewed host ' + url.hostname);
@@ -32,6 +37,7 @@ export function validateProbe(payload, source, language = 'en') {
 
 // Real download check: HEAD, follow redirects, demand a non-HTML body of sane size.
 export async function verifyDownload(url) {
+  if (url.startsWith('magnet:')) return { type: 'magnet', length: 0 };
   const res = await fetch(url, { method: 'HEAD', redirect: 'follow', signal: AbortSignal.timeout(8000) });
   await res.body?.cancel();
   if (!res.ok) throw new Error('HTTP ' + res.status);
@@ -49,7 +55,7 @@ async function withRetry(fn) {
       return await fn();
     } catch (error) {
       last = error;
-      const transient = /timeout|aborted|HTTP 5\d\d|fetch failed|ECONNRESET/i.test(String(error.message));
+      const transient = /timeout|aborted|HTTP 5\d\d|HTTP 429|fetch failed|ECONNRESET/i.test(String(error.message));
       if (!transient || attempt === RETRIES) break;
       await new Promise(r => setTimeout(r, 1000 * (attempt + 1)));
     }
@@ -101,18 +107,19 @@ export async function runHealth({ downloadCheck = true, all = false, only } = {}
       let download = 'skipped';
       if (downloadCheck) {
         const row = payload.results[0];
-        await verifyDownload(row.ebookUrl || row.audioUrl || row.url || row.downloadUrl);
+        await verifyDownload(row.ebookUrl || row.audioUrl || row.url || row.downloadUrl || row.magnetUrl || row.magnet);
         download = 'passed';
       }
       checks.push({ source, language, preset, status: 'passed', resultCount: count, download, elapsedMs: Date.now() - started });
     } catch (error) {
       checks.push({ source, language, preset, status: 'failed', error: String(error.message).slice(0, 200), elapsedMs: Date.now() - started });
     }
+    await sleep(1500);
   }
   const failed = checks.filter(c => c.status === 'failed');
   return {
     checkedAt: new Date().toISOString(),
-    scope: 'One search contract probe and one real download HEAD per source/language pair',
+    scope: 'One search contract probe and one real download check per source/language pair, paced',
     probed: checks.length,
     failedSources: [...new Set(failed.map(c => c.source))],
     failedPairs: failed.map(c => `${c.source}|${c.language}`),

@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-pdf-v1",
   "name": "ShelfBridge — PDF",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "PDF only. Fixed-layout scans and academic editions that survive being printed or marked up. EPUB and MOBI excluded.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
@@ -63,7 +63,7 @@
     "source": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutenberg&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-pdf-v1-v1.2.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutenberg&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-pdf-v1-v1.3.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -191,7 +191,7 @@
     "search": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutenberg&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-pdf-v1-v1.2.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutenberg&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-pdf-v1-v1.3.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -320,7 +320,7 @@
   "search": {
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutenberg&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-pdf-v1-v1.2.0",
+      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutenberg&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-pdf-v1-v1.3.0",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",

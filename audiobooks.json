@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shared-library-audiobooks-v1",
   "name": "ShelfBridge — Audiobooks",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Broad audiobook coverage. AudioBookBay torrents for current releases, LibriVox public-domain archives as backup. Seeders and size always visible.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
@@ -46,7 +46,7 @@
     "builtBy": "shelfbridge build.mjs",
     "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks.json",
     "sources": [
-      "audiobookbay",
+      "abb",
       "librivox"
     ],
     "language": "en",
@@ -65,7 +65,7 @@
     "source": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=audiobookbay%2Clibrivox&lang=en&languageMode=strict&profile=best&cacheBust=shared-library-audiobooks-v1-v1.2.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=abb%2Clibrivox&lang=en&languageMode=strict&profile=best&cacheBust=shared-library-audiobooks-v1-v1.3.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -193,7 +193,7 @@
     "search": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=audiobookbay%2Clibrivox&lang=en&languageMode=strict&profile=best&cacheBust=shared-library-audiobooks-v1-v1.2.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=abb%2Clibrivox&lang=en&languageMode=strict&profile=best&cacheBust=shared-library-audiobooks-v1-v1.3.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -322,7 +322,7 @@
   "search": {
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=audiobookbay%2Clibrivox&lang=en&languageMode=strict&profile=best&cacheBust=shared-library-audiobooks-v1-v1.2.0",
+      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=abb%2Clibrivox&lang=en&languageMode=strict&profile=best&cacheBust=shared-library-audiobooks-v1-v1.3.0",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",

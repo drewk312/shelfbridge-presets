@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-fast-audiobooks-v1",
   "name": "ShelfBridge — Fast Audiobooks",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "AudioBookBay only, for speed. Single torrent source so results return immediately with live seeder counts. Resolver required.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
@@ -46,7 +46,7 @@
     "builtBy": "shelfbridge build.mjs",
     "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/fast-audiobooks.json",
     "sources": [
-      "audiobookbay"
+      "abb"
     ],
     "language": "en",
     "languageMode": "strict",
@@ -64,7 +64,7 @@
     "source": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=audiobookbay&lang=en&languageMode=strict&profile=fast&cacheBust=shelfbridge-fast-audiobooks-v1-v1.2.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=abb&lang=en&languageMode=strict&profile=fast&cacheBust=shelfbridge-fast-audiobooks-v1-v1.3.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -192,7 +192,7 @@
     "search": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=audiobookbay&lang=en&languageMode=strict&profile=fast&cacheBust=shelfbridge-fast-audiobooks-v1-v1.2.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=abb&lang=en&languageMode=strict&profile=fast&cacheBust=shelfbridge-fast-audiobooks-v1-v1.3.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -321,7 +321,7 @@
   "search": {
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=audiobookbay&lang=en&languageMode=strict&profile=fast&cacheBust=shelfbridge-fast-audiobooks-v1-v1.2.0",
+      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=abb&lang=en&languageMode=strict&profile=fast&cacheBust=shelfbridge-fast-audiobooks-v1-v1.3.0",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",

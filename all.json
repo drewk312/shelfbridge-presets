@@ -3,8 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-all-v1",
   "name": "ShelfBridge — Everything",
-  "version": "1.2.0",
-  "description": "Every direct source in one import. Default preset: no resolver, no account. Strict English, junk and video filtered out.",
+  "version": "1.3.0",
+  "description": "Every reliable direct source in one import. Default preset: no resolver, no account. Z-Library is left out here because its downloads need an account; add ebooks-zlib separately. Strict English, junk and video filtered out.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
@@ -42,7 +42,6 @@
     "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/all.json",
     "sources": [
       "annas",
-      "zlib",
       "libgenli",
       "standardebooks",
       "gutenberg",
@@ -64,7 +63,7 @@
     "source": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutenberg%2Clibrivox&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-all-v1-v1.2.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=annas%2Clibgenli%2Cstandardebooks%2Cgutenberg%2Clibrivox&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-all-v1-v1.3.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -192,7 +191,7 @@
     "search": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutenberg%2Clibrivox&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-all-v1-v1.2.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=annas%2Clibgenli%2Cstandardebooks%2Cgutenberg%2Clibrivox&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-all-v1-v1.3.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -321,7 +320,7 @@
   "search": {
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutenberg%2Clibrivox&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-all-v1-v1.2.0",
+      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=annas%2Clibgenli%2Cstandardebooks%2Cgutenberg%2Clibrivox&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-all-v1-v1.3.0",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",

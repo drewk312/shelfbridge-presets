@@ -3,8 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-fast-ebooks-v1",
   "name": "ShelfBridge — Fast Ebooks",
-  "version": "1.2.0",
-  "description": "The three deep ebook sources only, for speed. Every row downloadable in-app. Strict English, junk and video filtered out.",
+  "version": "1.3.0",
+  "description": "The fastest reliable ebook sources only. Every row downloadable in-app. Strict English, junk and video filtered out.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
@@ -41,8 +41,8 @@
     "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/fast-ebooks.json",
     "sources": [
       "annas",
-      "zlib",
-      "libgenli"
+      "libgenli",
+      "bookracy"
     ],
     "language": "en",
     "languageMode": "strict",
@@ -60,7 +60,7 @@
     "source": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=annas%2Czlib%2Clibgenli&lang=en&languageMode=strict&profile=fast&cacheBust=shelfbridge-fast-ebooks-v1-v1.2.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=annas%2Clibgenli%2Cbookracy&lang=en&languageMode=strict&profile=fast&cacheBust=shelfbridge-fast-ebooks-v1-v1.3.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -188,7 +188,7 @@
     "search": {
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=annas%2Czlib%2Clibgenli&lang=en&languageMode=strict&profile=fast&cacheBust=shelfbridge-fast-ebooks-v1-v1.2.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=annas%2Clibgenli%2Cbookracy&lang=en&languageMode=strict&profile=fast&cacheBust=shelfbridge-fast-ebooks-v1-v1.3.0",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -317,7 +317,7 @@
   "search": {
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=annas%2Czlib%2Clibgenli&lang=en&languageMode=strict&profile=fast&cacheBust=shelfbridge-fast-ebooks-v1-v1.2.0",
+      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=annas%2Clibgenli%2Cbookracy&lang=en&languageMode=strict&profile=fast&cacheBust=shelfbridge-fast-ebooks-v1-v1.3.0",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",
