@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-all-v1",
   "name": "ShelfBridge — Everything",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Every reliable direct source in one import. Default preset: no resolver, no account. Z-Library is left out here because its downloads need an account; add ebooks-zlib separately. Strict English, junk and video filtered out.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
@@ -79,10 +79,10 @@
   },
   "adapters": {
     "source": {
-      "cacheNotifyUrl": "https://search.inkecho.duckdns.org/all/debrid-notify",
+      "cacheNotifyUrl": "https://inkandecho-builder.pages.dev/all/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=annas%2Clibgenli%2Cstandardebooks%2Cgutendex%2Clibrivox&lang=en&languageMode=strict",
+        "url": "https://inkandecho-builder.pages.dev/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=annas%2Clibgenli%2Cstandardebooks%2Cgutendex%2Clibrivox&lang=en&languageMode=strict",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -208,10 +208,10 @@
       }
     },
     "search": {
-      "cacheNotifyUrl": "https://search.inkecho.duckdns.org/all/debrid-notify",
+      "cacheNotifyUrl": "https://inkandecho-builder.pages.dev/all/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=annas%2Clibgenli%2Cstandardebooks%2Cgutendex%2Clibrivox&lang=en&languageMode=strict",
+        "url": "https://inkandecho-builder.pages.dev/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=annas%2Clibgenli%2Cstandardebooks%2Cgutendex%2Clibrivox&lang=en&languageMode=strict",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -338,10 +338,10 @@
     }
   },
   "search": {
-    "cacheNotifyUrl": "https://search.inkecho.duckdns.org/all/debrid-notify",
+    "cacheNotifyUrl": "https://inkandecho-builder.pages.dev/all/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=annas%2Clibgenli%2Cstandardebooks%2Cgutendex%2Clibrivox&lang=en&languageMode=strict",
+      "url": "https://inkandecho-builder.pages.dev/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=annas%2Clibgenli%2Cstandardebooks%2Cgutendex%2Clibrivox&lang=en&languageMode=strict",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",

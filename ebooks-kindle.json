@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-kindle-v1",
   "name": "ShelfBridge — Kindle formats",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Kindle-native files only: MOBI, AZW and AZW3. EPUB, PDF and comic formats excluded, so everything sideloads without conversion.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
@@ -79,10 +79,10 @@
   },
   "adapters": {
     "source": {
-      "cacheNotifyUrl": "https://search.inkecho.duckdns.org/ebook/debrid-notify",
+      "cacheNotifyUrl": "https://inkandecho-builder.pages.dev/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutendex&lang=en&languageMode=strict",
+        "url": "https://inkandecho-builder.pages.dev/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutendex&lang=en&languageMode=strict",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -208,10 +208,10 @@
       }
     },
     "search": {
-      "cacheNotifyUrl": "https://search.inkecho.duckdns.org/ebook/debrid-notify",
+      "cacheNotifyUrl": "https://inkandecho-builder.pages.dev/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutendex&lang=en&languageMode=strict",
+        "url": "https://inkandecho-builder.pages.dev/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutendex&lang=en&languageMode=strict",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -338,10 +338,10 @@
     }
   },
   "search": {
-    "cacheNotifyUrl": "https://search.inkecho.duckdns.org/ebook/debrid-notify",
+    "cacheNotifyUrl": "https://inkandecho-builder.pages.dev/ebook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutendex&lang=en&languageMode=strict",
+      "url": "https://inkandecho-builder.pages.dev/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutendex&lang=en&languageMode=strict",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",

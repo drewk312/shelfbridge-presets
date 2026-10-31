@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-elscione-v1",
   "name": "ShelfBridge — ElScione Server",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "ElScione h5ai file server. EPUB, PDF, CBZ and CBR straight off disk, no debrid and no account. Provider ID assumed.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
@@ -68,10 +68,10 @@
   },
   "adapters": {
     "source": {
-      "cacheNotifyUrl": "https://search.inkecho.duckdns.org/ebook/debrid-notify",
+      "cacheNotifyUrl": "https://inkandecho-builder.pages.dev/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=elscione&lang=en&languageMode=strict",
+        "url": "https://inkandecho-builder.pages.dev/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=elscione&lang=en&languageMode=strict",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -197,10 +197,10 @@
       }
     },
     "search": {
-      "cacheNotifyUrl": "https://search.inkecho.duckdns.org/ebook/debrid-notify",
+      "cacheNotifyUrl": "https://inkandecho-builder.pages.dev/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=elscione&lang=en&languageMode=strict",
+        "url": "https://inkandecho-builder.pages.dev/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=elscione&lang=en&languageMode=strict",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -327,10 +327,10 @@
     }
   },
   "search": {
-    "cacheNotifyUrl": "https://search.inkecho.duckdns.org/ebook/debrid-notify",
+    "cacheNotifyUrl": "https://inkandecho-builder.pages.dev/ebook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=elscione&lang=en&languageMode=strict",
+      "url": "https://inkandecho-builder.pages.dev/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=elscione&lang=en&languageMode=strict",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",

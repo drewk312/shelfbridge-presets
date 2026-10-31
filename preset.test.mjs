@@ -28,8 +28,9 @@ for (const spec of PRESETS) {
     assert.deepEqual(p.meta.sources, spec.sources);
 
     const url = new URL(p.search.request.url);
-    assert.equal(url.origin, 'https://search.inkecho.duckdns.org');
-    assert.equal(url.pathname, '/public/all/search');
+    assert.equal(url.origin, 'https://inkandecho-builder.pages.dev');
+    const mediaSeg = p.contentType === 'ebook' || p.contentType === 'audiobook' ? p.contentType : 'all';
+    assert.equal(url.pathname, '/' + mediaSeg + '/search');
     assert.equal(url.searchParams.get('debrid'), p.downloadService);
     assert.equal(url.searchParams.get('lang'), spec.language);
     assert.equal(url.searchParams.get('languageMode'), 'strict');
@@ -74,7 +75,7 @@ for (const spec of PRESETS) {
       assert.ok(!ex.has('m4b'), 'm4b must be allowed');
     }
 
-    assert.doesNotMatch(text, /pages\.dev|PRIVATE KEY|Bearer\s|api[_-]?key/i);
+    assert.doesNotMatch(text, /PRIVATE KEY|Bearer\s|api[_-]?key/i);
   });
 }
 

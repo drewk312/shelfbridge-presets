@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-audiobooks-m4b-v1",
   "name": "ShelfBridge — M4B Audiobooks",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Single-file M4B audiobooks only, with chapter markers intact. MP3 sets, FLAC and other splits excluded. Resolver required.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
@@ -73,10 +73,10 @@
   },
   "adapters": {
     "source": {
-      "cacheNotifyUrl": "https://search.inkecho.duckdns.org/audiobook/debrid-notify",
+      "cacheNotifyUrl": "https://inkandecho-builder.pages.dev/audiobook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=audiobookbay&lang=en&languageMode=strict",
+        "url": "https://inkandecho-builder.pages.dev/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=audiobookbay&lang=en&languageMode=strict",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -202,10 +202,10 @@
       }
     },
     "search": {
-      "cacheNotifyUrl": "https://search.inkecho.duckdns.org/audiobook/debrid-notify",
+      "cacheNotifyUrl": "https://inkandecho-builder.pages.dev/audiobook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=audiobookbay&lang=en&languageMode=strict",
+        "url": "https://inkandecho-builder.pages.dev/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=audiobookbay&lang=en&languageMode=strict",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -332,10 +332,10 @@
     }
   },
   "search": {
-    "cacheNotifyUrl": "https://search.inkecho.duckdns.org/audiobook/debrid-notify",
+    "cacheNotifyUrl": "https://inkandecho-builder.pages.dev/audiobook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=audiobookbay&lang=en&languageMode=strict",
+      "url": "https://inkandecho-builder.pages.dev/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=audiobookbay&lang=en&languageMode=strict",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",

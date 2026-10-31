@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-fast-ebooks-v1",
   "name": "ShelfBridge — Fast Ebooks",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "The fastest reliable ebook sources only. Every row downloadable in-app. Strict English, junk and video filtered out.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
@@ -74,10 +74,10 @@
   },
   "adapters": {
     "source": {
-      "cacheNotifyUrl": "https://search.inkecho.duckdns.org/ebook/debrid-notify",
+      "cacheNotifyUrl": "https://inkandecho-builder.pages.dev/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=fast&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=annas%2Clibgenli%2Cbookracy&lang=en&languageMode=strict",
+        "url": "https://inkandecho-builder.pages.dev/ebook/search?debrid=direct&profile=fast&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=annas%2Clibgenli%2Cbookracy&lang=en&languageMode=strict",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -203,10 +203,10 @@
       }
     },
     "search": {
-      "cacheNotifyUrl": "https://search.inkecho.duckdns.org/ebook/debrid-notify",
+      "cacheNotifyUrl": "https://inkandecho-builder.pages.dev/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=fast&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=annas%2Clibgenli%2Cbookracy&lang=en&languageMode=strict",
+        "url": "https://inkandecho-builder.pages.dev/ebook/search?debrid=direct&profile=fast&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=annas%2Clibgenli%2Cbookracy&lang=en&languageMode=strict",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -333,10 +333,10 @@
     }
   },
   "search": {
-    "cacheNotifyUrl": "https://search.inkecho.duckdns.org/ebook/debrid-notify",
+    "cacheNotifyUrl": "https://inkandecho-builder.pages.dev/ebook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=fast&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=annas%2Clibgenli%2Cbookracy&lang=en&languageMode=strict",
+      "url": "https://inkandecho-builder.pages.dev/ebook/search?debrid=direct&profile=fast&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=annas%2Clibgenli%2Cbookracy&lang=en&languageMode=strict",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",
