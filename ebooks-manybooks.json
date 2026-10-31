@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-manybooks-v1",
   "name": "ShelfBridge — ManyBooks",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "ManyBooks public-domain catalogue. Provider ID taken from the live backend; unproven until probed.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
@@ -24,10 +24,14 @@
   "selectedDebridService": "direct",
   "downloadService": "direct",
   "resolverCompatibility": {
-    "normalResults": [],
+    "normalResults": [
+      "direct"
+    ],
     "torrentResults": [],
     "directResults": [
-      "direct"
+      "direct",
+      "realdebrid",
+      "torbox"
     ],
     "usenetResults": [],
     "note": "Direct files only."
@@ -36,15 +40,23 @@
     "sections": []
   },
   "meta": {
-    "sourceContract": "typed-media-v2",
-    "builtBy": "shelfbridge build.mjs",
+    "builtAt": "2026-10-31T00:00:00.000Z",
+    "builder": "ShelfBridge build.mjs",
+    "language": "en",
+    "torboxTier": "standard",
+    "coverageProfile": "best",
+    "resultLimit": 40,
+    "requestTimeout": 30000,
+    "titleStyle": "clean",
     "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-manybooks.json",
+    "searchArchitecture": "bounded-distinct-providers-v4",
+    "preset": "ebooks-manybooks",
+    "languageMode": "strict",
+    "standaloneSource": "manybooks",
     "sources": [
       "manybooks"
     ],
-    "language": "en",
-    "languageMode": "strict",
-    "resultLimit": 40
+    "sourceContract": "typed-media-v2"
   },
   "rateLimit": {
     "requestsPerMinute": 8,
@@ -56,9 +68,10 @@
   },
   "adapters": {
     "source": {
+      "cacheNotifyUrl": "https://search.inkecho.duckdns.org/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=manybooks&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-manybooks-v1-v1.3.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=manybooks&lang=en&languageMode=strict",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -184,9 +197,10 @@
       }
     },
     "search": {
+      "cacheNotifyUrl": "https://search.inkecho.duckdns.org/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=manybooks&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-manybooks-v1-v1.3.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=manybooks&lang=en&languageMode=strict",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -313,9 +327,10 @@
     }
   },
   "search": {
+    "cacheNotifyUrl": "https://search.inkecho.duckdns.org/ebook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&client=ink-hosted&sources=manybooks&lang=en&languageMode=strict&profile=best&cacheBust=shelfbridge-ebooks-manybooks-v1-v1.3.0",
+      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=manybooks&lang=en&languageMode=strict",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",

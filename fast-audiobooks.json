@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-fast-audiobooks-v1",
   "name": "ShelfBridge — Fast Audiobooks",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "AudioBookBay only, for speed. Single torrent source so results return immediately with live seeder counts. Resolver required.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
@@ -33,7 +33,9 @@
       "torbox"
     ],
     "directResults": [
-      "direct"
+      "direct",
+      "realdebrid",
+      "torbox"
     ],
     "usenetResults": [],
     "note": "Torrent results only. TorBox or compatible resolver required."
@@ -42,15 +44,23 @@
     "sections": []
   },
   "meta": {
-    "sourceContract": "typed-media-v2",
-    "builtBy": "shelfbridge build.mjs",
+    "builtAt": "2026-10-31T00:00:00.000Z",
+    "builder": "ShelfBridge build.mjs",
+    "language": "en",
+    "torboxTier": "standard",
+    "coverageProfile": "best",
+    "resultLimit": 40,
+    "requestTimeout": 30000,
+    "titleStyle": "clean",
     "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/fast-audiobooks.json",
+    "searchArchitecture": "bounded-distinct-providers-v4",
+    "preset": "fast-audiobooks",
+    "languageMode": "strict",
+    "standaloneSource": "audiobookbay",
     "sources": [
       "abb"
     ],
-    "language": "en",
-    "languageMode": "strict",
-    "resultLimit": 40
+    "sourceContract": "typed-media-v2"
   },
   "rateLimit": {
     "requestsPerMinute": 8,
@@ -62,9 +72,10 @@
   },
   "adapters": {
     "source": {
+      "cacheNotifyUrl": "https://search.inkecho.duckdns.org/audiobook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=abb&lang=en&languageMode=strict&profile=fast&cacheBust=shelfbridge-fast-audiobooks-v1-v1.3.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&profile=fast&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=audiobookbay&lang=en&languageMode=strict",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -190,9 +201,10 @@
       }
     },
     "search": {
+      "cacheNotifyUrl": "https://search.inkecho.duckdns.org/audiobook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=abb&lang=en&languageMode=strict&profile=fast&cacheBust=shelfbridge-fast-audiobooks-v1-v1.3.0",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&profile=fast&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=audiobookbay&lang=en&languageMode=strict",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -319,9 +331,10 @@
     }
   },
   "search": {
+    "cacheNotifyUrl": "https://search.inkecho.duckdns.org/audiobook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&client=ink-hosted&sources=abb&lang=en&languageMode=strict&profile=fast&cacheBust=shelfbridge-fast-audiobooks-v1-v1.3.0",
+      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=torbox&profile=fast&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=audiobookbay&lang=en&languageMode=strict",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",

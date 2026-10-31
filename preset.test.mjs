@@ -14,7 +14,8 @@ for (const spec of PRESETS) {
     assert.equal(p.kind, 'search');
     assert.equal(p.schemaVersion, '1.0.0');
     assert.ok(p.lawfulNote, 'lawfulNote required on every preset');
-    assert.ok(p.contentTypes.includes(p.contentType) || p.contentType === 'all');
+    assert.ok(p.contentTypes.includes(p.contentType) || p.contentType === 'both');
+    assert.equal(p.contentType, spec.contentTypes.includes('ebook') && spec.contentTypes.includes('audiobook') ? 'both' : spec.contentTypes[0]);
     assert.equal(p.debrid, p.downloadService);
     assert.deepEqual(p.debridServices, [p.downloadService]);
     assert.equal(p.meta.language, spec.language);
@@ -32,13 +33,20 @@ for (const spec of PRESETS) {
     assert.equal(url.searchParams.get('debrid'), p.downloadService);
     assert.equal(url.searchParams.get('lang'), spec.language);
     assert.equal(url.searchParams.get('languageMode'), 'strict');
-    assert.equal(url.searchParams.get('sources'), spec.sources.join(','));
-    assert.equal(url.searchParams.get('cacheBust'), `${p.id}-v${p.version}`, 'cacheBust must track version');
+    const legacyId = { abb: 'audiobookbay', solid: 'solidtorrents', tcsv: 'torrentcsv', tgalaxy: 'torrentgalaxy', gutenberg: 'gutendex' };
+    assert.equal(url.searchParams.get('sources'), spec.sources.map(s => legacyId[s] || s).join(','));
+    assert.equal(url.searchParams.get('cacheBust'), 'source-stability-v2');
     assert.ok(p.search.request.timeout > 0 && p.search.request.timeout <= 30000);
 
     // rate limit must be the slowest member, never hand-set
     assert.equal(p.rateLimit.requestsPerMinute, rpmFor(spec));
     assert.equal(p.matching.threshold, spec.threshold);
+    assert.equal(p.rateLimit.retryAfterMs, Math.max(6000, Math.ceil(60000 / rpmFor(spec))));
+    assert.deepEqual(p.resolverCompatibility.directResults, ['direct', 'realdebrid', 'torbox']);
+    assert.deepEqual(p.discover, { sections: [] });
+    assert.ok(p.meta.preset, 'meta.preset required');
+    assert.ok(p.trustLabel && p.icon && p.provides.includes('search'), 'contract chrome missing');
+    assert.ok(p.adapters.source.cacheNotifyUrl.endsWith('/debrid-notify'), 'cache notify url required');
 
     for (const k of Object.keys(p.search.response.mapping)) assert.ok(ALLOWED_MAPPINGS.has(k), 'unsupported mapping ' + k);
     for (const k of ['title', 'author', 'downloadService', 'fileFormat', 'sourcePageUrl']) {
