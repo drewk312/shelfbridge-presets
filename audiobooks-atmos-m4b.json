@@ -4,7 +4,7 @@
   "id": "shelfbridge-audiobooks-atmos-m4b-v1",
   "name": "ShelfBridge — Dolby Atmos M4B",
   "version": "1.4.4",
-  "description": "Dolby Atmos spatial audiobooks as M4B from AudioBookBay. Needs TorBox (or compatible debrid) and an Atmos-capable player/headphones.",
+  "description": "Dolby Atmos spatial audiobooks as M4B from AudioBookBay (source-reported Atmos labels). Needs TorBox (or compatible debrid) and an Atmos-capable player/headphones.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
@@ -38,7 +38,7 @@
       "torbox"
     ],
     "usenetResults": [],
-    "note": "Torrent results only. Dolby Atmos M4B exclusively. Resolver required."
+    "note": "Torrent results only. Source-reported Dolby Atmos M4B. Resolver required."
   },
   "discover": {
     "sections": []
@@ -62,7 +62,8 @@
     ],
     "sourceContract": "typed-media-v2",
     "formatTarget": "m4b",
-    "audioFormat": "dolby-atmos"
+    "audioFormat": "dolby-atmos",
+    "audioVerification": "source"
   },
   "rateLimit": {
     "requestsPerMinute": 8,
@@ -77,7 +78,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/audiobook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=audiobooks-atmos-m4b&sources=audiobookbay&lang=en&languageMode=strict&audioFormat=dolby-atmos",
+        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=audiobooks-atmos-m4b&sources=audiobookbay&lang=en&languageMode=strict&audioFormat=dolby-atmos&audioVerification=source",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -89,7 +90,8 @@
           "limit": 80,
           "contentType": "audiobook",
           "preset": "audiobooks-atmos-m4b",
-          "audioFormat": "dolby-atmos"
+          "audioFormat": "dolby-atmos",
+          "audioVerification": "source"
         }
       },
       "response": {
@@ -208,7 +210,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/audiobook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=audiobooks-atmos-m4b&sources=audiobookbay&lang=en&languageMode=strict&audioFormat=dolby-atmos",
+        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=audiobooks-atmos-m4b&sources=audiobookbay&lang=en&languageMode=strict&audioFormat=dolby-atmos&audioVerification=source",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -220,7 +222,8 @@
           "limit": 80,
           "contentType": "audiobook",
           "preset": "audiobooks-atmos-m4b",
-          "audioFormat": "dolby-atmos"
+          "audioFormat": "dolby-atmos",
+          "audioVerification": "source"
         }
       },
       "response": {
@@ -340,7 +343,7 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/audiobook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=audiobooks-atmos-m4b&sources=audiobookbay&lang=en&languageMode=strict&audioFormat=dolby-atmos",
+      "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=audiobooks-atmos-m4b&sources=audiobookbay&lang=en&languageMode=strict&audioFormat=dolby-atmos&audioVerification=source",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",
@@ -352,7 +355,8 @@
         "limit": 80,
         "contentType": "audiobook",
         "preset": "audiobooks-atmos-m4b",
-        "audioFormat": "dolby-atmos"
+        "audioFormat": "dolby-atmos",
+        "audioVerification": "source"
       }
     },
     "response": {

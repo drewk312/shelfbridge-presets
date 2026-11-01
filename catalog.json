@@ -907,7 +907,7 @@
       "version": "1.4.4",
       "file": "audiobooks-atmos-m4b.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-atmos-m4b.json",
-      "sha256": "b37e31c90593db0b1781e3e97af21273157e8e31865f82a20d08c0c9bafbffce",
+      "sha256": "91cf7efce37392d5a8ce0b04f19fadae3a5adb9652a13ef70ea1f94fe9bc3cd9",
       "status": "pilot",
       "contentTypes": [
         "audiobook"

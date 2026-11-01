@@ -187,6 +187,7 @@ export const PRESET_REGISTRY = {
     "languageMode": "strict",
     "media": "audiobook",
     "audioFormat": "dolby-atmos",
+    "audioVerification": "source",
     "format": "m4b"
   },
   "librivox-audiobooks": {
@@ -438,6 +439,7 @@ export function applyPresetToUrl(url, body = {}) {
   if (conf.languageMode) url.searchParams.set('languageMode', conf.languageMode);
   if (conf.profile) url.searchParams.set('profile', conf.profile);
   if (conf.audioFormat) url.searchParams.set('audioFormat', conf.audioFormat);
+  if (conf.audioVerification) url.searchParams.set('audioVerification', conf.audioVerification);
   const presetId = String(name).replace(/\.json$/, '');
   url.searchParams.set('preset', presetId);
   const next = { ...body };
@@ -457,6 +459,7 @@ export function applyPresetToUrl(url, body = {}) {
   if (conf.lang) next.lang = conf.lang;
   if (conf.languageMode) next.languageMode = conf.languageMode;
   if (conf.audioFormat) next.audioFormat = conf.audioFormat;
+  if (conf.audioVerification) next.audioVerification = conf.audioVerification;
   next.preset = presetId;
   return { url, body: next, applied: conf, preset: presetId };
 }

@@ -94,8 +94,11 @@ for (const spec of PRESETS) {
     }
     if (spec.audioFormat === 'dolby-atmos') {
       assert.equal(url.searchParams.get('audioFormat'), 'dolby-atmos');
+      assert.equal(url.searchParams.get('audioVerification'), 'source');
       assert.equal(p.search?.request?.body?.audioFormat, 'dolby-atmos');
+      assert.equal(p.search?.request?.body?.audioVerification, 'source');
       assert.equal(p.meta?.audioFormat, 'dolby-atmos');
+      assert.equal(p.meta?.audioVerification, 'source');
     }
 
     assert.doesNotMatch(text, /PRIVATE KEY|Bearer\s|api[_-]?key/i);
