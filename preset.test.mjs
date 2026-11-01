@@ -28,16 +28,17 @@ for (const spec of PRESETS) {
     assert.deepEqual(p.meta.sources, spec.sources);
 
     const url = new URL(p.search.request.url);
-    assert.equal(url.origin, 'https://inkandecho-builder.pages.dev');
+    assert.equal(url.origin, 'https://search.inkecho.duckdns.org');
     const mediaSeg = p.contentType === 'ebook' || p.contentType === 'audiobook' ? p.contentType : 'all';
-    assert.equal(url.pathname, '/' + mediaSeg + '/search');
+    assert.equal(url.pathname, '/public/' + mediaSeg + '/search');
     assert.equal(url.searchParams.get('debrid'), p.downloadService);
     assert.equal(url.searchParams.get('lang'), spec.language);
     assert.equal(url.searchParams.get('languageMode'), 'strict');
     const legacyId = { abb: 'audiobookbay', solid: 'solidtorrents', tcsv: 'torrentcsv', tgalaxy: 'torrentgalaxy', gutenberg: 'gutendex' };
     assert.equal(url.searchParams.get('sources'), spec.sources.map(s => legacyId[s] || s).join(','));
     assert.equal(url.searchParams.get('cacheBust'), 'source-stability-v2');
-    assert.ok(p.search.request.timeout > 0 && p.search.request.timeout <= 30000);
+    const maxTimeout = spec.requestTimeout || 45000;
+    assert.ok(p.search.request.timeout > 0 && p.search.request.timeout <= maxTimeout);
 
     // rate limit must be the slowest member, never hand-set
     assert.equal(p.rateLimit.requestsPerMinute, rpmFor(spec));

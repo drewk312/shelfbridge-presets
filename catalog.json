@@ -10,10 +10,10 @@
     {
       "id": "shelfbridge-all-v1",
       "name": "ShelfBridge — Everything",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "all.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/all.json",
-      "sha256": "a61ac248f0fa6e1cb285422785e097e8819217726552573ffc642397514e7d5d",
+      "sha256": "4f14f27b7fcefd5f7ba4a9f13f9f63d6db9b586a816b85e918cfe9846b60379e",
       "status": "pilot",
       "contentTypes": [
         "ebook",
@@ -31,7 +31,7 @@
         "librivox"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
@@ -54,10 +54,10 @@
     {
       "id": "shared-library-direct-ebooks-v1",
       "name": "ShelfBridge — Direct Ebooks",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "direct-ebooks.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/direct-ebooks.json",
-      "sha256": "9e2554277bbf4e5d2b0bec787487af029de877bd6ca6581b5cdf869f36d9768a",
+      "sha256": "b5801e7ecd16d2af16132a28d48159e6f05037889b62d1e1359edd307dd39b48",
       "status": "pilot",
       "contentTypes": [
         "ebook"
@@ -74,7 +74,7 @@
         "gutenberg"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
@@ -97,10 +97,10 @@
     {
       "id": "shelfbridge-fast-ebooks-v1",
       "name": "ShelfBridge — Fast Ebooks",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "fast-ebooks.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/fast-ebooks.json",
-      "sha256": "670e7ecc9b941da3384774afc67ad56ed88ab7f1f2d252dc0c5395030cc20fee",
+      "sha256": "fc11de040768089d044b03cd2431411815ddc0c6db0cf0b65c8c01d65c684bb2",
       "status": "pilot",
       "contentTypes": [
         "ebook"
@@ -115,7 +115,7 @@
         "bookracy"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
@@ -138,10 +138,10 @@
     {
       "id": "shelfbridge-public-domain-ebooks-v1",
       "name": "ShelfBridge — Public-domain Ebooks",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "public-domain-ebooks.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/public-domain-ebooks.json",
-      "sha256": "22e5cdd75a9e228435ef81ef90e97829232a014a1ad77658ac9cec23b7905998",
+      "sha256": "74a6c5625b6ed3d88cbce091418d06a1fdb78d73b7b5f9ec32d6b035e0c6f5aa",
       "status": "pilot",
       "contentTypes": [
         "ebook"
@@ -155,7 +155,7 @@
         "gutenberg"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
@@ -178,10 +178,10 @@
     {
       "id": "shelfbridge-ebooks-kindle-v1",
       "name": "ShelfBridge — Kindle formats",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-kindle.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-kindle.json",
-      "sha256": "8c45991443ecb97f35039e011bfaeff56cd46547114aaea0ca9427b3918f7055",
+      "sha256": "ac9364ff2feaa0dabba9b4820195fbf56c9c43006431ed50924bd10c674808e0",
       "status": "pilot",
       "contentTypes": [
         "ebook"
@@ -199,7 +199,7 @@
       ],
       "format": "kindle",
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
@@ -222,10 +222,10 @@
     {
       "id": "shelfbridge-ebooks-pdf-v1",
       "name": "ShelfBridge — PDF",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-pdf.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-pdf.json",
-      "sha256": "aabe25ec0ca3a13949c1cca33fc2af1ff890557a09de2c81a9a41521220f03c5",
+      "sha256": "6a3d942f2ad33dd80cc0fee258fee7b72403da402fff60f62ef48b7901b85d16",
       "status": "pilot",
       "contentTypes": [
         "ebook"
@@ -243,7 +243,7 @@
       ],
       "format": "pdf",
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
@@ -266,10 +266,10 @@
     {
       "id": "shelfbridge-ebooks-annas-v1",
       "name": "ShelfBridge — Anna's Archive",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-annas.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-annas.json",
-      "sha256": "8411ae301aff2b60c7f5e2f1005c16490fd45b145aa112d2f39b6832954678ab",
+      "sha256": "7f7a302fae059e16a1de97c0cbcde82678a35594d93ff8f3324513d5e7d29e2f",
       "status": "pilot",
       "contentTypes": [
         "ebook"
@@ -282,7 +282,7 @@
         "annas"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
@@ -305,10 +305,10 @@
     {
       "id": "shelfbridge-ebooks-zlib-v1",
       "name": "ShelfBridge — Z-Library",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-zlib.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-zlib.json",
-      "sha256": "775eb47077791f5607c1392bdfe1e34c6b45bafd512c6f3cb1e68c3b2e4a2ec1",
+      "sha256": "3f97984973259fcab87e78310287ec111cfdbb36a61385eddbd4612c7282fa27",
       "status": "pilot",
       "contentTypes": [
         "ebook"
@@ -321,7 +321,7 @@
         "zlib"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
@@ -344,10 +344,10 @@
     {
       "id": "shelfbridge-ebooks-libgen-v1",
       "name": "ShelfBridge — LibGen",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-libgen.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-libgen.json",
-      "sha256": "097a173264ee00f23b28b572a0c48e87682e7d0f6d9d89341eae0e34b297e438",
+      "sha256": "aabd1fe5ec3784b0643e59a6d16c1f12715468ce8c059ea58ed4ae5cd0429e3b",
       "status": "pilot",
       "contentTypes": [
         "ebook"
@@ -360,7 +360,7 @@
         "libgenli"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
@@ -383,10 +383,10 @@
     {
       "id": "shelfbridge-ebooks-bookracy-v1",
       "name": "ShelfBridge — Bookracy",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-bookracy.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-bookracy.json",
-      "sha256": "15411a65e56ae71777b5631956d6294787f97987c75ca406162b1c5d07356f04",
+      "sha256": "e779f92f0380855d903d47f055e0760a6a9b1d9775e8570e9f28d32cc3e32f71",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -399,7 +399,7 @@
         "bookracy"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -422,10 +422,10 @@
     {
       "id": "shelfbridge-ebooks-mayberry-v1",
       "name": "ShelfBridge — Mayberry",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-mayberry.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-mayberry.json",
-      "sha256": "de09fa24324e3a0afbf8ed28a30de3f551a1fe599dfdd27508097ab7f6617664",
+      "sha256": "cb60a068dd9c134cd4c28782fe58027b301efb0e4d1cff16230ad4226197e727",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -438,7 +438,7 @@
         "mayberry"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -461,10 +461,10 @@
     {
       "id": "shelfbridge-ebooks-oceanofpdf-v1",
       "name": "ShelfBridge — OceanofPDF",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-oceanofpdf.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-oceanofpdf.json",
-      "sha256": "9e42e3b2a00b08a149fcd1d4057208815273c860869a022bd55eab0a33f7d3c5",
+      "sha256": "8489d3c5eaecf691b6065be6ac1da6d644e176bf366be6958599b177a0ed654a",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -477,7 +477,7 @@
         "oceanofpdf"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -500,10 +500,10 @@
     {
       "id": "shelfbridge-ebooks-elscione-v1",
       "name": "ShelfBridge — ElScione Server",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-elscione.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-elscione.json",
-      "sha256": "77dcf61051765bfc2180f1568682e9fef9f3071eb6b83355327241fa729b51c0",
+      "sha256": "056c3bca32d8dcb06eec60501a0f6db5c4c292425be1557d3704299de5ecd8e7",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -516,7 +516,7 @@
         "elscione"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -539,10 +539,10 @@
     {
       "id": "shelfbridge-ebooks-standardebooks-v1",
       "name": "ShelfBridge — Standard Ebooks",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-standardebooks.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-standardebooks.json",
-      "sha256": "f55a755f55f98204078e7e99c08deae411ca90c351eaa73322c7bc3a0f357277",
+      "sha256": "59de1dddd321f3109807d114ecb3b726942607524c352bafc414252a1cb9dcb3",
       "status": "pilot",
       "contentTypes": [
         "ebook"
@@ -555,7 +555,7 @@
         "standardebooks"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
@@ -578,10 +578,10 @@
     {
       "id": "shelfbridge-ebooks-gutenberg-v1",
       "name": "ShelfBridge — Project Gutenberg",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-gutenberg.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-gutenberg.json",
-      "sha256": "efa7a12062961f6d49b12a9d40f1b7370041a6216b90b8f28bf91f23af4311d8",
+      "sha256": "5dd161b739175b358dab3343b2cc5caf2835694e5d7a70f0f93aed5b52a8ac83",
       "status": "pilot",
       "contentTypes": [
         "ebook"
@@ -594,7 +594,7 @@
         "gutenberg"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
@@ -617,10 +617,10 @@
     {
       "id": "shelfbridge-ebooks-es-v1",
       "name": "ShelfBridge — Ebooks (Spanish)",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-es.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-es.json",
-      "sha256": "27ec2fba4fb818e1498da874b487a200859032292d58d8e4b07ad6697ce8a7cb",
+      "sha256": "15831182ce4ce75114bdae166c0ab43d08bd0b9c81264c0f06bdfc52ef251af9",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -637,7 +637,7 @@
         "gutenberg"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -660,10 +660,10 @@
     {
       "id": "shelfbridge-ebooks-fr-v1",
       "name": "ShelfBridge — Ebooks (French)",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-fr.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-fr.json",
-      "sha256": "52e4fd27fce5f9c28d0fa7b3fb3aa4e436c9fdced20872e3146dbd266de7ddb9",
+      "sha256": "8c07053989d8daabc4cf2c6d37e47b1df41ddf6e603df2c722a2f800457c4699",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -680,7 +680,7 @@
         "gutenberg"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -703,10 +703,10 @@
     {
       "id": "shelfbridge-ebooks-de-v1",
       "name": "ShelfBridge — Ebooks (German)",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-de.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-de.json",
-      "sha256": "83a2ae9a08cc10d5087890a9822bb9462269762aaf60f8b22233b98441eb9f00",
+      "sha256": "8c95a4ff53b4c66ea6e535a67d547534f5cea4610712e74981ded32dcc58b706",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -723,7 +723,7 @@
         "gutenberg"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -746,10 +746,10 @@
     {
       "id": "shared-library-audiobooks-v1",
       "name": "ShelfBridge — Audiobooks",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "audiobooks.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks.json",
-      "sha256": "0b123c946796c6e40ddc4ef8c04c2601c6c15c6a6b82246d10a4d841151e5538",
+      "sha256": "cd6b9b583c657cdcb40f9747d4779bd27d18b63534b91613f21e6eebfa3e8e61",
       "status": "pilot",
       "contentTypes": [
         "audiobook"
@@ -763,7 +763,7 @@
         "librivox"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
@@ -786,10 +786,10 @@
     {
       "id": "shelfbridge-fast-audiobooks-v1",
       "name": "ShelfBridge — Fast Audiobooks",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "fast-audiobooks.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/fast-audiobooks.json",
-      "sha256": "a3beff4cf992434548ecdb9ec7435a0c6bf0e0cc496459c625f20bc56600871b",
+      "sha256": "46d2dd8b5f35394738215686e839f90ab89ee7f694861e0633076c39ee1bae8d",
       "status": "pilot",
       "contentTypes": [
         "audiobook"
@@ -802,7 +802,7 @@
         "abb"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
@@ -825,10 +825,10 @@
     {
       "id": "shelfbridge-audiobooks-abb-v1",
       "name": "ShelfBridge — AudioBookBay",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "audiobooks-abb.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-abb.json",
-      "sha256": "75a61fce3ce6fa0ef3dbc3a66e3eeec3d282f5791d47eb3d18a4d5a0d60e8984",
+      "sha256": "339da479cd181bffedbc617273021908424791605bf78e16b9d286d9abb23da7",
       "status": "pilot",
       "contentTypes": [
         "audiobook"
@@ -841,7 +841,7 @@
         "abb"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
@@ -864,10 +864,10 @@
     {
       "id": "shelfbridge-audiobooks-m4b-v1",
       "name": "ShelfBridge — M4B Audiobooks",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "audiobooks-m4b.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-m4b.json",
-      "sha256": "862f9a39c894ab85f59c862c68705ff19e6a4b1f5b7ba584a93aae0547b783b9",
+      "sha256": "70bec5688e741d43473a1699f88e717f944be11299ec26846154deb199b46d73",
       "status": "pilot",
       "contentTypes": [
         "audiobook"
@@ -881,7 +881,7 @@
       ],
       "format": "m4b",
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
@@ -904,10 +904,10 @@
     {
       "id": "shelfbridge-librivox-audiobooks-v1",
       "name": "ShelfBridge — LibriVox Audiobook Archives",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "librivox-audiobooks.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/librivox-audiobooks.json",
-      "sha256": "a2608921a085a9167fcc6e8c454fd4c66ab027be5ab6a479cc8f6d21645624b6",
+      "sha256": "b76a5bd2f1dbbf5259f7cc4dd5a9ebb241624b1b090da20ff52db66072e65b5a",
       "status": "pilot",
       "contentTypes": [
         "audiobook"
@@ -920,7 +920,7 @@
         "librivox"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
@@ -943,10 +943,10 @@
     {
       "id": "shelfbridge-magazines-v1",
       "name": "ShelfBridge — Magazines",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "magazines.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/magazines.json",
-      "sha256": "d4093e6861c2489c2ac8ef2c59d8571feae6a4a834fbf752d0450efc849f10ae",
+      "sha256": "eb2446a15e4bf97a746d91e140c25693041aa0942fa4ae7e97ed30e19740ccd8",
       "status": "candidate",
       "contentTypes": [
         "magazine"
@@ -959,7 +959,7 @@
         "freemagazines"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -982,11 +982,11 @@
     {
       "id": "shelfbridge-mobilism-v1",
       "name": "ShelfBridge — Mobilism Releases",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "mobilism.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/mobilism.json",
-      "sha256": "ba9d0b28a19a315ec373fc2154b9d727bd7f174d310fd07bd4e3f4c03c319106",
-      "status": "candidate",
+      "sha256": "b8e61514f11ce27a6a4be096e967e22e8338eeed9b5ffb8f0c5694192c05e0c4",
+      "status": "pilot",
       "contentTypes": [
         "ebook",
         "audiobook"
@@ -999,8 +999,8 @@
         "mobilism"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
-        "search": "unverified",
+        "checkedOn": "2026-11-01",
+        "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
       },
@@ -1022,10 +1022,10 @@
     {
       "id": "shelfbridge-manga-v1",
       "name": "ShelfBridge — Manga",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "manga.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga.json",
-      "sha256": "948cd95ef7fbc5403b0b868577d876f6ef7f53b8a925344a18d53e5ce3aa013c",
+      "sha256": "15c22c7251bc6027f884252c02a6bc757ec630c324dec27da5a2a322977f8efe",
       "status": "candidate",
       "contentTypes": [
         "manga"
@@ -1038,7 +1038,7 @@
         "mangadex"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -1061,10 +1061,10 @@
     {
       "id": "shelfbridge-webnovels-v1",
       "name": "ShelfBridge — Web Fiction",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "webnovels.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/webnovels.json",
-      "sha256": "a8a981e9364d2bcba45e36c511d6e2963c1cd814bd530cd04ed5d9ec694342a6",
+      "sha256": "8d6ec5d4c6d880e782832c78ea49d588654a17b3db87508c380f4a39aaa1b5fb",
       "status": "candidate",
       "contentTypes": [
         "webnovel"
@@ -1077,7 +1077,7 @@
         "royalroad"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -1100,10 +1100,10 @@
     {
       "id": "shelfbridge-ebooks-openlib-v1",
       "name": "ShelfBridge — OpenLibrary",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-openlib.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-openlib.json",
-      "sha256": "9522fe652c699ffdf93b3514b38e7b136b62f3bbb3769549e5d2e6a9404ea0fc",
+      "sha256": "e79041759a35b4199313cfe0666ff137d4f6c17bc72c98a2b81139861dd27266",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -1116,7 +1116,7 @@
         "openlib"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -1139,10 +1139,10 @@
     {
       "id": "shelfbridge-ebooks-dbooks-v1",
       "name": "ShelfBridge — DBooks",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-dbooks.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-dbooks.json",
-      "sha256": "977dfadbc2ed487c3db129e5993096c62db9ea29a113374cef69eaa6535c08c0",
+      "sha256": "a5345562c427c04e78335767fd6685945a12cb8f923312b6e7b4c8f53ee9c08e",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -1155,7 +1155,7 @@
         "dbooks"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -1178,10 +1178,10 @@
     {
       "id": "shelfbridge-ebooks-libgenalt-v1",
       "name": "ShelfBridge — LibGen (alt)",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-libgen2.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-libgen2.json",
-      "sha256": "94ce22c8dc9380a6631ab21ba536b245e4d2417d4cf6715d53fb90929f25cd05",
+      "sha256": "a4a9bbd74fa190298ee0526402740d266cf04796415688222d7e9a0194a8fd93",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -1194,7 +1194,7 @@
         "libgen"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -1217,10 +1217,10 @@
     {
       "id": "shelfbridge-ebooks-libgenfiction-v1",
       "name": "ShelfBridge — LibGen Fiction",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-libgenfiction.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-libgenfiction.json",
-      "sha256": "b02169da291a68f6f2c6840431437de3c1af8bcce3ce25d9dc3169fd7b335047",
+      "sha256": "94cc9e23dafbd56d073f136caebd52f7d0b0b2b075ba5ade81ef68513d3f8d89",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -1233,7 +1233,7 @@
         "libgenfiction"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -1256,10 +1256,10 @@
     {
       "id": "shelfbridge-ebooks-manybooks-v1",
       "name": "ShelfBridge — ManyBooks",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-manybooks.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-manybooks.json",
-      "sha256": "9bdbe14bd3b131fe4d017aba6f711ea7eed6e9c5a9b03d981720d9cac7dd93d0",
+      "sha256": "57db3d83e3d0b7fa9cb26f7c6a42241792449839cd59dfd8a0cea4a0dead869f",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -1272,7 +1272,7 @@
         "manybooks"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -1295,10 +1295,10 @@
     {
       "id": "shelfbridge-ebooks-feedbooks-v1",
       "name": "ShelfBridge — Feedbooks",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-feedbooks.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-feedbooks.json",
-      "sha256": "4ff03d785c0afeda9dd143f24084e81ed73e10d4d2dd8d58b21529e489a32432",
+      "sha256": "32b5b382b7dd1296443edd11915725bd0aa7e7398740d4b9b28e1a33f4e4e759",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -1311,7 +1311,7 @@
         "feedbooks"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -1334,10 +1334,10 @@
     {
       "id": "shelfbridge-ebooks-pdfdrive-v1",
       "name": "ShelfBridge — PDFDrive",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-pdfdrive.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-pdfdrive.json",
-      "sha256": "8eca8c656805b5f6255865ffdbbd1977267d63eb9c5c5ec4c4c8c36ed8ce3df3",
+      "sha256": "4b95a6a443b454b2c036c3833fe77807073e4dea337f4c631152e0b40486db27",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -1350,7 +1350,7 @@
         "pdfdrive"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -1373,10 +1373,10 @@
     {
       "id": "shelfbridge-ebooks-archiveorg-v1",
       "name": "ShelfBridge — Internet Archive",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "ebooks-archiveorg.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-archiveorg.json",
-      "sha256": "56ef1c62cd51183465add85596e093aabf8e4031e3b79174d29ac9c52ddf47ef",
+      "sha256": "f0b70c8c026cd02ab48a07c91dca076a57632fe64a7326f3e0aa7351981d1bc6",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -1389,7 +1389,7 @@
         "archiveorg"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -1412,10 +1412,10 @@
     {
       "id": "shelfbridge-audiobooks-loyalbooks-v1",
       "name": "ShelfBridge — Loyal Books",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "audiobooks-loyalbooks.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-loyalbooks.json",
-      "sha256": "29f64355d7ed809aeca5707310a212cc899942ba0be9b9cc2593219a2fd64908",
+      "sha256": "4d50ec648fd97d0be499cd96a06bcb58568ef21ea23f639ec74fdb298fbfc233",
       "status": "candidate",
       "contentTypes": [
         "audiobook"
@@ -1428,7 +1428,7 @@
         "loyalbooks"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -1451,10 +1451,10 @@
     {
       "id": "shelfbridge-audiobooks-tokyobook-v1",
       "name": "ShelfBridge — Tokybook",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "audiobooks-tokyobook.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-tokyobook.json",
-      "sha256": "7f0d6116f995a1e4acd17c184d430a28e460212be13adfaf368f7dabca6f41c6",
+      "sha256": "d99c8fa0a67200b48e4db697ab8faa94af2f2a23771c8a15a98b4db0c6b15b34",
       "status": "candidate",
       "contentTypes": [
         "audiobook"
@@ -1467,7 +1467,7 @@
         "tokyobook"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -1490,10 +1490,10 @@
     {
       "id": "shelfbridge-audiobooks-golden-v1",
       "name": "ShelfBridge — Golden Audiobooks",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "audiobooks-golden.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-golden.json",
-      "sha256": "9ec9e586aabd52504e73ee188aea9ded488a19a165055c06890e6d60de2d2356",
+      "sha256": "49a44f121b2a922a6a8141252f77ebcd589004d14771aaa16f15ec8db2b34865",
       "status": "candidate",
       "contentTypes": [
         "audiobook"
@@ -1506,7 +1506,7 @@
         "goldenaudiobooks"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -1529,10 +1529,10 @@
     {
       "id": "shelfbridge-audiobooks-bookaudiobooks-v1",
       "name": "ShelfBridge — BookAudiobooks",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "audiobooks-bookaudiobooks.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-bookaudiobooks.json",
-      "sha256": "1e645a3d4e2032e579a628702e7d3ee78602a92bdd89505f29d79c0b7e308d96",
+      "sha256": "80625272b24840f87c1cb3e50737729d14788ae65848e98e2ef3ae07d3e745b9",
       "status": "candidate",
       "contentTypes": [
         "audiobook"
@@ -1545,7 +1545,7 @@
         "bookaudiobooks"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -1568,10 +1568,10 @@
     {
       "id": "shelfbridge-audiobooks-4soul-v1",
       "name": "ShelfBridge — Audiobooks4Soul",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "audiobooks-4soul.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-4soul.json",
-      "sha256": "9889ca399fe90bc519fa23e84f4acd2ca0b5f3c66e472f4f33b43841f5a28cdc",
+      "sha256": "7b655b0adc957d165c8d78fbd03312fb3b9562927a5f55708a8fe3447b4cfb2a",
       "status": "candidate",
       "contentTypes": [
         "audiobook"
@@ -1584,7 +1584,7 @@
         "audiobooks4soul"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
@@ -1607,10 +1607,10 @@
     {
       "id": "shelfbridge-audiobooks-fulllength-v1",
       "name": "ShelfBridge — FullLengthAudiobooks",
-      "version": "1.4.1",
+      "version": "1.4.2",
       "file": "audiobooks-fulllength.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-fulllength.json",
-      "sha256": "91ede7208f6e8296673e0554e75433e13650258285ceaa6f2ad1ac386d14f63d",
+      "sha256": "4630907d0c7161eba586604f3b0dddbbf5ae7976a8a7cc598885819de0328414",
       "status": "candidate",
       "contentTypes": [
         "audiobook"
@@ -1623,7 +1623,7 @@
         "fulllengthaudiobooks"
       ],
       "verification": {
-        "checkedOn": "2026-10-31",
+        "checkedOn": "2026-11-01",
         "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
