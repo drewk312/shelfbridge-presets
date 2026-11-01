@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-mobilism-v1",
   "name": "ShelfBridge — Mobilism Releases",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "Mobilism forum search via the Ink & Echo VPS scraper (logged-in Playwright). Rows download through /dl/mobilism/{id} (CloudFam DDL). No TorBox required.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
@@ -41,7 +41,7 @@
     "sections": []
   },
   "meta": {
-    "builtAt": "2026-11-01T00:00:00.000Z",
+    "builtAt": "2026-11-01T02:20:00.000Z",
     "builder": "ShelfBridge build.mjs",
     "language": "en",
     "torboxTier": "standard",
@@ -75,7 +75,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/all/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=mobilism&lang=en&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v3&torboxTier=standard&titleStyle=clean&sources=mobilism&lang=en&languageMode=strict",
         "timeout": 60000,
         "headers": {
           "Accept": "application/json",
@@ -204,7 +204,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/all/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=mobilism&lang=en&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v3&torboxTier=standard&titleStyle=clean&sources=mobilism&lang=en&languageMode=strict",
         "timeout": 60000,
         "headers": {
           "Accept": "application/json",
@@ -334,7 +334,7 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/all/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=mobilism&lang=en&languageMode=strict",
+      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v3&torboxTier=standard&titleStyle=clean&sources=mobilism&lang=en&languageMode=strict",
       "timeout": 60000,
       "headers": {
         "Accept": "application/json",

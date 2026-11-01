@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-libgen-v1",
   "name": "ShelfBridge — LibGen",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "LibGen in isolation, as direct downloads. Strongest on older, out-of-print and academic material.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
@@ -40,13 +40,13 @@
     "sections": []
   },
   "meta": {
-    "builtAt": "2026-11-01T00:00:00.000Z",
+    "builtAt": "2026-11-01T02:20:00.000Z",
     "builder": "ShelfBridge build.mjs",
     "language": "en",
     "torboxTier": "standard",
     "coverageProfile": "best",
     "resultLimit": 60,
-    "requestTimeout": 45000,
+    "requestTimeout": 22000,
     "titleStyle": "clean",
     "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-libgen.json",
     "searchArchitecture": "bounded-distinct-providers-v4",
@@ -71,8 +71,8 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=libgenli&lang=en&languageMode=strict",
-        "timeout": 45000,
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v3&torboxTier=standard&titleStyle=clean&sources=libgenli&lang=en&languageMode=strict",
+        "timeout": 22000,
         "headers": {
           "Accept": "application/json",
           "Content-Type": "application/json"
@@ -200,8 +200,8 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=libgenli&lang=en&languageMode=strict",
-        "timeout": 45000,
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v3&torboxTier=standard&titleStyle=clean&sources=libgenli&lang=en&languageMode=strict",
+        "timeout": 22000,
         "headers": {
           "Accept": "application/json",
           "Content-Type": "application/json"
@@ -330,8 +330,8 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-stability-v2&torboxTier=standard&titleStyle=clean&sources=libgenli&lang=en&languageMode=strict",
-      "timeout": 45000,
+      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v3&torboxTier=standard&titleStyle=clean&sources=libgenli&lang=en&languageMode=strict",
+      "timeout": 22000,
       "headers": {
         "Accept": "application/json",
         "Content-Type": "application/json"

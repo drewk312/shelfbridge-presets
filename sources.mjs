@@ -33,7 +33,7 @@ export const PROVIDERS = {
   freemagazines: { label: 'FreeMagazines', media: 'magazine', method: 'direct', rpm: 8, rowSource: 'freemagazines', hosts: null, pathPattern: null, fileType: null }
 };
 
-const V = '1.4.2';
+const V = '1.4.3';
 
 export const PRESETS = [
   { file: 'all.json', id: 'shelfbridge-all-v1', name: 'ShelfBridge — Everything', version: V, language: 'en', contentType: 'all', contentTypes: ['ebook', 'audiobook'], downloadMethod: 'direct', sources: ['annas', 'libgenli', 'standardebooks', 'gutenberg', 'librivox'], limit: 100, threshold: 0.3, status: 'pilot', description: 'Every reliable direct source in one import. Default preset: no resolver, no account. Z-Library is left out here because its downloads need an account; add ebooks-zlib separately. Strict English, junk and video filtered out.', compatNote: 'Direct files only, mixed ebook and audiobook. LibriVox rows are ZIP archives.' },

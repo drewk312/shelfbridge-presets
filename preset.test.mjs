@@ -36,8 +36,8 @@ for (const spec of PRESETS) {
     assert.equal(url.searchParams.get('languageMode'), 'strict');
     const legacyId = { abb: 'audiobookbay', solid: 'solidtorrents', tcsv: 'torrentcsv', tgalaxy: 'torrentgalaxy', gutenberg: 'gutendex' };
     assert.equal(url.searchParams.get('sources'), spec.sources.map(s => legacyId[s] || s).join(','));
-    assert.equal(url.searchParams.get('cacheBust'), 'source-stability-v2');
-    const maxTimeout = spec.requestTimeout || 45000;
+    assert.equal(url.searchParams.get('cacheBust'), 'source-speed-v3');
+    const maxTimeout = spec.requestTimeout || 22000;
     assert.ok(p.search.request.timeout > 0 && p.search.request.timeout <= maxTimeout);
 
     // rate limit must be the slowest member, never hand-set
