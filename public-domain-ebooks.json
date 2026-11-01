@@ -75,7 +75,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=standardebooks%2Cgutendex&lang=en&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=public-domain-ebooks&sources=standardebooks%2Cgutendex&lang=en&languageMode=strict",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -85,7 +85,8 @@
           "title": "{TITLE}",
           "author": "{AUTHOR}",
           "limit": 30,
-          "contentType": "ebook"
+          "contentType": "ebook",
+          "preset": "public-domain-ebooks"
         }
       },
       "response": {
@@ -204,7 +205,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=standardebooks%2Cgutendex&lang=en&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=public-domain-ebooks&sources=standardebooks%2Cgutendex&lang=en&languageMode=strict",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -214,7 +215,8 @@
           "title": "{TITLE}",
           "author": "{AUTHOR}",
           "limit": 30,
-          "contentType": "ebook"
+          "contentType": "ebook",
+          "preset": "public-domain-ebooks"
         }
       },
       "response": {
@@ -334,7 +336,7 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=standardebooks%2Cgutendex&lang=en&languageMode=strict",
+      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=public-domain-ebooks&sources=standardebooks%2Cgutendex&lang=en&languageMode=strict",
       "timeout": 22000,
       "headers": {
         "Accept": "application/json",
@@ -344,7 +346,8 @@
         "title": "{TITLE}",
         "author": "{AUTHOR}",
         "limit": 30,
-        "contentType": "ebook"
+        "contentType": "ebook",
+        "preset": "public-domain-ebooks"
       }
     },
     "response": {

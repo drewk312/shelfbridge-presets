@@ -40,13 +40,17 @@ for (const spec of PRESETS) {
       assert.equal(url.searchParams.get('comicShelf'), spec.comicShelf || (p.contentType === 'manga' ? 'manga' : 'comics'));
       assert.equal(url.searchParams.get('lang'), spec.language === 'en' ? 'any' : spec.language);
       assert.equal(url.searchParams.get('languageMode'), null);
-      assert.equal(url.searchParams.get('cacheBust'), 'comics-shelves-v2');
+      assert.equal(url.searchParams.get('cacheBust'), 'comics-preset-resolve-v1');
+      assert.equal(url.searchParams.get('preset'), spec.file.replace(/\.json$/, ''));
       assert.equal(p.search.request.body.contentType, 'comics');
       assert.equal(p.search.request.body.comicShelf, spec.comicShelf || (p.contentType === 'manga' ? 'manga' : 'comics'));
+      assert.equal(p.search.request.body.preset, spec.file.replace(/\.json$/, ''));
     } else {
       assert.equal(url.searchParams.get('lang'), spec.language);
       assert.equal(url.searchParams.get('languageMode'), 'strict');
       assert.equal(url.searchParams.get('cacheBust'), 'source-speed-v4');
+      assert.equal(url.searchParams.get('preset'), spec.file.replace(/\.json$/, ''));
+      assert.equal(p.search.request.body.preset, spec.file.replace(/\.json$/, ''));
     }
     const legacyId = { abb: 'audiobookbay', solid: 'solidtorrents', tcsv: 'torrentcsv', tgalaxy: 'torrentgalaxy', gutenberg: 'gutendex' };
     assert.equal(url.searchParams.get('sources'), spec.sources.map(s => legacyId[s] || s).join(','));

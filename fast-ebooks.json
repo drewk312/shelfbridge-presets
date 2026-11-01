@@ -77,7 +77,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=fast&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=annas%2Clibgenli%2Cbookracy&lang=en&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=fast&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=fast-ebooks&sources=annas%2Clibgenli%2Cbookracy&lang=en&languageMode=strict",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -87,7 +87,8 @@
           "title": "{TITLE}",
           "author": "{AUTHOR}",
           "limit": 80,
-          "contentType": "ebook"
+          "contentType": "ebook",
+          "preset": "fast-ebooks"
         }
       },
       "response": {
@@ -206,7 +207,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=fast&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=annas%2Clibgenli%2Cbookracy&lang=en&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=fast&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=fast-ebooks&sources=annas%2Clibgenli%2Cbookracy&lang=en&languageMode=strict",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -216,7 +217,8 @@
           "title": "{TITLE}",
           "author": "{AUTHOR}",
           "limit": 80,
-          "contentType": "ebook"
+          "contentType": "ebook",
+          "preset": "fast-ebooks"
         }
       },
       "response": {
@@ -336,7 +338,7 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=fast&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=annas%2Clibgenli%2Cbookracy&lang=en&languageMode=strict",
+      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=fast&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=fast-ebooks&sources=annas%2Clibgenli%2Cbookracy&lang=en&languageMode=strict",
       "timeout": 22000,
       "headers": {
         "Accept": "application/json",
@@ -346,7 +348,8 @@
         "title": "{TITLE}",
         "author": "{AUTHOR}",
         "limit": 80,
-        "contentType": "ebook"
+        "contentType": "ebook",
+        "preset": "fast-ebooks"
       }
     },
     "response": {

@@ -79,7 +79,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=comics-shelves-v2&torboxTier=standard&titleStyle=clean&sources=nyaa%2Cknaben&lang=any&media=comics&comicShelf=manga",
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&preset=manga&sources=nyaa%2Cknaben&lang=any&media=comics&comicShelf=manga",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -90,6 +90,7 @@
           "author": "{AUTHOR}",
           "limit": 60,
           "contentType": "comics",
+          "preset": "manga",
           "media": "comics",
           "comicShelf": "manga"
         }
@@ -210,7 +211,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=comics-shelves-v2&torboxTier=standard&titleStyle=clean&sources=nyaa%2Cknaben&lang=any&media=comics&comicShelf=manga",
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&preset=manga&sources=nyaa%2Cknaben&lang=any&media=comics&comicShelf=manga",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -221,6 +222,7 @@
           "author": "{AUTHOR}",
           "limit": 60,
           "contentType": "comics",
+          "preset": "manga",
           "media": "comics",
           "comicShelf": "manga"
         }
@@ -342,7 +344,7 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=comics-shelves-v2&torboxTier=standard&titleStyle=clean&sources=nyaa%2Cknaben&lang=any&media=comics&comicShelf=manga",
+      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&preset=manga&sources=nyaa%2Cknaben&lang=any&media=comics&comicShelf=manga",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",
@@ -353,6 +355,7 @@
         "author": "{AUTHOR}",
         "limit": 60,
         "contentType": "comics",
+        "preset": "manga",
         "media": "comics",
         "comicShelf": "manga"
       }

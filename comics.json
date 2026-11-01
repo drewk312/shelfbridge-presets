@@ -71,7 +71,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=comics-shelves-v2&torboxTier=standard&titleStyle=clean&sources=getcomics&lang=any&media=comics&comicShelf=comics",
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&preset=comics&sources=getcomics&lang=any&media=comics&comicShelf=comics",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -82,6 +82,7 @@
           "author": "{AUTHOR}",
           "limit": 60,
           "contentType": "comics",
+          "preset": "comics",
           "media": "comics",
           "comicShelf": "comics"
         }
@@ -202,7 +203,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=comics-shelves-v2&torboxTier=standard&titleStyle=clean&sources=getcomics&lang=any&media=comics&comicShelf=comics",
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&preset=comics&sources=getcomics&lang=any&media=comics&comicShelf=comics",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -213,6 +214,7 @@
           "author": "{AUTHOR}",
           "limit": 60,
           "contentType": "comics",
+          "preset": "comics",
           "media": "comics",
           "comicShelf": "comics"
         }
@@ -334,7 +336,7 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=comics-shelves-v2&torboxTier=standard&titleStyle=clean&sources=getcomics&lang=any&media=comics&comicShelf=comics",
+      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&preset=comics&sources=getcomics&lang=any&media=comics&comicShelf=comics",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",
@@ -345,6 +347,7 @@
         "author": "{AUTHOR}",
         "limit": 60,
         "contentType": "comics",
+        "preset": "comics",
         "media": "comics",
         "comicShelf": "comics"
       }

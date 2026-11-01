@@ -81,7 +81,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutendex&lang=es&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=ebooks-es&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutendex&lang=es&languageMode=strict",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -91,7 +91,8 @@
           "title": "{TITLE}",
           "author": "{AUTHOR}",
           "limit": 60,
-          "contentType": "ebook"
+          "contentType": "ebook",
+          "preset": "ebooks-es"
         }
       },
       "response": {
@@ -210,7 +211,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutendex&lang=es&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=ebooks-es&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutendex&lang=es&languageMode=strict",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -220,7 +221,8 @@
           "title": "{TITLE}",
           "author": "{AUTHOR}",
           "limit": 60,
-          "contentType": "ebook"
+          "contentType": "ebook",
+          "preset": "ebooks-es"
         }
       },
       "response": {
@@ -340,7 +342,7 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutendex&lang=es&languageMode=strict",
+      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=ebooks-es&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutendex&lang=es&languageMode=strict",
       "timeout": 22000,
       "headers": {
         "Accept": "application/json",
@@ -350,7 +352,8 @@
         "title": "{TITLE}",
         "author": "{AUTHOR}",
         "limit": 60,
-        "contentType": "ebook"
+        "contentType": "ebook",
+        "preset": "ebooks-es"
       }
     },
     "response": {
