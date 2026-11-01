@@ -38,7 +38,8 @@ export const PRESET_REGISTRY = {
     "profile": "best",
     "lang": "en",
     "languageMode": "strict",
-    "media": "ebook"
+    "media": "ebook",
+    "format": "kindle"
   },
   "ebooks-pdf": {
     "sources": "annas,zlib,libgenli,standardebooks,gutendex",
@@ -46,7 +47,8 @@ export const PRESET_REGISTRY = {
     "profile": "best",
     "lang": "en",
     "languageMode": "strict",
-    "media": "ebook"
+    "media": "ebook",
+    "format": "pdf"
   },
   "ebooks-annas": {
     "sources": "annas",
@@ -174,7 +176,18 @@ export const PRESET_REGISTRY = {
     "profile": "best",
     "lang": "en",
     "languageMode": "strict",
-    "media": "audiobook"
+    "media": "audiobook",
+    "format": "m4b"
+  },
+  "audiobooks-atmos-m4b": {
+    "sources": "audiobookbay",
+    "debrid": "torbox",
+    "profile": "best",
+    "lang": "en",
+    "languageMode": "strict",
+    "media": "audiobook",
+    "audioFormat": "dolby-atmos",
+    "format": "m4b"
   },
   "librivox-audiobooks": {
     "sources": "librivox",
@@ -372,6 +385,7 @@ export const PRESET_ALIASES = {
   "shelfbridge-fast-audiobooks-v1": "fast-audiobooks",
   "shelfbridge-audiobooks-abb-v1": "audiobooks-abb",
   "shelfbridge-audiobooks-m4b-v1": "audiobooks-m4b",
+  "shelfbridge-audiobooks-atmos-m4b-v1": "audiobooks-atmos-m4b",
   "shelfbridge-librivox-audiobooks-v1": "librivox-audiobooks",
   "shelfbridge-magazines-v1": "magazines",
   "shelfbridge-mobilism-v1": "mobilism",
@@ -423,6 +437,7 @@ export function applyPresetToUrl(url, body = {}) {
   if (conf.lang) url.searchParams.set('lang', conf.lang);
   if (conf.languageMode) url.searchParams.set('languageMode', conf.languageMode);
   if (conf.profile) url.searchParams.set('profile', conf.profile);
+  if (conf.audioFormat) url.searchParams.set('audioFormat', conf.audioFormat);
   const presetId = String(name).replace(/\.json$/, '');
   url.searchParams.set('preset', presetId);
   const next = { ...body };
@@ -441,6 +456,7 @@ export function applyPresetToUrl(url, body = {}) {
   if (conf.profile) next.profile = conf.profile;
   if (conf.lang) next.lang = conf.lang;
   if (conf.languageMode) next.languageMode = conf.languageMode;
+  if (conf.audioFormat) next.audioFormat = conf.audioFormat;
   next.preset = presetId;
   return { url, body: next, applied: conf, preset: presetId };
 }

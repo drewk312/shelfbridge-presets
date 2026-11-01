@@ -92,6 +92,11 @@ for (const spec of PRESETS) {
       for (const t of ['mp3', 'flac']) assert.ok(ex.has(t), 'm4b must exclude ' + t);
       assert.ok(!ex.has('m4b'), 'm4b must be allowed');
     }
+    if (spec.audioFormat === 'dolby-atmos') {
+      assert.equal(url.searchParams.get('audioFormat'), 'dolby-atmos');
+      assert.equal(p.search?.request?.body?.audioFormat, 'dolby-atmos');
+      assert.equal(p.meta?.audioFormat, 'dolby-atmos');
+    }
 
     assert.doesNotMatch(text, /PRIVATE KEY|Bearer\s|api[_-]?key/i);
   });

@@ -11,7 +11,7 @@ Each becomes a switch. After this one pass, we update routing on the VPS via `pr
 4. https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks.json
 5. https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/mobilism.json
 
-## Full list (43)
+## Full list (44)
 
 - **ShelfBridge — Everything** (`direct`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/all.json
 - **ShelfBridge — Direct Ebooks** (`direct`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/direct-ebooks.json
@@ -35,6 +35,7 @@ Each becomes a switch. After this one pass, we update routing on the VPS via `pr
 - **ShelfBridge — Fast Audiobooks** (`torbox`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/fast-audiobooks.json
 - **ShelfBridge — AudioBookBay** (`torbox`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-abb.json
 - **ShelfBridge — M4B Audiobooks** (`torbox`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-m4b.json
+- **ShelfBridge — Dolby Atmos M4B** (`torbox`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-atmos-m4b.json
 - **ShelfBridge — LibriVox Audiobook Archives** (`direct`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/librivox-audiobooks.json
 - **ShelfBridge — Magazines** (`direct`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/magazines.json
 - **ShelfBridge — Mobilism Releases** (`direct`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/mobilism.json

@@ -33,6 +33,8 @@ for (const p of PRESETS) {
     media
   };
   if (p.comicShelf) entry.comicShelf = p.comicShelf;
+  if (p.audioFormat) entry.audioFormat = p.audioFormat;
+  if (p.format) entry.format = p.format;
   registry[id] = entry;
   aliases[p.id] = id;
 }
@@ -72,6 +74,7 @@ export function applyPresetToUrl(url, body = {}) {
   if (conf.lang) url.searchParams.set('lang', conf.lang);
   if (conf.languageMode) url.searchParams.set('languageMode', conf.languageMode);
   if (conf.profile) url.searchParams.set('profile', conf.profile);
+  if (conf.audioFormat) url.searchParams.set('audioFormat', conf.audioFormat);
   const presetId = String(name).replace(/\\.json$/, '');
   url.searchParams.set('preset', presetId);
   const next = { ...body };
@@ -90,6 +93,7 @@ export function applyPresetToUrl(url, body = {}) {
   if (conf.profile) next.profile = conf.profile;
   if (conf.lang) next.lang = conf.lang;
   if (conf.languageMode) next.languageMode = conf.languageMode;
+  if (conf.audioFormat) next.audioFormat = conf.audioFormat;
   next.preset = presetId;
   return { url, body: next, applied: conf, preset: presetId };
 }

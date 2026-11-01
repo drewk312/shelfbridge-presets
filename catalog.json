@@ -902,6 +902,46 @@
       }
     },
     {
+      "id": "shelfbridge-audiobooks-atmos-m4b-v1",
+      "name": "ShelfBridge — Dolby Atmos M4B",
+      "version": "1.4.4",
+      "file": "audiobooks-atmos-m4b.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-atmos-m4b.json",
+      "sha256": "b37e31c90593db0b1781e3e97af21273157e8e31865f82a20d08c0c9bafbffce",
+      "status": "pilot",
+      "contentTypes": [
+        "audiobook"
+      ],
+      "downloadMethod": "torbox",
+      "requiresDebrid": true,
+      "language": "en",
+      "languageMode": "strict",
+      "providers": [
+        "abb"
+      ],
+      "format": "m4b",
+      "verification": {
+        "checkedOn": "2026-11-01",
+        "search": "pending",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
       "id": "shelfbridge-librivox-audiobooks-v1",
       "name": "ShelfBridge — LibriVox Audiobook Archives",
       "version": "1.4.4",
