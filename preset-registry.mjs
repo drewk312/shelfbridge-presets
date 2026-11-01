@@ -146,6 +146,30 @@ export const PRESET_REGISTRY = {
     "languageMode": "strict",
     "media": "ebook"
   },
+  "ebooks-ro": {
+    "sources": "annas,zlib,libgenli,standardebooks,gutendex",
+    "debrid": "direct",
+    "profile": "best",
+    "lang": "ro",
+    "languageMode": "strict",
+    "media": "ebook"
+  },
+  "ebooks-ar": {
+    "sources": "annas,zlib,libgenli,standardebooks,gutendex",
+    "debrid": "direct",
+    "profile": "best",
+    "lang": "ar",
+    "languageMode": "strict",
+    "media": "ebook"
+  },
+  "ebooks-any": {
+    "sources": "annas,zlib,libgenli,standardebooks,gutendex",
+    "debrid": "direct",
+    "profile": "best",
+    "lang": "any",
+    "languageMode": "any",
+    "media": "ebook"
+  },
   "audiobooks": {
     "sources": "audiobookbay,librivox",
     "debrid": "torbox",
@@ -153,6 +177,46 @@ export const PRESET_REGISTRY = {
     "lang": "en",
     "languageMode": "strict",
     "media": "audiobook"
+  },
+  "audiobooks-ro": {
+    "sources": "audiobookbay,librivox",
+    "debrid": "torbox",
+    "profile": "best",
+    "lang": "ro",
+    "languageMode": "strict",
+    "media": "audiobook"
+  },
+  "audiobooks-ar": {
+    "sources": "audiobookbay,librivox",
+    "debrid": "torbox",
+    "profile": "best",
+    "lang": "ar",
+    "languageMode": "strict",
+    "media": "audiobook"
+  },
+  "audiobooks-any": {
+    "sources": "audiobookbay,librivox",
+    "debrid": "torbox",
+    "profile": "best",
+    "lang": "any",
+    "languageMode": "any",
+    "media": "audiobook"
+  },
+  "mobilism-ro": {
+    "sources": "mobilism",
+    "debrid": "direct",
+    "profile": "best",
+    "lang": "ro",
+    "languageMode": "strict",
+    "media": "all"
+  },
+  "mobilism-ar": {
+    "sources": "mobilism",
+    "debrid": "direct",
+    "profile": "best",
+    "lang": "ar",
+    "languageMode": "strict",
+    "media": "all"
   },
   "fast-audiobooks": {
     "sources": "audiobookbay",
@@ -382,7 +446,15 @@ export const PRESET_ALIASES = {
   "shelfbridge-ebooks-es-v1": "ebooks-es",
   "shelfbridge-ebooks-fr-v1": "ebooks-fr",
   "shelfbridge-ebooks-de-v1": "ebooks-de",
+  "shelfbridge-ebooks-ro-v1": "ebooks-ro",
+  "shelfbridge-ebooks-ar-v1": "ebooks-ar",
+  "shelfbridge-ebooks-any-v1": "ebooks-any",
   "shared-library-audiobooks-v1": "audiobooks",
+  "shelfbridge-audiobooks-ro-v1": "audiobooks-ro",
+  "shelfbridge-audiobooks-ar-v1": "audiobooks-ar",
+  "shelfbridge-audiobooks-any-v1": "audiobooks-any",
+  "shelfbridge-mobilism-ro-v1": "mobilism-ro",
+  "shelfbridge-mobilism-ar-v1": "mobilism-ar",
   "shelfbridge-fast-audiobooks-v1": "fast-audiobooks",
   "shelfbridge-audiobooks-abb-v1": "audiobooks-abb",
   "shelfbridge-audiobooks-m4b-v1": "audiobooks-m4b",

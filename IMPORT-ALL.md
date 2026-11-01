@@ -11,7 +11,7 @@ Each becomes a switch. After this one pass, we update routing on the VPS via `pr
 4. https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks.json
 5. https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/mobilism.json
 
-## Full list (44)
+## Full list (52)
 
 - **ShelfBridge — Everything** (`direct`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/all.json
 - **ShelfBridge — Direct Ebooks** (`direct`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/direct-ebooks.json
@@ -31,7 +31,15 @@ Each becomes a switch. After this one pass, we update routing on the VPS via `pr
 - **ShelfBridge — Ebooks (Spanish)** (`direct`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-es.json
 - **ShelfBridge — Ebooks (French)** (`direct`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-fr.json
 - **ShelfBridge — Ebooks (German)** (`direct`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-de.json
+- **ShelfBridge — Ebooks (Romanian)** (`direct`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-ro.json
+- **ShelfBridge — Ebooks (Arabic)** (`direct`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-ar.json
+- **ShelfBridge — Ebooks (Any language)** (`direct`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-any.json
 - **ShelfBridge — Audiobooks** (`torbox`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks.json
+- **ShelfBridge — Audiobooks (Romanian)** (`torbox`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-ro.json
+- **ShelfBridge — Audiobooks (Arabic)** (`torbox`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-ar.json
+- **ShelfBridge — Audiobooks (Any language)** (`torbox`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-any.json
+- **ShelfBridge — Mobilism (Romanian)** (`direct`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/mobilism-ro.json
+- **ShelfBridge — Mobilism (Arabic)** (`direct`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/mobilism-ar.json
 - **ShelfBridge — Fast Audiobooks** (`torbox`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/fast-audiobooks.json
 - **ShelfBridge — AudioBookBay** (`torbox`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-abb.json
 - **ShelfBridge — M4B Audiobooks** (`torbox`): https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-m4b.json

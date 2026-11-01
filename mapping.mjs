@@ -124,7 +124,10 @@ export const LANGUAGE_LABELS = {
   "en": "^(en(-[a-z]+)?|english)$",
   "es": "^(es(-[a-z]+)?|spanish|español)$",
   "fr": "^(fr(-[a-z]+)?|french|français)$",
-  "de": "^(de(-[a-z]+)?|german|deutsch)$"
+  "de": "^(de(-[a-z]+)?|german|deutsch)$",
+  "ro": "^(ro(-[a-z]+)?|ron|rum|romanian|romana|română)$",
+  "ar": "^(ar(-[a-z]+)?|ara|arabic|عربي|العربية)$",
+  "any": ".*"
 };
 
 // content type and optional format target decide what gets filtered.

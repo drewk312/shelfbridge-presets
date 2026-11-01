@@ -24,12 +24,15 @@ for (const p of PRESETS) {
   // Match live VPS comics shelves (extra indexer coverage).
   if (id === 'manga' || id === 'comics-manga') sources = 'nyaa,knaben,prowlarr';
 
+  const languageMode = comic
+    ? 'any'
+    : (p.languageMode || (p.language === 'any' ? 'any' : 'strict'));
   const entry = {
     sources,
     debrid: p.downloadMethod,
     profile: p.profile || 'best',
     lang: comic ? (p.language === 'en' ? 'any' : p.language) : p.language,
-    languageMode: comic ? 'any' : 'strict',
+    languageMode,
     media
   };
   if (p.comicShelf) entry.comicShelf = p.comicShelf;
