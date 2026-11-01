@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-mobilism-v1",
   "name": "ShelfBridge — Mobilism Releases",
-  "version": "1.4.4",
   "description": "Mobilism forum search via the Ink & Echo VPS scraper (logged-in Playwright). Rows download through /dl/mobilism/{id} (CloudFam DDL). No TorBox required.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

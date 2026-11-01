@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-fr-v1",
   "name": "ShelfBridge — Ebooks (French)",
-  "version": "1.4.4",
   "description": "French-language ebooks across every direct source. Strict French; untranslated English editions excluded.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

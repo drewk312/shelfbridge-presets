@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-libgen-v1",
   "name": "ShelfBridge — LibGen",
-  "version": "1.4.4",
   "description": "LibGen in isolation, as direct downloads. Strongest on older, out-of-print and academic material.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

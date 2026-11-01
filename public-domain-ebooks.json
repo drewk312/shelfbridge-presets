@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-public-domain-ebooks-v1",
   "name": "ShelfBridge — Public-domain Ebooks",
-  "version": "1.4.4",
-  "description": "English public-domain ebooks only. Professionally typeset, permanently hosted, zero legal ambiguity. No TorBox required.",
+  "description": "English public-domain ebooks only. Professionally typeset, permanently hosted. No TorBox required.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",
@@ -34,7 +32,7 @@
       "torbox"
     ],
     "usenetResults": [],
-    "note": "Direct files only. Public-domain status varies by country."
+    "note": "Direct files only."
   },
   "discover": {
     "sections": []

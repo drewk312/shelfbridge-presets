@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-kindle-v1",
   "name": "ShelfBridge — Kindle formats",
-  "version": "1.4.4",
   "description": "Kindle-native files only: MOBI, AZW and AZW3. EPUB, PDF and comic formats excluded, so everything sideloads without conversion.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

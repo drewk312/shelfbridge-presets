@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shared-library-audiobooks-v1",
   "name": "ShelfBridge — Audiobooks",
-  "version": "1.4.4",
   "description": "Broad audiobook coverage. AudioBookBay torrents for current releases, LibriVox public-domain archives as backup. Seeders and size always visible.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

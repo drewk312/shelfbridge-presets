@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-de-v1",
   "name": "ShelfBridge — Ebooks (German)",
-  "version": "1.4.4",
   "description": "German-language ebooks across every direct source. Strict German; untranslated English editions excluded.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

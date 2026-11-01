@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-zlib-v1",
   "name": "ShelfBridge — Z-Library",
-  "version": "1.4.4",
   "description": "Z-Library in isolation. Search works anonymously but downloads need an account or session key, so expect some rows to fail until the backend holds a session. Kept out of all.json for that reason.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

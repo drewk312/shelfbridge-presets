@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-elscione-v1",
   "name": "ShelfBridge — ElScione Server",
-  "version": "1.4.4",
   "description": "ElScione h5ai file server. EPUB, PDF, CBZ and CBR straight off disk, no debrid and no account. Provider ID assumed.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

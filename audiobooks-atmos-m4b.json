@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-audiobooks-atmos-m4b-v1",
   "name": "ShelfBridge — Dolby Atmos M4B",
-  "version": "1.4.4",
   "description": "Dolby Atmos spatial audiobooks as M4B from AudioBookBay (source-reported Atmos labels). Needs TorBox (or compatible debrid) and an Atmos-capable player/headphones.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-webnovels-v1",
   "name": "ShelfBridge — Web Fiction",
-  "version": "1.4.4",
   "description": "Royal Road public chapters. Provider ID assumed; unlocked chapters only; access terms still under review.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

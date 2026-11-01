@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-archiveorg-v1",
   "name": "ShelfBridge — Internet Archive",
-  "version": "1.4.4",
   "description": "Internet Archive texts. Provider ID taken from the live backend; unproven until probed.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

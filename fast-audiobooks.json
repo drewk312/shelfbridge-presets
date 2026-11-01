@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-fast-audiobooks-v1",
   "name": "ShelfBridge — Fast Audiobooks",
-  "version": "1.4.4",
   "description": "AudioBookBay only, for speed. Single torrent source so results return immediately with live seeder counts. Resolver required.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

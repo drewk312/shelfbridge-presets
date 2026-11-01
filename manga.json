@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-manga-v1",
   "name": "ShelfBridge — Manga",
-  "version": "1.4.4",
   "description": "Manga, manhwa and manhua as CBZ/CBR torrents from Nyaa Literature and Knaben. Needs TorBox (or compatible debrid) and a comic reader. For chapter-by-chapter reading use Mihon + Keiyoushi instead.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

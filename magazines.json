@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-magazines-v1",
   "name": "ShelfBridge — Magazines",
-  "version": "1.4.4",
   "description": "PDF magazines with covers and titles preserved. No account and no debrid. Provider ID assumed.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-pdf-v1",
   "name": "ShelfBridge — PDF",
-  "version": "1.4.4",
   "description": "PDF only. Fixed-layout scans and academic editions that survive being printed or marked up. EPUB and MOBI excluded.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

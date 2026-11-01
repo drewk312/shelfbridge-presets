@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-bookracy-v1",
   "name": "ShelfBridge — Bookracy",
-  "version": "1.4.4",
   "description": "Bookracy open library API. No account and no debrid required. Provider ID assumed; backend support unconfirmed.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

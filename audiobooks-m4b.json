@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-audiobooks-m4b-v1",
   "name": "ShelfBridge — M4B Audiobooks",
-  "version": "1.4.4",
   "description": "Single-file M4B audiobooks only, with chapter markers intact. MP3 sets, FLAC and other splits excluded. Resolver required.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

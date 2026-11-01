@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-all-v1",
   "name": "ShelfBridge — Everything",
-  "version": "1.4.4",
   "description": "Every reliable direct source in one import. Default preset: no resolver, no account. Z-Library is left out here because its downloads need an account; add ebooks-zlib separately. Strict English, junk and video filtered out.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

@@ -10,10 +10,10 @@ for (const spec of PRESETS) {
     const text = readFileSync(new URL(spec.file, import.meta.url), 'utf8');
     const p = JSON.parse(text);
     assert.equal(p.id, spec.id);
-    assert.equal(p.version, spec.version);
     assert.equal(p.kind, 'search');
     assert.equal(p.schemaVersion, '1.0.0');
-    assert.ok(p.lawfulNote, 'lawfulNote required on every preset');
+    assert.equal(p.version, undefined);
+    assert.equal(p.lawfulNote, undefined);
     assert.ok(p.contentTypes.includes(p.contentType) || p.contentType === 'both');
     assert.equal(p.contentType, spec.contentTypes.includes('ebook') && spec.contentTypes.includes('audiobook') ? 'both' : spec.contentTypes[0]);
     assert.equal(p.debrid, p.downloadService);

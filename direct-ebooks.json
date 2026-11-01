@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shared-library-direct-ebooks-v1",
   "name": "ShelfBridge — Direct Ebooks",
-  "version": "1.4.4",
   "description": "Broad English ebook coverage as direct downloads. Shadow-library depth plus public-domain permanence. Strict English, junk and video filtered out.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

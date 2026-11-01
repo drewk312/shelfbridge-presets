@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-libgenalt-v1",
   "name": "ShelfBridge — LibGen (alt)",
-  "version": "1.4.4",
   "description": "LibGen alternate mirror, separate from libgenli. Provider ID taken from the live backend; unproven until probed.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

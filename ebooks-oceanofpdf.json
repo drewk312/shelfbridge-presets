@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-oceanofpdf-v1",
   "name": "ShelfBridge — OceanofPDF",
-  "version": "1.4.4",
   "description": "OceanofPDF EPUB and PDF results. Signed downloads with scoped clearance; may need an interactive check. Provider ID assumed.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

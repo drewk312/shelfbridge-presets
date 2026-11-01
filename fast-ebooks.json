@@ -3,10 +3,8 @@
   "kind": "search",
   "id": "shelfbridge-fast-ebooks-v1",
   "name": "ShelfBridge — Fast Ebooks",
-  "version": "1.4.4",
   "description": "The fastest reliable ebook sources only. Every row downloadable in-app. Strict English, junk and video filtered out.",
   "trustLabel": "User Added",
-  "lawfulNote": "Use sources only for content you are legally entitled to access.",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",

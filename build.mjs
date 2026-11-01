@@ -37,7 +37,6 @@ const catalog = {
   presets: written.map(({ spec, bytes }) => ({
     id: spec.id,
     name: spec.name,
-    version: spec.version,
     file: spec.file,
     url: RAW_BASE + spec.file,
     sha256: createHash('sha256').update(bytes).digest('hex'),
