@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-de-v1",
   "name": "ShelfBridge — Ebooks (German)",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "description": "German-language ebooks across every direct source. Strict German; untranslated English editions excluded.",
   "trustLabel": "User Added",
   "lawfulNote": "Use sources only for content you are legally entitled to access.",
@@ -40,7 +40,7 @@
     "sections": []
   },
   "meta": {
-    "builtAt": "2026-11-01T02:20:00.000Z",
+    "builtAt": "2026-11-01T03:25:00.000Z",
     "builder": "ShelfBridge build.mjs",
     "language": "de",
     "torboxTier": "standard",
@@ -81,7 +81,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v3&torboxTier=standard&titleStyle=clean&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutendex&lang=de&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutendex&lang=de&languageMode=strict",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -210,7 +210,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v3&torboxTier=standard&titleStyle=clean&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutendex&lang=de&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutendex&lang=de&languageMode=strict",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -340,7 +340,7 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v3&torboxTier=standard&titleStyle=clean&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutendex&lang=de&languageMode=strict",
+      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=annas%2Czlib%2Clibgenli%2Cstandardebooks%2Cgutendex&lang=de&languageMode=strict",
       "timeout": 22000,
       "headers": {
         "Accept": "application/json",

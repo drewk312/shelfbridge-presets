@@ -29,14 +29,27 @@ for (const spec of PRESETS) {
 
     const url = new URL(p.search.request.url);
     assert.equal(url.origin, 'https://search.inkecho.duckdns.org');
-    const mediaSeg = p.contentType === 'ebook' || p.contentType === 'audiobook' ? p.contentType : 'all';
+    const comic = !!spec.comicShelf || p.contentType === 'manga' || p.contentType === 'comic';
+    const mediaSeg = p.contentType === 'ebook' || p.contentType === 'audiobook'
+      ? p.contentType
+      : comic ? 'ebook' : 'all';
     assert.equal(url.pathname, '/public/' + mediaSeg + '/search');
     assert.equal(url.searchParams.get('debrid'), p.downloadService);
-    assert.equal(url.searchParams.get('lang'), spec.language);
-    assert.equal(url.searchParams.get('languageMode'), 'strict');
+    if (comic) {
+      assert.equal(url.searchParams.get('media'), 'comics');
+      assert.equal(url.searchParams.get('comicShelf'), spec.comicShelf || (p.contentType === 'manga' ? 'manga' : 'comics'));
+      assert.equal(url.searchParams.get('lang'), spec.language === 'en' ? 'any' : spec.language);
+      assert.equal(url.searchParams.get('languageMode'), null);
+      assert.equal(url.searchParams.get('cacheBust'), 'comics-shelves-v2');
+      assert.equal(p.search.request.body.contentType, 'comics');
+      assert.equal(p.search.request.body.comicShelf, spec.comicShelf || (p.contentType === 'manga' ? 'manga' : 'comics'));
+    } else {
+      assert.equal(url.searchParams.get('lang'), spec.language);
+      assert.equal(url.searchParams.get('languageMode'), 'strict');
+      assert.equal(url.searchParams.get('cacheBust'), 'source-speed-v4');
+    }
     const legacyId = { abb: 'audiobookbay', solid: 'solidtorrents', tcsv: 'torrentcsv', tgalaxy: 'torrentgalaxy', gutenberg: 'gutendex' };
     assert.equal(url.searchParams.get('sources'), spec.sources.map(s => legacyId[s] || s).join(','));
-    assert.equal(url.searchParams.get('cacheBust'), 'source-speed-v3');
     const maxTimeout = spec.requestTimeout || 22000;
     assert.ok(p.search.request.timeout > 0 && p.search.request.timeout <= maxTimeout);
 
