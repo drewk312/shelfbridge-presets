@@ -58,3 +58,9 @@ Pilot presets have incomplete verification. Candidates have unconfirmed backend 
 | ShelfBridge — BookAudiobooks | direct | candidate | [audiobooks-bookaudiobooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-bookaudiobooks.json) |
 | ShelfBridge — Audiobooks4Soul | direct | candidate | [audiobooks-4soul.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-4soul.json) |
 | ShelfBridge — FullLengthAudiobooks | direct | candidate | [audiobooks-fulllength.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-fulllength.json) |
+| ShelfBridge — EPUB Ebooks | direct | pilot | [ebooks-epub.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-epub.json) |
+| ShelfBridge — Public-domain Books and Audio | direct | pilot | [public-domain-all.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/public-domain-all.json) |
+| ShelfBridge — Public-domain Ebooks, Any Language | direct | pilot | [public-domain-ebooks-any.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/public-domain-ebooks-any.json) |
+| ShelfBridge — Knaben Ebooks | torbox | pilot | [ebooks-knaben.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-knaben.json) |
+| ShelfBridge — Knaben Audiobooks | torbox | pilot | [audiobooks-knaben.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-knaben.json) |
+| ShelfBridge — Knaben Comics and Manga | torbox | pilot | [comics-knaben.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/comics-knaben.json) |

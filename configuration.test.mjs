@@ -37,3 +37,11 @@ test('fast preset metadata reflects its actual profile', () => {
 test('unverified downloads are never marked verified by preset overrides', () => {
   assert.notEqual(makePreset(spec('mobilism.json')).meta.downloadVerified, true);
 });
+
+test('the main bundle includes Z-Library without stale server preset overrides',()=>{
+  const p=makePreset(spec('all.json'));
+  const url=new URL(p.search.request.url);
+  assert.ok(url.searchParams.get('sources').split(',').includes('zlib'));
+  assert.equal(url.searchParams.get('preset'),null);
+  assert.equal(p.search.request.body.preset,undefined);
+});

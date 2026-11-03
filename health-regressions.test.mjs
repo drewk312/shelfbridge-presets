@@ -48,7 +48,8 @@ test('provider probes remove preset expansion and use backend source IDs',async(
   }
   assert.equal(report.probed,seen.length);
   assert.equal(report.checks.find(check=>check.format===null).status,'passed');
-  assert.ok(report.checks.filter(check=>check.format).every(check=>check.status==='failed'));
+  assert.ok(report.checks.filter(check=>['pdf','kindle'].includes(check.format)).every(check=>check.status==='failed'));
+  assert.equal(report.checks.find(check=>check.format==='epub').status,'passed');
 });
 
 test('format-specific probes reject a different file format',()=>{

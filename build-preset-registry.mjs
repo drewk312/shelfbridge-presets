@@ -1,3 +1,4 @@
+import { renderReadme } from './lib/readme.mjs';
 import { writeFileSync, readFileSync, existsSync } from 'node:fs';
 import { pathToFileURL } from 'node:url';
 import { resolveConfiguration } from './lib/configuration.mjs';
@@ -78,7 +79,7 @@ export function applyPresetToUrl(url, body = {}) {
 }
 `;
 
-const outputs = { 'preset-registry.mjs': file };
+const outputs = { 'preset-registry.mjs': file, 'README.md': renderReadme() };
 
 const base = 'https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/';
 const md = `# Preset URLs

@@ -12,7 +12,7 @@
       "name": "ShelfBridge — Direct books and audiobook archives",
       "file": "all.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/all.json",
-      "sha256": "f51b05f6dc88a3bd27b360c57e1ec797b0e79bffd0a18f7eabdc47262b981b63",
+      "sha256": "e09819011d02730087b9642723fa357c38071e41cf1e29d0332fbf0840f6c0e4",
       "status": "pilot",
       "contentTypes": [
         "audiobook",
@@ -24,6 +24,7 @@
       "languageMode": "strict",
       "providers": [
         "annas",
+        "zlib",
         "libgenli",
         "standardebooks",
         "gutenberg",
@@ -55,7 +56,7 @@
       "name": "ShelfBridge — Direct Ebooks",
       "file": "direct-ebooks.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/direct-ebooks.json",
-      "sha256": "4397de2e0b0e8a80f7f9ea03a16c310ce5989a9ec6998fbb34532a432579de30",
+      "sha256": "196406bb8e54d04ab8898ef8190aa5ccefa887ca54a2f9a99d71425268b881db",
       "status": "pilot",
       "contentTypes": [
         "ebook"
@@ -299,7 +300,7 @@
       "name": "ShelfBridge — Z-Library",
       "file": "ebooks-zlib.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-zlib.json",
-      "sha256": "69067e196750dab25002658cf189cd6a2b55d16290db8dc78be2f126e5350ea8",
+      "sha256": "5aafca3d3ff2a175253b0e747a8457d180a1baf554ec7484e646128acb7637ac",
       "status": "pilot",
       "contentTypes": [
         "ebook"
@@ -2022,6 +2023,241 @@
       "verification": {
         "checkedOn": null,
         "search": "unverified",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
+      "id": "shelfbridge-ebooks-epub-v1",
+      "name": "ShelfBridge — EPUB Ebooks",
+      "file": "ebooks-epub.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-epub.json",
+      "sha256": "c73c1f70d7b7eb037c1152116c56c4a99abacfbe126a18e6a59bda2616999e5e",
+      "status": "pilot",
+      "contentTypes": [
+        "ebook"
+      ],
+      "downloadMethod": "direct",
+      "requiresDebrid": false,
+      "language": "en",
+      "languageMode": "strict",
+      "providers": [
+        "standardebooks",
+        "gutenberg"
+      ],
+      "format": "epub",
+      "verification": {
+        "checkedOn": null,
+        "search": "pending",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
+      "id": "shelfbridge-public-domain-all-v1",
+      "name": "ShelfBridge — Public-domain Books and Audio",
+      "file": "public-domain-all.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/public-domain-all.json",
+      "sha256": "4cd35a230b31b384361b9dcdbcc36ed6e17e501e875c64a222897b1ea8a53026",
+      "status": "pilot",
+      "contentTypes": [
+        "audiobook",
+        "ebook"
+      ],
+      "downloadMethod": "direct",
+      "requiresDebrid": false,
+      "language": "en",
+      "languageMode": "strict",
+      "providers": [
+        "standardebooks",
+        "gutenberg",
+        "librivox"
+      ],
+      "verification": {
+        "checkedOn": null,
+        "search": "pending",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
+      "id": "shelfbridge-public-domain-ebooks-any-v1",
+      "name": "ShelfBridge — Public-domain Ebooks, Any Language",
+      "file": "public-domain-ebooks-any.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/public-domain-ebooks-any.json",
+      "sha256": "af4cb737f19ab802ba5142c495ad1db9b909ef224a4ec9719b089b44816edc08",
+      "status": "pilot",
+      "contentTypes": [
+        "ebook"
+      ],
+      "downloadMethod": "direct",
+      "requiresDebrid": false,
+      "language": "any",
+      "languageMode": "any",
+      "providers": [
+        "standardebooks",
+        "gutenberg"
+      ],
+      "verification": {
+        "checkedOn": null,
+        "search": "pending",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
+      "id": "shelfbridge-ebooks-knaben-v1",
+      "name": "ShelfBridge — Knaben Ebooks",
+      "file": "ebooks-knaben.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-knaben.json",
+      "sha256": "b21f10ae878c635352e5f6556113403d408fccea88b15781061c4ab03b4a127c",
+      "status": "pilot",
+      "contentTypes": [
+        "ebook"
+      ],
+      "downloadMethod": "torbox",
+      "requiresDebrid": true,
+      "language": "any",
+      "languageMode": "any",
+      "providers": [
+        "knaben"
+      ],
+      "verification": {
+        "checkedOn": null,
+        "search": "pending",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
+      "id": "shelfbridge-audiobooks-knaben-v1",
+      "name": "ShelfBridge — Knaben Audiobooks",
+      "file": "audiobooks-knaben.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-knaben.json",
+      "sha256": "c43fa9c2729237c58e901d65b8a20bfd442b315d1d1ecb4e3b3a4de692d83c13",
+      "status": "pilot",
+      "contentTypes": [
+        "audiobook"
+      ],
+      "downloadMethod": "torbox",
+      "requiresDebrid": true,
+      "language": "any",
+      "languageMode": "any",
+      "providers": [
+        "knaben"
+      ],
+      "verification": {
+        "checkedOn": null,
+        "search": "pending",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
+      "id": "shelfbridge-comics-knaben-v1",
+      "name": "ShelfBridge — Knaben Comics and Manga",
+      "file": "comics-knaben.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/comics-knaben.json",
+      "sha256": "0164004f23d807745c88169d0c73b319ed692894a1ee361a87467940bc60dd3d",
+      "status": "pilot",
+      "contentTypes": [
+        "comic",
+        "manga"
+      ],
+      "downloadMethod": "torbox",
+      "requiresDebrid": true,
+      "language": "any",
+      "languageMode": "any",
+      "providers": [
+        "knaben"
+      ],
+      "verification": {
+        "checkedOn": null,
+        "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
       },

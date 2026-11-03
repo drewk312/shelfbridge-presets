@@ -136,7 +136,7 @@ export function exclusionsFor(contentType, format) {
   if (contentType === 'ebook') AUDIO.forEach(t => set.add(t));
   if (contentType === 'audiobook') TEXT.forEach(t => set.add(t));
   if (format === 'kindle') TEXT.forEach(t => { if (!['mobi', 'azw', 'azw3'].includes(t)) set.add(t); });
-  if (format === 'pdf') TEXT.forEach(t => { if (t !== 'pdf') set.add(t); });
-  if (format === 'm4b') AUDIO.forEach(t => { if (t !== 'm4b') set.add(t); });
+  if (TEXT.includes(format)) TEXT.forEach(t => { if (t !== format) set.add(t); });
+  if (AUDIO.includes(format)) AUDIO.forEach(t => { if (t !== format) set.add(t); });
   return [...set].sort();
 }

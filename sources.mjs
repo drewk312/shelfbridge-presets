@@ -37,17 +37,17 @@ export const PROVIDERS = {
 };
 
 export const RELEASE_BUILT_AT = '2026-11-02T00:00:00.000Z';
-const V = '1.4.5';
+const V = '1.4.6';
 
 export const PRESETS = [
-  { file: 'all.json', id: 'shelfbridge-all-v1', name: 'ShelfBridge — Direct books and audiobook archives', version: V, language: 'en', contentType: 'all', contentTypes: ['ebook', 'audiobook'], downloadMethod: 'direct', sources: ['annas', 'libgenli', 'standardebooks', 'gutenberg', 'librivox'], limit: 100, threshold: 0.3, status: 'pilot', description: "Direct ebook sources and LibriVox audiobook archives. English results. Z-Library is available separately because its downloads require an account.", compatNote: 'Direct files only, mixed ebook and audiobook. LibriVox rows are ZIP archives.' },
-  { file: 'direct-ebooks.json', id: 'shared-library-direct-ebooks-v1', name: 'ShelfBridge — Direct Ebooks', version: V, language: 'en', contentType: 'ebook', contentTypes: ['ebook'], downloadMethod: 'direct', sources: ['annas', 'zlib', 'libgenli', 'standardebooks', 'gutenberg'], limit: 80, threshold: 0.3, status: 'pilot', description: "English ebooks from Anna's Archive, Z-Library, LibGen, Standard Ebooks and Gutenberg. Z-Library downloads require an account.", compatNote: 'Direct files only. No TorBox or other debrid subscription required.' },
+  { file: 'all.json', id: 'shelfbridge-all-v1', name: 'ShelfBridge — Direct books and audiobook archives', version: V, language: 'en', contentType: 'all', contentTypes: ['ebook', 'audiobook'], downloadMethod: 'direct', routing: 'explicit', sources: ['annas', 'zlib', 'libgenli', 'standardebooks', 'gutenberg', 'librivox'], limit: 100, threshold: 0.3, status: 'pilot', description: "English ebooks from Anna's Archive, Z-Library, LibGen, Standard Ebooks and Gutenberg, plus LibriVox audiobook archives. Downloads use the hosted backend.", compatNote: 'Direct files only, mixed ebook and audiobook. LibriVox rows are ZIP archives.' },
+  { file: 'direct-ebooks.json', id: 'shared-library-direct-ebooks-v1', name: 'ShelfBridge — Direct Ebooks', version: V, language: 'en', contentType: 'ebook', contentTypes: ['ebook'], downloadMethod: 'direct', sources: ['annas', 'zlib', 'libgenli', 'standardebooks', 'gutenberg'], limit: 80, threshold: 0.3, status: 'pilot', description: "English ebooks from Anna's Archive, Z-Library, LibGen, Standard Ebooks and Gutenberg. Downloads use the hosted backend.", compatNote: 'Direct files only. No TorBox or other debrid subscription required.' },
   { file: 'fast-ebooks.json', id: 'shelfbridge-fast-ebooks-v1', name: 'ShelfBridge — Fast Ebooks', version: V, language: 'en', contentType: 'ebook', contentTypes: ['ebook'], downloadMethod: 'direct', sources: ['annas', 'libgenli'], limit: 80, threshold: 0.3, profile: 'fast', status: 'pilot', description: "English ebooks from Anna's Archive and LibGen, using the fast search profile.", compatNote: 'Direct files only. Fast search profile; fewer providers.' },
   { file: 'public-domain-ebooks.json', id: 'shelfbridge-public-domain-ebooks-v1', name: 'ShelfBridge — Public-domain Ebooks', version: V, language: 'en', contentType: 'ebook', contentTypes: ['ebook'], downloadMethod: 'direct', sources: ['standardebooks', 'gutenberg'], limit: 30, threshold: 0.4, status: 'pilot', description: "English ebooks from Standard Ebooks and Project Gutenberg.", compatNote: 'Direct files only.' },
   { file: 'ebooks-kindle.json', id: 'shelfbridge-ebooks-kindle-v1', name: 'ShelfBridge — Kindle formats', version: V, language: 'en', contentType: 'ebook', contentTypes: ['ebook'], downloadMethod: 'direct', sources: ['annas', 'zlib', 'libgenli', 'standardebooks', 'gutenberg'], limit: 60, threshold: 0.35, format: 'kindle', status: 'pilot', description: "MOBI, AZW and AZW3 results for sideloading. Other ebook formats are excluded.", compatNote: 'Direct files only. MOBI/AZW/AZW3 exclusively.' },
   { file: 'ebooks-pdf.json', id: 'shelfbridge-ebooks-pdf-v1', name: 'ShelfBridge — PDF', version: V, language: 'en', contentType: 'ebook', contentTypes: ['ebook'], downloadMethod: 'direct', sources: ['annas', 'zlib', 'libgenli', 'standardebooks', 'gutenberg'], limit: 60, threshold: 0.35, format: 'pdf', status: 'pilot', description: "PDF results. Other ebook formats are excluded.", compatNote: 'Direct PDF files only.' },
   { file: 'ebooks-annas.json', id: 'shelfbridge-ebooks-annas-v1', name: "ShelfBridge — Anna's Archive", version: V, language: 'en', contentType: 'ebook', contentTypes: ['ebook'], downloadMethod: 'direct', sources: ['annas'], limit: 60, threshold: 0.4, status: 'pilot', description: "Search Anna's Archive separately.", compatNote: 'Direct files only. Requests are limited to four per minute.' },
-  { file: 'ebooks-zlib.json', id: 'shelfbridge-ebooks-zlib-v1', name: 'ShelfBridge — Z-Library', version: V, language: 'en', contentType: 'ebook', contentTypes: ['ebook'], downloadMethod: 'direct', sources: ['zlib'], limit: 60, threshold: 0.4, status: 'pilot', description: 'Z-Library in isolation. Search works anonymously but downloads need an account or session key, so expect some rows to fail until the backend holds a session. Kept out of all.json for that reason.', compatNote: 'Direct files only. Downloads are account-gated. Anonymous rate limits apply.' },
+  { file: 'ebooks-zlib.json', id: 'shelfbridge-ebooks-zlib-v1', name: 'ShelfBridge — Z-Library', version: V, language: 'en', contentType: 'ebook', contentTypes: ['ebook'], downloadMethod: 'direct', sources: ['zlib'], limit: 60, threshold: 0.4, status: 'pilot', description: 'Z-Library search and downloads through the hosted backend. Also included in all.json and direct-ebooks.json.', compatNote: 'Direct downloads through the hosted backend.' },
   { file: 'ebooks-libgen.json', id: 'shelfbridge-ebooks-libgen-v1', name: 'ShelfBridge — LibGen', version: V, language: 'en', contentType: 'ebook', contentTypes: ['ebook'], downloadMethod: 'direct', sources: ['libgenli'], limit: 60, threshold: 0.4, status: 'pilot', description: "Search LibGen separately.", compatNote: 'Direct files only.' },
   { file: 'ebooks-bookracy.json', id: 'shelfbridge-ebooks-bookracy-v1', name: 'ShelfBridge — Bookracy', version: V, language: 'en', contentType: 'ebook', contentTypes: ['ebook'], downloadMethod: 'direct', sources: ['bookracy'], limit: 60, threshold: 0.4, status: 'candidate', description: 'Bookracy open library API. No account and no debrid required. Provider ID assumed; backend support unconfirmed.', compatNote: 'Direct files only. No account required.' },
   { file: 'ebooks-mayberry.json', id: 'shelfbridge-ebooks-mayberry-v1', name: 'ShelfBridge — Mayberry', version: V, language: 'en', contentType: 'ebook', contentTypes: ['ebook'], downloadMethod: 'direct', sources: ['mayberry'], limit: 60, threshold: 0.4, status: 'candidate', description: 'Mayberry federated library network. No account required. Provider ID assumed; backend support unconfirmed.', compatNote: 'Direct files only. No account required.' },
@@ -93,3 +93,44 @@ export const PRESETS = [
   { file: 'audiobooks-4soul.json', id: 'shelfbridge-audiobooks-4soul-v1', name: 'ShelfBridge — Audiobooks4Soul', version: V, language: 'en', contentType: 'audiobook', contentTypes: ['audiobook'], downloadMethod: 'direct', sources: ['audiobooks4soul'], limit: 40, threshold: 0.4, status: 'candidate', description: 'Audiobooks4Soul host. Provider ID taken from the live backend; unproven until probed.', compatNote: 'Direct files only.' },
   { file: 'audiobooks-fulllength.json', id: 'shelfbridge-audiobooks-fulllength-v1', name: 'ShelfBridge — FullLengthAudiobooks', version: V, language: 'en', contentType: 'audiobook', contentTypes: ['audiobook'], downloadMethod: 'direct', sources: ['fulllengthaudiobooks'], limit: 40, threshold: 0.4, status: 'candidate', description: 'FullLengthAudiobooks host. Provider ID taken from the live backend; unproven until probed.', compatNote: 'Direct files only.' },
 ];
+
+// Additional views over existing backend providers.
+const variants = [
+  ['ebooks-epub.json', 'direct-ebooks.json', {
+    name: 'ShelfBridge — EPUB Ebooks', format: 'epub',
+    sources: ['standardebooks','gutenberg'],
+    description: 'English EPUB editions from Standard Ebooks and Project Gutenberg.',
+    compatNote: 'Direct EPUB files. No torrent resolver required.'
+  }],
+  ['public-domain-all.json', 'all.json', {
+    name: 'ShelfBridge — Public-domain Books and Audio',
+    sources: ['standardebooks','gutenberg','librivox'],
+    description: 'English ebooks from Standard Ebooks and Gutenberg, plus LibriVox audiobook archives.',
+    compatNote: 'LibriVox results are ZIP archives and require extraction.'
+  }],
+  ['public-domain-ebooks-any.json', 'public-domain-ebooks.json', {
+    name: 'ShelfBridge — Public-domain Ebooks, Any Language', language: 'any', languageMode: 'any',
+    description: 'Standard Ebooks and Gutenberg with no language restriction.',
+    compatNote: 'Direct EPUB files. Language availability depends on the catalog.'
+  }],
+  ['ebooks-knaben.json', 'ebooks-libgen.json', {
+    name: 'ShelfBridge — Knaben Ebooks', sources: ['knaben'], downloadMethod: 'torbox', language: 'any', languageMode: 'any',
+    description: 'Ebook torrent results from Knaben. All languages; upstream language labels are often missing.',
+    compatNote: 'Requires a torrent resolver. Verify the language before downloading.'
+  }],
+  ['audiobooks-knaben.json', 'audiobooks-abb.json', {
+    name: 'ShelfBridge — Knaben Audiobooks', sources: ['knaben'], language: 'any', languageMode: 'any',
+    description: 'Audiobook torrent results from Knaben. All languages; upstream language labels are often missing.',
+    compatNote: 'Requires a torrent resolver. Verify the language before downloading.'
+  }],
+  ['comics-knaben.json', 'comics-manga.json', {
+    name: 'ShelfBridge — Knaben Comics and Manga', sources: ['knaben'], language: 'any', languageMode: 'any',
+    description: 'Comic and manga torrent results from Knaben, without a language restriction.',
+    compatNote: 'Requires a torrent resolver and support for the resolved comic format.'
+  }]
+];
+for (const [file, base, overrides] of variants) {
+  const template = PRESETS.find(p => p.file === base);
+  if (!template) throw new Error('Missing base preset: ' + base);
+  PRESETS.push({ ...template, ...overrides, file, id: 'shelfbridge-' + file.replace(/\.json$/, '') + '-v1' });
+}
