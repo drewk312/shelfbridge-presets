@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shared-library-direct-ebooks-v1",
   "name": "ShelfBridge — Direct Ebooks",
-  "description": "English ebooks from Anna's Archive, Z-Library, LibGen, Standard Ebooks and Gutenberg. Z-Library downloads require an account.",
+  "description": "English ebooks from Anna's Archive, Z-Library, LibGen, Standard Ebooks and Gutenberg. Downloads use the hosted backend.",
   "trustLabel": "User Added",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
