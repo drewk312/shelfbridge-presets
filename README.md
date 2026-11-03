@@ -39,7 +39,7 @@ The sections below contain pilot presets for testing. Source availability can ch
 | [fast-ebooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/fast-ebooks.json) | Anna's Archive, LibGen | en | Direct |
 | [public-domain-ebooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/public-domain-ebooks.json) | Standard Ebooks, Project Gutenberg | en | Direct |
 | [ebooks-kindle.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-kindle.json) | Anna's Archive, Z-Library, LibGen, Standard Ebooks, Project Gutenberg | en | Direct |
-| [ebooks-pdf.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-pdf.json) | Anna's Archive, Z-Library, LibGen, Standard Ebooks, Project Gutenberg | en | Direct |
+| [ebooks-pdf.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-pdf.json) | Anna's Archive, Z-Library, LibGen | en | Direct |
 | [ebooks-annas.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-annas.json) | Anna's Archive | en | Direct |
 | [ebooks-zlib.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-zlib.json) | Z-Library | en | Direct |
 | [ebooks-libgen.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-libgen.json) | LibGen | en | Direct |

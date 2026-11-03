@@ -42,7 +42,7 @@ export const PRESET_REGISTRY = {
     "format": "kindle"
   },
   "ebooks-pdf": {
-    "sources": "annas,zlib,libgenli,standardebooks,gutendex",
+    "sources": "annas,zlib,libgenli",
     "debrid": "direct",
     "profile": "best",
     "lang": "en",

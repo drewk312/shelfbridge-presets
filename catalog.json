@@ -219,7 +219,7 @@
       "name": "ShelfBridge — PDF",
       "file": "ebooks-pdf.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-pdf.json",
-      "sha256": "7a7705fe5ed1eb3143f120b9b2ce60baafebe1eb85fb8ac7af0f6e262d6afcb2",
+      "sha256": "b7b54926a413b35bcae5fd30b1d8ba4fc05af6428d088bf8c5923b5489df57fc",
       "status": "pilot",
       "contentTypes": [
         "ebook"
@@ -231,9 +231,7 @@
       "providers": [
         "annas",
         "zlib",
-        "libgenli",
-        "standardebooks",
-        "gutenberg"
+        "libgenli"
       ],
       "format": "pdf",
       "verification": {
@@ -1359,7 +1357,7 @@
       "name": "ShelfBridge — Manga",
       "file": "manga.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga.json",
-      "sha256": "5556310b060b6f41a8406942b715bfa8108d50463d107ecb69952ae5e77a2218",
+      "sha256": "65f960253f6b80cc32c7c502f1ec2cb88acffb72f84dfd582f88ec395c704201",
       "status": "pilot",
       "contentTypes": [
         "manga"
