@@ -3,7 +3,7 @@
 
 export const PROVIDERS = {
   annas: { label: "Anna's Archive", media: 'ebook', method: 'direct', rpm: 4, rowSource: null, hosts: ['annas-archive.org','annas-archive.se','annas-archive.li','annas-archive.gl','annas-archive.gs'], pathPattern: null, fileType: null },
-  zlib: { label: 'Z-Library', media: 'ebook', method: 'direct', rpm: 4, rowSource: 'zlib', hosts: null, pathPattern: null, fileType: 'epub' },
+  zlib: { label: 'Z-Library', media: 'ebook', method: 'direct', rpm: 4, rowSource: 'zlib', hosts: null, pathPattern: null, fileType: null },
   libgenli: { label: 'LibGen', media: 'ebook', method: 'direct', rpm: 6, rowSource: 'libgenli', hosts: null, pathPattern: null, fileType: null },
   standardebooks: { label: 'Standard Ebooks', media: 'ebook', method: 'direct', rpm: 10, rowSource: 'standardebooks', hosts: ['standardebooks.org'], pathPattern: '^\\/ebooks\\/.+\\/downloads\\/[^/]+\\.epub$', fileType: 'epub' },
   gutenberg: { label: 'Project Gutenberg', media: 'ebook', method: 'direct', rpm: 10, rowSource: 'gutendex', hosts: ['www.gutenberg.org'], pathPattern: '^\\/ebooks\\/\\d+\\.epub[\\w.]*$', fileType: 'epub' },
