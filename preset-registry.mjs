@@ -171,7 +171,7 @@ export const PRESET_REGISTRY = {
     "media": "ebook"
   },
   "audiobooks": {
-    "sources": "audiobookbay,librivox",
+    "sources": "audiobookbay,knaben",
     "debrid": "torbox",
     "profile": "best",
     "lang": "en",
@@ -179,7 +179,7 @@ export const PRESET_REGISTRY = {
     "media": "audiobook"
   },
   "audiobooks-ro": {
-    "sources": "audiobookbay,librivox",
+    "sources": "audiobookbay,knaben",
     "debrid": "torbox",
     "profile": "best",
     "lang": "ro",
@@ -187,7 +187,7 @@ export const PRESET_REGISTRY = {
     "media": "audiobook"
   },
   "audiobooks-ar": {
-    "sources": "audiobookbay,librivox",
+    "sources": "audiobookbay,knaben",
     "debrid": "torbox",
     "profile": "best",
     "lang": "ar",
@@ -195,7 +195,7 @@ export const PRESET_REGISTRY = {
     "media": "audiobook"
   },
   "audiobooks-any": {
-    "sources": "audiobookbay,librivox",
+    "sources": "audiobookbay,knaben",
     "debrid": "torbox",
     "profile": "best",
     "lang": "any",

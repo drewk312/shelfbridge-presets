@@ -854,7 +854,7 @@
       "name": "ShelfBridge — Audiobooks",
       "file": "audiobooks.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks.json",
-      "sha256": "863adb7c2917e0a00ef372293baed59adec0751719b8894d177d8df1e41819e6",
+      "sha256": "421b3a0130b2635ae190a1da911530f6b303348e711c6a172a8e7c160f8cd96b",
       "status": "pilot",
       "contentTypes": [
         "audiobook"
@@ -865,7 +865,7 @@
       "languageMode": "strict",
       "providers": [
         "abb",
-        "librivox"
+        "knaben"
       ],
       "verification": {
         "checkedOn": null,
@@ -893,7 +893,7 @@
       "name": "ShelfBridge — Audiobooks (Romanian)",
       "file": "audiobooks-ro.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-ro.json",
-      "sha256": "7e0f4321525b68016135a27277447674252ab7535bdf95e6d80ef32c191fe2e9",
+      "sha256": "f48db0960d4f3025cae066992222f7c76b2bad4a0245dc5247f3f324de3fc825",
       "status": "candidate",
       "contentTypes": [
         "audiobook"
@@ -904,7 +904,7 @@
       "languageMode": "strict",
       "providers": [
         "abb",
-        "librivox"
+        "knaben"
       ],
       "verification": {
         "checkedOn": null,
@@ -932,7 +932,7 @@
       "name": "ShelfBridge — Audiobooks (Arabic)",
       "file": "audiobooks-ar.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-ar.json",
-      "sha256": "253e19d06d25f8ba011c200baa963418dad115dc3f39ee97953bba6c431fdb3e",
+      "sha256": "32a9ac0443afd11a5b0de3aa921a44dc6b9a069d5e0dbcd52179009e080b1060",
       "status": "candidate",
       "contentTypes": [
         "audiobook"
@@ -943,7 +943,7 @@
       "languageMode": "strict",
       "providers": [
         "abb",
-        "librivox"
+        "knaben"
       ],
       "verification": {
         "checkedOn": null,
@@ -971,7 +971,7 @@
       "name": "ShelfBridge — Audiobooks (Any language)",
       "file": "audiobooks-any.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-any.json",
-      "sha256": "93a3a7543b7b9b02710e22eda8b410e99990ea106bfda184906e1d46d73d7d60",
+      "sha256": "27df002f60b4ae83a0c1f7c4997e45d9b2a9b0d516967907ef31cdfc66e8685a",
       "status": "pilot",
       "contentTypes": [
         "audiobook"
@@ -982,7 +982,7 @@
       "languageMode": "any",
       "providers": [
         "abb",
-        "librivox"
+        "knaben"
       ],
       "verification": {
         "checkedOn": null,

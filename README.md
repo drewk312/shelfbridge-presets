@@ -54,8 +54,8 @@ The sections below contain pilot presets for testing. Source availability can ch
 
 | JSON preset | Sources | Language | Access |
 | --- | --- | --- | --- |
-| [audiobooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks.json) | AudioBookBay, LibriVox | en | Torrent resolver |
-| [audiobooks-any.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-any.json) | AudioBookBay, LibriVox | any | Torrent resolver |
+| [audiobooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks.json) | AudioBookBay, Knaben | en | Torrent resolver |
+| [audiobooks-any.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-any.json) | AudioBookBay, Knaben | any | Torrent resolver |
 | [fast-audiobooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/fast-audiobooks.json) | AudioBookBay | en | Torrent resolver |
 | [audiobooks-abb.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-abb.json) | AudioBookBay | en | Torrent resolver |
 | [audiobooks-m4b.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-m4b.json) | AudioBookBay | en | Torrent resolver |
@@ -102,8 +102,8 @@ Backend or download support is unconfirmed for these candidates.
 | [ebooks-de.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-de.json) | Anna's Archive, Z-Library, LibGen, Standard Ebooks, Project Gutenberg | de | Direct |
 | [ebooks-ro.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-ro.json) | Anna's Archive, Z-Library, LibGen, Standard Ebooks, Project Gutenberg | ro | Direct |
 | [ebooks-ar.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-ar.json) | Anna's Archive, Z-Library, LibGen, Standard Ebooks, Project Gutenberg | ar | Direct |
-| [audiobooks-ro.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-ro.json) | AudioBookBay, LibriVox | ro | Torrent resolver |
-| [audiobooks-ar.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-ar.json) | AudioBookBay, LibriVox | ar | Torrent resolver |
+| [audiobooks-ro.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-ro.json) | AudioBookBay, Knaben | ro | Torrent resolver |
+| [audiobooks-ar.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-ar.json) | AudioBookBay, Knaben | ar | Torrent resolver |
 | [mobilism-ro.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/mobilism-ro.json) | Mobilism | ro | Direct |
 | [mobilism-ar.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/mobilism-ar.json) | Mobilism | ar | Direct |
 | [webnovels.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/webnovels.json) | Royal Road | en | Direct |

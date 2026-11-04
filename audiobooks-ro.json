@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-audiobooks-ro-v1",
   "name": "ShelfBridge — Audiobooks (Romanian)",
-  "description": "Romanian audiobooks from AudioBookBay and LibriVox. Strict Romanian. Commercial RO titles are scarce; many searches will be empty.",
+  "description": "Romanian audiobook torrents from AudioBookBay and Knaben. Results require confirmed Romanian metadata.",
   "trustLabel": "User Added",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
@@ -36,7 +36,7 @@
       "torbox"
     ],
     "usenetResults": [],
-    "note": "ABB torrents need TorBox. LibriVox is direct ZIP. Romanian audio coverage is thin."
+    "note": "Magnet links and info hashes. The reader handles torrent resolution and downloads."
   },
   "discover": {
     "sections": []
@@ -56,11 +56,11 @@
     "languageMode": "strict",
     "selectedSources": [
       "audiobookbay",
-      "librivox"
+      "knaben"
     ],
     "sources": [
       "abb",
-      "librivox"
+      "knaben"
     ],
     "sourceContract": "typed-media-v2"
   },
@@ -77,7 +77,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/audiobook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=audiobooks-ro&sources=audiobookbay%2Clibrivox&lang=ro&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=audiobookbay%2Cknaben&lang=ro&languageMode=strict",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -87,8 +87,7 @@
           "title": "{TITLE}",
           "author": "{AUTHOR}",
           "limit": 60,
-          "contentType": "audiobook",
-          "preset": "audiobooks-ro"
+          "contentType": "audiobook"
         }
       },
       "response": {
@@ -207,7 +206,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/audiobook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=audiobooks-ro&sources=audiobookbay%2Clibrivox&lang=ro&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=audiobookbay%2Cknaben&lang=ro&languageMode=strict",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -217,8 +216,7 @@
           "title": "{TITLE}",
           "author": "{AUTHOR}",
           "limit": 60,
-          "contentType": "audiobook",
-          "preset": "audiobooks-ro"
+          "contentType": "audiobook"
         }
       },
       "response": {
@@ -338,7 +336,7 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/audiobook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=audiobooks-ro&sources=audiobookbay%2Clibrivox&lang=ro&languageMode=strict",
+      "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=audiobookbay%2Cknaben&lang=ro&languageMode=strict",
       "timeout": 22000,
       "headers": {
         "Accept": "application/json",
@@ -348,8 +346,7 @@
         "title": "{TITLE}",
         "author": "{AUTHOR}",
         "limit": 60,
-        "contentType": "audiobook",
-        "preset": "audiobooks-ro"
+        "contentType": "audiobook"
       }
     },
     "response": {
