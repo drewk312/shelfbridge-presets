@@ -42,6 +42,10 @@ Pilot presets have incomplete verification. Candidates have unconfirmed backend 
 | ShelfBridge — DBooks | direct | pilot | [ebooks-dbooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-dbooks.json) |
 | ShelfBridge — Golden Audiobooks | direct | candidate | [audiobooks-golden.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-golden.json) |
 | ShelfBridge — FullLengthAudiobooks | direct | pilot | [audiobooks-fulllength.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-fulllength.json) |
+| ShelfBridge — Best Manga | direct | pilot | [best-manga.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/best-manga.json) |
+| ShelfBridge — Best Comics | direct | pilot | [best-comics.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/best-comics.json) |
+| ShelfBridge — Best Audiobooks | torbox | pilot | [best-audiobooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/best-audiobooks.json) |
+| ShelfBridge — Best Ebooks | torbox | pilot | [best-ebooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/best-ebooks.json) |
 | ShelfBridge — MangaPill | direct | pilot | [manga-mangapill.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-mangapill.json) |
 | ShelfBridge — TCB Scans | direct | pilot | [manga-tcbscans.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-tcbscans.json) |
 | ShelfBridge — Nyaa Manga | torbox | pilot | [manga-nyaa.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-nyaa.json) |

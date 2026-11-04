@@ -2,7 +2,7 @@
 
 JSON source presets for **Lantern & Leaf** and **Ink & Echo**.
 
-Choose a file below. Its link opens the raw JSON URL to copy into your app. Import one provider at a time; 49 presets are listed.
+Choose a file below. Its link opens the raw JSON URL to copy into your app. Import one provider at a time; 53 presets are listed.
 
 [Validation](https://github.com/drewk312/shelfbridge-presets/actions/workflows/validate.yml) · [Source health](https://github.com/drewk312/shelfbridge-presets/actions/workflows/health.yml) · [Setup guide](DIY_SETUP.md) · [Coverage](COVERAGE.md)
 
@@ -29,6 +29,10 @@ The sections below contain pilot presets for testing. Source availability can ch
 | JSON preset | Sources | Language | Access |
 | --- | --- | --- | --- |
 | [all.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/all.json) | Anna's Archive, Z-Library, LibGen, Standard Ebooks, Project Gutenberg, LibriVox | en | Direct |
+| [best-manga.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/best-manga.json) | TCB Scans, MangaPill | any | Direct |
+| [best-comics.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/best-comics.json) | GetComics | any | Direct |
+| [best-audiobooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/best-audiobooks.json) | AudioBookBay, Knaben | any | Torrent resolver |
+| [best-ebooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/best-ebooks.json) | TorrentCSV, Knaben | any | Torrent resolver |
 | [public-domain-all.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/public-domain-all.json) | Standard Ebooks, Project Gutenberg, LibriVox | en | Direct |
 
 ## Ebooks

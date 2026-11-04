@@ -297,6 +297,40 @@ export const PRESET_REGISTRY = {
     "languageMode": "any",
     "media": "audiobook"
   },
+  "best-manga": {
+    "sources": "tcbscans,mangapill",
+    "debrid": "direct",
+    "profile": "fast",
+    "lang": "any",
+    "languageMode": "any",
+    "media": "comics",
+    "comicShelf": "manga"
+  },
+  "best-comics": {
+    "sources": "getcomics",
+    "debrid": "direct",
+    "profile": "fast",
+    "lang": "any",
+    "languageMode": "any",
+    "media": "comics",
+    "comicShelf": "comics"
+  },
+  "best-audiobooks": {
+    "sources": "audiobookbay,knaben",
+    "debrid": "torbox",
+    "profile": "fast",
+    "lang": "any",
+    "languageMode": "any",
+    "media": "audiobook"
+  },
+  "best-ebooks": {
+    "sources": "torrentcsv,knaben",
+    "debrid": "torbox",
+    "profile": "fast",
+    "lang": "any",
+    "languageMode": "any",
+    "media": "ebook"
+  },
   "manga-mangapill": {
     "sources": "mangapill",
     "debrid": "direct",
@@ -449,6 +483,10 @@ export const PRESET_ALIASES = {
   "shelfbridge-ebooks-dbooks-v1": "ebooks-dbooks",
   "shelfbridge-audiobooks-golden-v1": "audiobooks-golden",
   "shelfbridge-audiobooks-fulllength-v1": "audiobooks-fulllength",
+  "shelfbridge-best-manga-v1": "best-manga",
+  "shelfbridge-best-comics-v1": "best-comics",
+  "shelfbridge-best-audiobooks-v1": "best-audiobooks",
+  "shelfbridge-best-ebooks-v1": "best-ebooks",
   "shelfbridge-manga-mangapill-v1": "manga-mangapill",
   "shelfbridge-manga-tcbscans-v1": "manga-tcbscans",
   "shelfbridge-manga-nyaa-v1": "manga-nyaa",

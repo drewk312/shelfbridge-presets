@@ -1432,6 +1432,162 @@
       }
     },
     {
+      "id": "shelfbridge-best-manga-v1",
+      "name": "ShelfBridge — Best Manga",
+      "file": "best-manga.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/best-manga.json",
+      "sha256": "16d4afaa26db279c67d924a6509a28ef1f915de949ce93f30552e5c6ab11360b",
+      "status": "pilot",
+      "contentTypes": [
+        "manga"
+      ],
+      "downloadMethod": "direct",
+      "requiresDebrid": false,
+      "language": "any",
+      "languageMode": "any",
+      "providers": [
+        "tcbscans",
+        "mangapill"
+      ],
+      "verification": {
+        "checkedOn": null,
+        "search": "pending",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
+      "id": "shelfbridge-best-comics-v1",
+      "name": "ShelfBridge — Best Comics",
+      "file": "best-comics.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/best-comics.json",
+      "sha256": "57d61c9a42efaf1290a0db8cdcaa0deb4eaec029f87f1526efc559bf6d182557",
+      "status": "pilot",
+      "contentTypes": [
+        "comic",
+        "manga"
+      ],
+      "downloadMethod": "direct",
+      "requiresDebrid": false,
+      "language": "any",
+      "languageMode": "any",
+      "providers": [
+        "getcomics"
+      ],
+      "verification": {
+        "checkedOn": null,
+        "search": "pending",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
+      "id": "shelfbridge-best-audiobooks-v1",
+      "name": "ShelfBridge — Best Audiobooks",
+      "file": "best-audiobooks.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/best-audiobooks.json",
+      "sha256": "ecd7807abb3c066694893afb30182727d7602509f17dc4a9fd90d5a5c1fc9071",
+      "status": "pilot",
+      "contentTypes": [
+        "audiobook"
+      ],
+      "downloadMethod": "torbox",
+      "requiresDebrid": true,
+      "language": "any",
+      "languageMode": "any",
+      "providers": [
+        "abb",
+        "knaben"
+      ],
+      "verification": {
+        "checkedOn": null,
+        "search": "pending",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
+      "id": "shelfbridge-best-ebooks-v1",
+      "name": "ShelfBridge — Best Ebooks",
+      "file": "best-ebooks.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/best-ebooks.json",
+      "sha256": "82f80ad70ef32308926bc456a2eb779ed77cc277a0f48d168720940b9506961f",
+      "status": "pilot",
+      "contentTypes": [
+        "ebook"
+      ],
+      "downloadMethod": "torbox",
+      "requiresDebrid": true,
+      "language": "any",
+      "languageMode": "any",
+      "providers": [
+        "torrentcsv",
+        "knaben"
+      ],
+      "verification": {
+        "checkedOn": null,
+        "search": "pending",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
       "id": "shelfbridge-manga-mangapill-v1",
       "name": "ShelfBridge — MangaPill",
       "file": "manga-mangapill.json",
