@@ -11,7 +11,7 @@ export const PROVIDERS = {
   abb: { label: 'AudioBookBay', media: 'audiobook', method: 'torbox', rpm: 8, rowSource: 'abb', hosts: ['audiobookbay.lu','audiobookbay.is'], pathPattern: null, fileType: null },
   librivox: { label: 'LibriVox', media: 'audiobook', method: 'direct', rpm: 10, rowSource: 'librivox', hosts: ['archive.org'], pathPattern: '^\\/(compress|download)\\/.+\\.zip$', fileType: 'zip' },
   mobilism: { label: 'Mobilism', media: 'all', method: 'direct', rpm: 30, rowSource: 'mobilism', hosts: null, pathPattern: null, fileType: null },
-  mangadex: { label: 'MangaDex', media: 'manga', method: 'direct', rpm: 8, rowSource: 'mangadex', hosts: ['mangadex.org','uploads.mangadex.org'], pathPattern: null, fileType: null },
+  mangadex: { label: 'MangaDex', media: 'manga', method: 'direct', rpm: 8, rowSource: 'mangadex', hosts: ['search.inkecho.duckdns.org'], pathPattern: '^/dl/mangadex/[a-f0-9-]+[.]cbz$', fileType: 'cbz' },
   getcomics: { label: 'GetComics', media: 'comic', method: 'direct', rpm: 8, rowSource: 'getcomics', hosts: ['getcomics.org'], pathPattern: null, fileType: null },
   nyaa: { label: 'Nyaa', media: 'manga', method: 'torbox', rpm: 10, rowSource: 'nyaa', hosts: ['nyaa.si'], pathPattern: null, fileType: null },
   knaben: { label: 'Knaben', media: 'all', method: 'torbox', rpm: 10, rowSource: 'knaben', hosts: null, pathPattern: null, fileType: null },
@@ -97,6 +97,7 @@ export const PRESETS = [
 
 // Additional views over existing backend providers.
 const variants = [
+ ['manga-mangadex.json','manga.json',{name:'ShelfBridge — MangaDex',sources:['mangadex'],downloadMethod:'direct',routing:'explicit',description:'English MangaDex chapters packaged as CBZ files. Searches return up to 20 chapters per series.',compatNote:'Direct CBZ chapters. A comic reader is required.'}],
   ['ebooks-torrentcsv.json', 'ebooks-libgen.json', {
     name: 'ShelfBridge — TorrentCSV EPUBs', sources: ['torrentcsv'], downloadMethod: 'torbox', routing: 'explicit', language: 'any', languageMode: 'any', format: 'epub',
     description: 'EPUB torrents from TorrentCSV. Language is not reported by the source.',

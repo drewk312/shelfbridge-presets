@@ -1,11 +1,11 @@
 # Coverage
 
-60 presets, 32 referenced providers.
+61 presets, 33 referenced providers.
 
 | Status | Presets |
 | --- | ---: |
 | stable | 0 |
-| pilot | 32 |
+| pilot | 33 |
 | candidate | 28 |
 
 A pilot is available for testing. A candidate has unconfirmed backend or download support. Stable status requires recorded app-version evidence for import, search, resolution, download and refresh. No native-app verification is recorded in this release.

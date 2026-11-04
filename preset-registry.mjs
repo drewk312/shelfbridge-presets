@@ -425,6 +425,15 @@ export const PRESET_REGISTRY = {
     "languageMode": "strict",
     "media": "audiobook"
   },
+  "manga-mangadex": {
+    "sources": "mangadex",
+    "debrid": "direct",
+    "profile": "best",
+    "lang": "any",
+    "languageMode": "any",
+    "media": "comics",
+    "comicShelf": "manga"
+  },
   "ebooks-torrentcsv": {
     "sources": "torrentcsv",
     "debrid": "torbox",
@@ -548,6 +557,7 @@ export const PRESET_ALIASES = {
   "shelfbridge-audiobooks-bookaudiobooks-v1": "audiobooks-bookaudiobooks",
   "shelfbridge-audiobooks-4soul-v1": "audiobooks-4soul",
   "shelfbridge-audiobooks-fulllength-v1": "audiobooks-fulllength",
+  "shelfbridge-manga-mangadex-v1": "manga-mangadex",
   "shelfbridge-ebooks-torrentcsv-v1": "ebooks-torrentcsv",
   "shelfbridge-ebooks-nyaa-v1": "ebooks-nyaa",
   "shelfbridge-ebooks-epub-v1": "ebooks-epub",

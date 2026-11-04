@@ -2040,6 +2040,44 @@
       }
     },
     {
+      "id": "shelfbridge-manga-mangadex-v1",
+      "name": "ShelfBridge — MangaDex",
+      "file": "manga-mangadex.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-mangadex.json",
+      "sha256": "307fd1db5c91f6cf252d2c87064cdcc3332af2c1d830aba185d207b4aeb134d3",
+      "status": "pilot",
+      "contentTypes": [
+        "manga"
+      ],
+      "downloadMethod": "direct",
+      "requiresDebrid": false,
+      "language": "any",
+      "languageMode": "any",
+      "providers": [
+        "mangadex"
+      ],
+      "verification": {
+        "checkedOn": null,
+        "search": "pending",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
       "id": "shelfbridge-ebooks-torrentcsv-v1",
       "name": "ShelfBridge — TorrentCSV EPUBs",
       "file": "ebooks-torrentcsv.json",

@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {zipPages,downloadChapter} from './server/mangadex.mjs';
+test('CBZ has local entries and a central directory',()=>{const b=zipPages([{data:Buffer.from('image'),extension:'jpg'}]);assert.equal(b.readUInt32LE(0),0x04034b50);assert.equal(b.readUInt32LE(b.length-22),0x06054b50);assert.equal(b.readUInt16LE(b.length-14),1);assert.ok(b.includes(Buffer.from('0001.jpg')));});
+test('invalid chapter IDs never reach the network',async()=>{await assert.rejects(downloadChapter('../x',{fetchImpl:()=>{throw Error('network called')}}),/Invalid chapter/);});

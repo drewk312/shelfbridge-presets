@@ -58,6 +58,7 @@ Pilot presets have incomplete verification. Candidates have unconfirmed backend 
 | ShelfBridge — BookAudiobooks | direct | candidate | [audiobooks-bookaudiobooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-bookaudiobooks.json) |
 | ShelfBridge — Audiobooks4Soul | direct | candidate | [audiobooks-4soul.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-4soul.json) |
 | ShelfBridge — FullLengthAudiobooks | direct | candidate | [audiobooks-fulllength.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-fulllength.json) |
+| ShelfBridge — MangaDex | direct | pilot | [manga-mangadex.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-mangadex.json) |
 | ShelfBridge — TorrentCSV EPUBs | torbox | pilot | [ebooks-torrentcsv.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-torrentcsv.json) |
 | ShelfBridge — Nyaa Light Novels | torbox | pilot | [ebooks-nyaa.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-nyaa.json) |
 | ShelfBridge — EPUB Ebooks | direct | pilot | [ebooks-epub.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-epub.json) |

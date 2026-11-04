@@ -2,7 +2,7 @@
 
 JSON source presets for **Lantern & Leaf** and **Ink & Echo**.
 
-Choose a file below. Its link opens the raw JSON URL to copy into your app. Import one provider at a time; 60 presets are listed.
+Choose a file below. Its link opens the raw JSON URL to copy into your app. Import one provider at a time; 61 presets are listed.
 
 [Validation](https://github.com/drewk312/shelfbridge-presets/actions/workflows/validate.yml) · [Source health](https://github.com/drewk312/shelfbridge-presets/actions/workflows/health.yml) · [Setup guide](DIY_SETUP.md) · [Coverage](COVERAGE.md)
 
@@ -72,6 +72,7 @@ The sections below contain pilot presets for testing. Source availability can ch
 | [manga.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga.json) | Nyaa, Knaben | any | Torrent resolver |
 | [comics.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/comics.json) | GetComics | any | Direct |
 | [comics-manga.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/comics-manga.json) | Nyaa, Knaben | any | Torrent resolver |
+| [manga-mangadex.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-mangadex.json) | MangaDex | any | Direct |
 | [comics-knaben.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/comics-knaben.json) | Knaben | any | Torrent resolver |
 
 ## Magazines and web fiction
