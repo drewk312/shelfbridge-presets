@@ -5,8 +5,8 @@
 | Status | Presets |
 | --- | ---: |
 | stable | 0 |
-| pilot | 33 |
-| candidate | 28 |
+| pilot | 35 |
+| candidate | 26 |
 
 A pilot is available for testing. A candidate has unconfirmed backend or download support. Stable status requires recorded app-version evidence for import, search, resolution, download and refresh. No native-app verification is recorded in this release.
 

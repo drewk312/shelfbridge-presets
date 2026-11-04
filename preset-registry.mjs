@@ -325,8 +325,8 @@ export const PRESET_REGISTRY = {
     "sources": "dbooks",
     "debrid": "direct",
     "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
+    "lang": "any",
+    "languageMode": "any",
     "media": "ebook"
   },
   "ebooks-libgen2": {
@@ -421,8 +421,8 @@ export const PRESET_REGISTRY = {
     "sources": "fulllengthaudiobooks",
     "debrid": "direct",
     "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
+    "lang": "any",
+    "languageMode": "any",
     "media": "audiobook"
   },
   "manga-mangadex": {

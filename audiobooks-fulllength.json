@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-audiobooks-fulllength-v1",
   "name": "ShelfBridge — FullLengthAudiobooks",
-  "description": "FullLengthAudiobooks host. Provider ID taken from the live backend; unproven until probed.",
+  "description": "FullLengthAudiobooks chapters packaged as ZIP archives. Source language labels are unavailable.",
   "trustLabel": "User Added",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
@@ -40,7 +40,7 @@
   "meta": {
     "builtAt": "2026-11-02T00:00:00.000Z",
     "builder": "ShelfBridge build.mjs",
-    "language": "en",
+    "language": "any",
     "torboxTier": "standard",
     "coverageProfile": "best",
     "resultLimit": 40,
@@ -49,7 +49,7 @@
     "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-fulllength.json",
     "searchArchitecture": "bounded-distinct-providers-v4",
     "preset": "audiobooks-fulllength",
-    "languageMode": "strict",
+    "languageMode": "any",
     "standaloneSource": "fulllengthaudiobooks",
     "sources": [
       "fulllengthaudiobooks"
@@ -69,7 +69,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/audiobook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=audiobooks-fulllength&sources=fulllengthaudiobooks&lang=en&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=audiobook&sources=fulllengthaudiobooks&lang=any&languageMode=any",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -79,8 +79,7 @@
           "title": "{TITLE}",
           "author": "{AUTHOR}",
           "limit": 40,
-          "contentType": "audiobook",
-          "preset": "audiobooks-fulllength"
+          "contentType": "audiobook"
         }
       },
       "response": {
@@ -199,7 +198,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/audiobook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=audiobooks-fulllength&sources=fulllengthaudiobooks&lang=en&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=audiobook&sources=fulllengthaudiobooks&lang=any&languageMode=any",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -209,8 +208,7 @@
           "title": "{TITLE}",
           "author": "{AUTHOR}",
           "limit": 40,
-          "contentType": "audiobook",
-          "preset": "audiobooks-fulllength"
+          "contentType": "audiobook"
         }
       },
       "response": {
@@ -330,7 +328,7 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/audiobook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=audiobooks-fulllength&sources=fulllengthaudiobooks&lang=en&languageMode=strict",
+      "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=audiobook&sources=fulllengthaudiobooks&lang=any&languageMode=any",
       "timeout": 22000,
       "headers": {
         "Accept": "application/json",
@@ -340,8 +338,7 @@
         "title": "{TITLE}",
         "author": "{AUTHOR}",
         "limit": 40,
-        "contentType": "audiobook",
-        "preset": "audiobooks-fulllength"
+        "contentType": "audiobook"
       }
     },
     "response": {

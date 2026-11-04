@@ -1550,21 +1550,21 @@
       "name": "ShelfBridge — DBooks",
       "file": "ebooks-dbooks.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-dbooks.json",
-      "sha256": "7c2e47c8746478f8ae971063c31fa6cc4fe3a243c4491cb5ca03954545731172",
-      "status": "candidate",
+      "sha256": "e8a4edb607c04c78773c95e6aa5f33cf0fc22645c0998f3a50444a4d377a3ce5",
+      "status": "pilot",
       "contentTypes": [
         "ebook"
       ],
       "downloadMethod": "direct",
       "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
+      "language": "any",
+      "languageMode": "any",
       "providers": [
         "dbooks"
       ],
       "verification": {
         "checkedOn": null,
-        "search": "unverified",
+        "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
       },
@@ -2006,21 +2006,21 @@
       "name": "ShelfBridge — FullLengthAudiobooks",
       "file": "audiobooks-fulllength.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-fulllength.json",
-      "sha256": "752ac305c64841317e9ac047a5025cc322162664d54255669f6056ab3838333e",
-      "status": "candidate",
+      "sha256": "31eaa3e35d34f5460e3249ba18412e3eae812d45f1ec504ee712a05224777fe3",
+      "status": "pilot",
       "contentTypes": [
         "audiobook"
       ],
       "downloadMethod": "direct",
       "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
+      "language": "any",
+      "languageMode": "any",
       "providers": [
         "fulllengthaudiobooks"
       ],
       "verification": {
         "checkedOn": null,
-        "search": "unverified",
+        "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
       },

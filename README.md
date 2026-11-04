@@ -46,6 +46,7 @@ The sections below contain pilot presets for testing. Source availability can ch
 | [ebooks-standardebooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-standardebooks.json) | Standard Ebooks | en | Direct |
 | [ebooks-gutenberg.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-gutenberg.json) | Project Gutenberg | en | Direct |
 | [ebooks-any.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-any.json) | Anna's Archive, Z-Library, LibGen, Standard Ebooks, Project Gutenberg | any | Direct |
+| [ebooks-dbooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-dbooks.json) | DBooks | any | Direct |
 | [ebooks-torrentcsv.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-torrentcsv.json) | TorrentCSV | any | Torrent resolver |
 | [ebooks-nyaa.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-nyaa.json) | Nyaa | any | Torrent resolver |
 | [ebooks-epub.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-epub.json) | Standard Ebooks, Project Gutenberg | en | Direct |
@@ -63,6 +64,7 @@ The sections below contain pilot presets for testing. Source availability can ch
 | [audiobooks-m4b.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-m4b.json) | AudioBookBay | en | Torrent resolver |
 | [audiobooks-atmos-m4b.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-atmos-m4b.json) | AudioBookBay | en | Torrent resolver |
 | [librivox-audiobooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/librivox-audiobooks.json) | LibriVox | en | Direct |
+| [audiobooks-fulllength.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-fulllength.json) | FullLengthAudiobooks | any | Direct |
 | [audiobooks-knaben.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-knaben.json) | Knaben | any | Torrent resolver |
 
 ## Comics and manga
@@ -92,7 +94,7 @@ The sections below contain pilot presets for testing. Source availability can ch
 Backend or download support is unconfirmed for these candidates.
 
 <details>
-<summary>Show 28 experimental .json presets</summary>
+<summary>Show 26 experimental .json presets</summary>
 
 | JSON preset | Sources | Language | Access |
 | --- | --- | --- | --- |
@@ -111,7 +113,6 @@ Backend or download support is unconfirmed for these candidates.
 | [mobilism-ar.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/mobilism-ar.json) | Mobilism | ar | Direct |
 | [webnovels.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/webnovels.json) | Royal Road | en | Direct |
 | [ebooks-openlib.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-openlib.json) | OpenLibrary | en | Direct |
-| [ebooks-dbooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-dbooks.json) | DBooks | en | Direct |
 | [ebooks-libgen2.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-libgen2.json) | LibGen alt | en | Direct |
 | [ebooks-libgenfiction.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-libgenfiction.json) | LibGen Fiction | en | Direct |
 | [ebooks-manybooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-manybooks.json) | ManyBooks | en | Direct |
@@ -123,7 +124,6 @@ Backend or download support is unconfirmed for these candidates.
 | [audiobooks-golden.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-golden.json) | Golden Audiobooks | en | Direct |
 | [audiobooks-bookaudiobooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-bookaudiobooks.json) | BookAudiobooks | en | Direct |
 | [audiobooks-4soul.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-4soul.json) | Audiobooks4Soul | en | Direct |
-| [audiobooks-fulllength.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-fulllength.json) | FullLengthAudiobooks | en | Direct |
 
 </details>
 

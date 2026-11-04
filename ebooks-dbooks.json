@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-dbooks-v1",
   "name": "ShelfBridge — DBooks",
-  "description": "DBooks direct file host, no account. Provider ID taken from the live backend; unproven until probed.",
+  "description": "Open-access technical books from DBooks. Upstream language labels are unavailable.",
   "trustLabel": "User Added",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
@@ -40,7 +40,7 @@
   "meta": {
     "builtAt": "2026-11-02T00:00:00.000Z",
     "builder": "ShelfBridge build.mjs",
-    "language": "en",
+    "language": "any",
     "torboxTier": "standard",
     "coverageProfile": "best",
     "resultLimit": 40,
@@ -49,7 +49,7 @@
     "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-dbooks.json",
     "searchArchitecture": "bounded-distinct-providers-v4",
     "preset": "ebooks-dbooks",
-    "languageMode": "strict",
+    "languageMode": "any",
     "standaloneSource": "dbooks",
     "sources": [
       "dbooks"
@@ -69,7 +69,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=ebooks-dbooks&sources=dbooks&lang=en&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=ebook&sources=dbooks&lang=any&languageMode=any",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -79,8 +79,7 @@
           "title": "{TITLE}",
           "author": "{AUTHOR}",
           "limit": 40,
-          "contentType": "ebook",
-          "preset": "ebooks-dbooks"
+          "contentType": "ebook"
         }
       },
       "response": {
@@ -199,7 +198,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=ebooks-dbooks&sources=dbooks&lang=en&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=ebook&sources=dbooks&lang=any&languageMode=any",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -209,8 +208,7 @@
           "title": "{TITLE}",
           "author": "{AUTHOR}",
           "limit": 40,
-          "contentType": "ebook",
-          "preset": "ebooks-dbooks"
+          "contentType": "ebook"
         }
       },
       "response": {
@@ -330,7 +328,7 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=ebooks-dbooks&sources=dbooks&lang=en&languageMode=strict",
+      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=ebook&sources=dbooks&lang=any&languageMode=any",
       "timeout": 22000,
       "headers": {
         "Accept": "application/json",
@@ -340,8 +338,7 @@
         "title": "{TITLE}",
         "author": "{AUTHOR}",
         "limit": 40,
-        "contentType": "ebook",
-        "preset": "ebooks-dbooks"
+        "contentType": "ebook"
       }
     },
     "response": {
