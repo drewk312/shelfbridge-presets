@@ -2,6 +2,7 @@
 // Rate limits are derived from the slowest member provider, never set by hand.
 
 export const PROVIDERS = {
+  tcbscans: {label:'TCB Scans',media:'manga',method:'direct',rpm:6,rowSource:'tcbscans',hosts:['search.inkecho.duckdns.org'],pathPattern:'^/dl/tcb/[0-9]+/[a-z0-9.-]+[.]cbz$',fileType:'cbz'},
   torrentcsv: { label: 'TorrentCSV', media: 'ebook', method: 'torbox', rpm: 10, rowSource: 'torrentcsv', hosts: null, pathPattern: null, fileType: null },
   annas: { label: "Anna's Archive", media: 'ebook', method: 'direct', rpm: 4, rowSource: null, hosts: ['annas-archive.org','annas-archive.se','annas-archive.li','annas-archive.gl','annas-archive.gs'], pathPattern: null, fileType: null },
   zlib: { label: 'Z-Library', media: 'ebook', method: 'direct', rpm: 4, rowSource: 'zlib', hosts: null, pathPattern: null, fileType: null },
@@ -65,6 +66,7 @@ export const PRESETS = [
 
 // Additional views over existing backend providers.
 const variants = [
+ ['manga-tcbscans.json','manga.json',{name:'ShelfBridge — TCB Scans',sources:['tcbscans'],downloadMethod:'direct',routing:'explicit',description:'TCB Scans English manga chapters as CBZ files. Returns up to 20 recent chapters per matching series.',compatNote:'Direct CBZ chapters. Comic reader required.'}],
  ['manga-nyaa.json','manga.json',{name:'ShelfBridge — Nyaa Manga',sources:['nyaa'],routing:'explicit',description:'Manga torrents from Nyaa Literature. The reader app resolves magnets.'}],
  ['ebooks-torrents.json','ebooks-libgen.json',{name:'ShelfBridge — EPUB Torrents',sources:['torrentcsv','knaben'],downloadMethod:'torbox',language:'any',format:'epub',routing:'explicit',description:'EPUB torrent results from TorrentCSV and Knaben. Check the edition and language.'}],
  ['manga-mangadex.json','manga.json',{name:'ShelfBridge — MangaDex',sources:['mangadex'],downloadMethod:'direct',routing:'explicit',description:'English MangaDex chapters packaged as CBZ files. Searches return up to 20 chapters per series.',compatNote:'Direct CBZ chapters. A comic reader is required.'}],

@@ -1432,6 +1432,44 @@
       }
     },
     {
+      "id": "shelfbridge-manga-tcbscans-v1",
+      "name": "ShelfBridge — TCB Scans",
+      "file": "manga-tcbscans.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-tcbscans.json",
+      "sha256": "51869e085c6e991bed44683da40751a5379726cdd8e30517291dd4d153d16f3c",
+      "status": "pilot",
+      "contentTypes": [
+        "manga"
+      ],
+      "downloadMethod": "direct",
+      "requiresDebrid": false,
+      "language": "any",
+      "languageMode": "any",
+      "providers": [
+        "tcbscans"
+      ],
+      "verification": {
+        "checkedOn": null,
+        "search": "pending",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
       "id": "shelfbridge-manga-nyaa-v1",
       "name": "ShelfBridge — Nyaa Manga",
       "file": "manga-nyaa.json",
