@@ -18,13 +18,17 @@
   "debrid": "direct",
   "debridChoice": "direct",
   "debridServices": [
-    "direct"
+    "direct",
+    "realdebrid",
+    "torbox"
   ],
   "selectedDebridService": "direct",
   "downloadService": "direct",
   "resolverCompatibility": {
     "normalResults": [
-      "direct"
+      "direct",
+      "realdebrid",
+      "torbox"
     ],
     "torrentResults": [],
     "directResults": [

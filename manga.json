@@ -17,6 +17,7 @@
   "debrid": "torbox",
   "debridChoice": "torbox",
   "debridServices": [
+    "realdebrid",
     "torbox"
   ],
   "selectedDebridService": "torbox",

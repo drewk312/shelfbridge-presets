@@ -17,7 +17,7 @@ for (const spec of PRESETS) {
     assert.ok(p.contentTypes.includes(p.contentType) || p.contentType === 'both');
     assert.equal(p.contentType, spec.contentTypes.includes('ebook') && spec.contentTypes.includes('audiobook') ? 'both' : spec.contentTypes[0]);
     assert.equal(p.debrid, p.downloadService);
-    assert.deepEqual(p.debridServices, [p.downloadService]);
+    assert.deepEqual(p.debridServices, p.downloadService === 'direct' ? ['direct', 'realdebrid', 'torbox'] : ['realdebrid', 'torbox']);
     assert.equal(p.meta.language, spec.comicShelf && spec.language === 'en' ? 'any' : spec.language);
     assert.ok(LANGUAGE_LABELS[spec.language], 'unregistered language');
     assert.equal(p.hostedProviderUrl, 'https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/' + spec.file);
