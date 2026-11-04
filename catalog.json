@@ -370,158 +370,6 @@
       }
     },
     {
-      "id": "shelfbridge-ebooks-bookracy-v1",
-      "name": "ShelfBridge — Bookracy",
-      "file": "ebooks-bookracy.json",
-      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-bookracy.json",
-      "sha256": "bcd6dcd5dbd087712cf1b399ed63d46fa7e102e89eee29143630a48730981de6",
-      "status": "candidate",
-      "contentTypes": [
-        "ebook"
-      ],
-      "downloadMethod": "direct",
-      "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
-      "providers": [
-        "bookracy"
-      ],
-      "verification": {
-        "checkedOn": null,
-        "search": "unverified",
-        "download": "unverified",
-        "continuousMonitoring": false
-      },
-      "compatibility": {
-        "lantern-and-leaf": {
-          "status": "not-tested"
-        },
-        "ink-and-echo": {
-          "status": "not-tested"
-        },
-        "bokumi": {
-          "status": "not-tested"
-        },
-        "manga-comics-app": {
-          "status": "not-tested"
-        }
-      }
-    },
-    {
-      "id": "shelfbridge-ebooks-mayberry-v1",
-      "name": "ShelfBridge — Mayberry",
-      "file": "ebooks-mayberry.json",
-      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-mayberry.json",
-      "sha256": "73e79c3498496a232835dbd322e15668de06d77bc53f5e5faf33071ee8e26943",
-      "status": "candidate",
-      "contentTypes": [
-        "ebook"
-      ],
-      "downloadMethod": "direct",
-      "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
-      "providers": [
-        "mayberry"
-      ],
-      "verification": {
-        "checkedOn": null,
-        "search": "unverified",
-        "download": "unverified",
-        "continuousMonitoring": false
-      },
-      "compatibility": {
-        "lantern-and-leaf": {
-          "status": "not-tested"
-        },
-        "ink-and-echo": {
-          "status": "not-tested"
-        },
-        "bokumi": {
-          "status": "not-tested"
-        },
-        "manga-comics-app": {
-          "status": "not-tested"
-        }
-      }
-    },
-    {
-      "id": "shelfbridge-ebooks-oceanofpdf-v1",
-      "name": "ShelfBridge — OceanofPDF",
-      "file": "ebooks-oceanofpdf.json",
-      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-oceanofpdf.json",
-      "sha256": "0d8e5668e2aa75d33ad78051cba9fbd5cb768e8bcd072fbde4713e0ae91a2ea0",
-      "status": "candidate",
-      "contentTypes": [
-        "ebook"
-      ],
-      "downloadMethod": "direct",
-      "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
-      "providers": [
-        "oceanofpdf"
-      ],
-      "verification": {
-        "checkedOn": null,
-        "search": "unverified",
-        "download": "unverified",
-        "continuousMonitoring": false
-      },
-      "compatibility": {
-        "lantern-and-leaf": {
-          "status": "not-tested"
-        },
-        "ink-and-echo": {
-          "status": "not-tested"
-        },
-        "bokumi": {
-          "status": "not-tested"
-        },
-        "manga-comics-app": {
-          "status": "not-tested"
-        }
-      }
-    },
-    {
-      "id": "shelfbridge-ebooks-elscione-v1",
-      "name": "ShelfBridge — ElScione Server",
-      "file": "ebooks-elscione.json",
-      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-elscione.json",
-      "sha256": "83b872e56168318a4fe2df0e6535e388464bac04d5344fd555764d2ec1255539",
-      "status": "candidate",
-      "contentTypes": [
-        "ebook"
-      ],
-      "downloadMethod": "direct",
-      "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
-      "providers": [
-        "elscione"
-      ],
-      "verification": {
-        "checkedOn": null,
-        "search": "unverified",
-        "download": "unverified",
-        "continuousMonitoring": false
-      },
-      "compatibility": {
-        "lantern-and-leaf": {
-          "status": "not-tested"
-        },
-        "ink-and-echo": {
-          "status": "not-tested"
-        },
-        "bokumi": {
-          "status": "not-tested"
-        },
-        "manga-comics-app": {
-          "status": "not-tested"
-        }
-      }
-    },
-    {
       "id": "shelfbridge-ebooks-standardebooks-v1",
       "name": "ShelfBridge — Standard Ebooks",
       "file": "ebooks-standardebooks.json",
@@ -1470,82 +1318,6 @@
       }
     },
     {
-      "id": "shelfbridge-webnovels-v1",
-      "name": "ShelfBridge — Web Fiction",
-      "file": "webnovels.json",
-      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/webnovels.json",
-      "sha256": "8e61df73281edb440b3cc862ab5416bc28dc6bce9b57cef09a565938f86844bb",
-      "status": "candidate",
-      "contentTypes": [
-        "webnovel"
-      ],
-      "downloadMethod": "direct",
-      "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
-      "providers": [
-        "royalroad"
-      ],
-      "verification": {
-        "checkedOn": null,
-        "search": "unverified",
-        "download": "unverified",
-        "continuousMonitoring": false
-      },
-      "compatibility": {
-        "lantern-and-leaf": {
-          "status": "not-tested"
-        },
-        "ink-and-echo": {
-          "status": "not-tested"
-        },
-        "bokumi": {
-          "status": "not-tested"
-        },
-        "manga-comics-app": {
-          "status": "not-tested"
-        }
-      }
-    },
-    {
-      "id": "shelfbridge-ebooks-openlib-v1",
-      "name": "ShelfBridge — OpenLibrary",
-      "file": "ebooks-openlib.json",
-      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-openlib.json",
-      "sha256": "bfc0df80fa4bd82a848593f314a1ec3dd21f952bd72119b956bc3923d9f044d1",
-      "status": "candidate",
-      "contentTypes": [
-        "ebook"
-      ],
-      "downloadMethod": "direct",
-      "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
-      "providers": [
-        "openlib"
-      ],
-      "verification": {
-        "checkedOn": null,
-        "search": "unverified",
-        "download": "unverified",
-        "continuousMonitoring": false
-      },
-      "compatibility": {
-        "lantern-and-leaf": {
-          "status": "not-tested"
-        },
-        "ink-and-echo": {
-          "status": "not-tested"
-        },
-        "bokumi": {
-          "status": "not-tested"
-        },
-        "manga-comics-app": {
-          "status": "not-tested"
-        }
-      }
-    },
-    {
       "id": "shelfbridge-ebooks-dbooks-v1",
       "name": "ShelfBridge — DBooks",
       "file": "ebooks-dbooks.json",
@@ -1565,310 +1337,6 @@
       "verification": {
         "checkedOn": null,
         "search": "pending",
-        "download": "unverified",
-        "continuousMonitoring": false
-      },
-      "compatibility": {
-        "lantern-and-leaf": {
-          "status": "not-tested"
-        },
-        "ink-and-echo": {
-          "status": "not-tested"
-        },
-        "bokumi": {
-          "status": "not-tested"
-        },
-        "manga-comics-app": {
-          "status": "not-tested"
-        }
-      }
-    },
-    {
-      "id": "shelfbridge-ebooks-libgenalt-v1",
-      "name": "ShelfBridge — LibGen (alt)",
-      "file": "ebooks-libgen2.json",
-      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-libgen2.json",
-      "sha256": "f589371045993683df9e2d597703e2134fcd48918a68147347d75d9e0e638ad6",
-      "status": "candidate",
-      "contentTypes": [
-        "ebook"
-      ],
-      "downloadMethod": "direct",
-      "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
-      "providers": [
-        "libgen"
-      ],
-      "verification": {
-        "checkedOn": null,
-        "search": "unverified",
-        "download": "unverified",
-        "continuousMonitoring": false
-      },
-      "compatibility": {
-        "lantern-and-leaf": {
-          "status": "not-tested"
-        },
-        "ink-and-echo": {
-          "status": "not-tested"
-        },
-        "bokumi": {
-          "status": "not-tested"
-        },
-        "manga-comics-app": {
-          "status": "not-tested"
-        }
-      }
-    },
-    {
-      "id": "shelfbridge-ebooks-libgenfiction-v1",
-      "name": "ShelfBridge — LibGen Fiction",
-      "file": "ebooks-libgenfiction.json",
-      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-libgenfiction.json",
-      "sha256": "14c34cf058a8d244251b5cb8742eb9849d7fe93c4225100d9dfa9738a3093800",
-      "status": "candidate",
-      "contentTypes": [
-        "ebook"
-      ],
-      "downloadMethod": "direct",
-      "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
-      "providers": [
-        "libgenfiction"
-      ],
-      "verification": {
-        "checkedOn": null,
-        "search": "unverified",
-        "download": "unverified",
-        "continuousMonitoring": false
-      },
-      "compatibility": {
-        "lantern-and-leaf": {
-          "status": "not-tested"
-        },
-        "ink-and-echo": {
-          "status": "not-tested"
-        },
-        "bokumi": {
-          "status": "not-tested"
-        },
-        "manga-comics-app": {
-          "status": "not-tested"
-        }
-      }
-    },
-    {
-      "id": "shelfbridge-ebooks-manybooks-v1",
-      "name": "ShelfBridge — ManyBooks",
-      "file": "ebooks-manybooks.json",
-      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-manybooks.json",
-      "sha256": "c46d8affb5bb1cb8c3081440eea96feb1bfbbf8be8c64eec764cb2b17712a274",
-      "status": "candidate",
-      "contentTypes": [
-        "ebook"
-      ],
-      "downloadMethod": "direct",
-      "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
-      "providers": [
-        "manybooks"
-      ],
-      "verification": {
-        "checkedOn": null,
-        "search": "unverified",
-        "download": "unverified",
-        "continuousMonitoring": false
-      },
-      "compatibility": {
-        "lantern-and-leaf": {
-          "status": "not-tested"
-        },
-        "ink-and-echo": {
-          "status": "not-tested"
-        },
-        "bokumi": {
-          "status": "not-tested"
-        },
-        "manga-comics-app": {
-          "status": "not-tested"
-        }
-      }
-    },
-    {
-      "id": "shelfbridge-ebooks-feedbooks-v1",
-      "name": "ShelfBridge — Feedbooks",
-      "file": "ebooks-feedbooks.json",
-      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-feedbooks.json",
-      "sha256": "afa809723f43e6a6d29dfa269be1cca3553c7a5bfa0963bd611dc14a3e019c11",
-      "status": "candidate",
-      "contentTypes": [
-        "ebook"
-      ],
-      "downloadMethod": "direct",
-      "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
-      "providers": [
-        "feedbooks"
-      ],
-      "verification": {
-        "checkedOn": null,
-        "search": "unverified",
-        "download": "unverified",
-        "continuousMonitoring": false
-      },
-      "compatibility": {
-        "lantern-and-leaf": {
-          "status": "not-tested"
-        },
-        "ink-and-echo": {
-          "status": "not-tested"
-        },
-        "bokumi": {
-          "status": "not-tested"
-        },
-        "manga-comics-app": {
-          "status": "not-tested"
-        }
-      }
-    },
-    {
-      "id": "shelfbridge-ebooks-pdfdrive-v1",
-      "name": "ShelfBridge — PDFDrive",
-      "file": "ebooks-pdfdrive.json",
-      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-pdfdrive.json",
-      "sha256": "8bafa2d338144c47b77c32f0c86fea76c48611b62058174784b8b605a7f68a84",
-      "status": "candidate",
-      "contentTypes": [
-        "ebook"
-      ],
-      "downloadMethod": "direct",
-      "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
-      "providers": [
-        "pdfdrive"
-      ],
-      "verification": {
-        "checkedOn": null,
-        "search": "unverified",
-        "download": "unverified",
-        "continuousMonitoring": false
-      },
-      "compatibility": {
-        "lantern-and-leaf": {
-          "status": "not-tested"
-        },
-        "ink-and-echo": {
-          "status": "not-tested"
-        },
-        "bokumi": {
-          "status": "not-tested"
-        },
-        "manga-comics-app": {
-          "status": "not-tested"
-        }
-      }
-    },
-    {
-      "id": "shelfbridge-ebooks-archiveorg-v1",
-      "name": "ShelfBridge — Internet Archive",
-      "file": "ebooks-archiveorg.json",
-      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-archiveorg.json",
-      "sha256": "9d3e30d346661e7533af4a47052f8419f355889449a351fb7f6d8a39ebe89723",
-      "status": "candidate",
-      "contentTypes": [
-        "ebook"
-      ],
-      "downloadMethod": "direct",
-      "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
-      "providers": [
-        "archiveorg"
-      ],
-      "verification": {
-        "checkedOn": null,
-        "search": "unverified",
-        "download": "unverified",
-        "continuousMonitoring": false
-      },
-      "compatibility": {
-        "lantern-and-leaf": {
-          "status": "not-tested"
-        },
-        "ink-and-echo": {
-          "status": "not-tested"
-        },
-        "bokumi": {
-          "status": "not-tested"
-        },
-        "manga-comics-app": {
-          "status": "not-tested"
-        }
-      }
-    },
-    {
-      "id": "shelfbridge-audiobooks-loyalbooks-v1",
-      "name": "ShelfBridge — Loyal Books",
-      "file": "audiobooks-loyalbooks.json",
-      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-loyalbooks.json",
-      "sha256": "663af552e0bd8e96be56089786ff74d16e45af4eb9fc54adb3aa3c748f1c5080",
-      "status": "candidate",
-      "contentTypes": [
-        "audiobook"
-      ],
-      "downloadMethod": "direct",
-      "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
-      "providers": [
-        "loyalbooks"
-      ],
-      "verification": {
-        "checkedOn": null,
-        "search": "unverified",
-        "download": "unverified",
-        "continuousMonitoring": false
-      },
-      "compatibility": {
-        "lantern-and-leaf": {
-          "status": "not-tested"
-        },
-        "ink-and-echo": {
-          "status": "not-tested"
-        },
-        "bokumi": {
-          "status": "not-tested"
-        },
-        "manga-comics-app": {
-          "status": "not-tested"
-        }
-      }
-    },
-    {
-      "id": "shelfbridge-audiobooks-tokyobook-v1",
-      "name": "ShelfBridge — Tokybook",
-      "file": "audiobooks-tokyobook.json",
-      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-tokyobook.json",
-      "sha256": "01592714fa7481727592f761542ccd0a03ecef2394cf50adba8faef07eaa2b50",
-      "status": "candidate",
-      "contentTypes": [
-        "audiobook"
-      ],
-      "downloadMethod": "direct",
-      "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
-      "providers": [
-        "tokyobook"
-      ],
-      "verification": {
-        "checkedOn": null,
-        "search": "unverified",
         "download": "unverified",
         "continuousMonitoring": false
       },
@@ -1926,82 +1394,6 @@
       }
     },
     {
-      "id": "shelfbridge-audiobooks-bookaudiobooks-v1",
-      "name": "ShelfBridge — BookAudiobooks",
-      "file": "audiobooks-bookaudiobooks.json",
-      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-bookaudiobooks.json",
-      "sha256": "35180e96ea006f0a87012efaf2d1e1eda87740f8f1fc85aa21d7b4368f03255d",
-      "status": "candidate",
-      "contentTypes": [
-        "audiobook"
-      ],
-      "downloadMethod": "direct",
-      "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
-      "providers": [
-        "bookaudiobooks"
-      ],
-      "verification": {
-        "checkedOn": null,
-        "search": "unverified",
-        "download": "unverified",
-        "continuousMonitoring": false
-      },
-      "compatibility": {
-        "lantern-and-leaf": {
-          "status": "not-tested"
-        },
-        "ink-and-echo": {
-          "status": "not-tested"
-        },
-        "bokumi": {
-          "status": "not-tested"
-        },
-        "manga-comics-app": {
-          "status": "not-tested"
-        }
-      }
-    },
-    {
-      "id": "shelfbridge-audiobooks-4soul-v1",
-      "name": "ShelfBridge — Audiobooks4Soul",
-      "file": "audiobooks-4soul.json",
-      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-4soul.json",
-      "sha256": "1656992223426be96546c5f8409bb940bcab49d88976dbcfb76d02aa8030565f",
-      "status": "candidate",
-      "contentTypes": [
-        "audiobook"
-      ],
-      "downloadMethod": "direct",
-      "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
-      "providers": [
-        "audiobooks4soul"
-      ],
-      "verification": {
-        "checkedOn": null,
-        "search": "unverified",
-        "download": "unverified",
-        "continuousMonitoring": false
-      },
-      "compatibility": {
-        "lantern-and-leaf": {
-          "status": "not-tested"
-        },
-        "ink-and-echo": {
-          "status": "not-tested"
-        },
-        "bokumi": {
-          "status": "not-tested"
-        },
-        "manga-comics-app": {
-          "status": "not-tested"
-        }
-      }
-    },
-    {
       "id": "shelfbridge-audiobooks-fulllength-v1",
       "name": "ShelfBridge — FullLengthAudiobooks",
       "file": "audiobooks-fulllength.json",
@@ -2018,6 +1410,84 @@
       "providers": [
         "fulllengthaudiobooks"
       ],
+      "verification": {
+        "checkedOn": null,
+        "search": "pending",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
+      "id": "shelfbridge-manga-nyaa-v1",
+      "name": "ShelfBridge — Nyaa Manga",
+      "file": "manga-nyaa.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-nyaa.json",
+      "sha256": "45f315f0248d7f9594fda1b060ee3386e6ade2f78142116cbac473f4fa0d0825",
+      "status": "pilot",
+      "contentTypes": [
+        "manga"
+      ],
+      "downloadMethod": "torbox",
+      "requiresDebrid": true,
+      "language": "any",
+      "languageMode": "any",
+      "providers": [
+        "nyaa"
+      ],
+      "verification": {
+        "checkedOn": null,
+        "search": "pending",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
+      "id": "shelfbridge-ebooks-torrents-v1",
+      "name": "ShelfBridge — EPUB Torrents",
+      "file": "ebooks-torrents.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-torrents.json",
+      "sha256": "be5d9164800c27fcf71ffe425f83a6be4bc04e2077e6b25fc537dcb07420fecd",
+      "status": "pilot",
+      "contentTypes": [
+        "ebook"
+      ],
+      "downloadMethod": "torbox",
+      "requiresDebrid": true,
+      "language": "any",
+      "languageMode": "any",
+      "providers": [
+        "torrentcsv",
+        "knaben"
+      ],
+      "format": "epub",
       "verification": {
         "checkedOn": null,
         "search": "pending",

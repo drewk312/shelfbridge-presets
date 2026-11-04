@@ -45,7 +45,4 @@ test('the main bundle includes Z-Library without stale server preset overrides',
   assert.equal(url.searchParams.get('preset'),null);
   assert.equal(p.search.request.body.preset,undefined);
 });
-test('Tokybook uses the deployed backend source ID',()=>{
- const p=makePreset(spec('audiobooks-tokyobook.json'));
- assert.equal(new URL(p.search.request.url).searchParams.get('sources'),'tokybook');
-});
+test('unavailable Tokybook preset is removed',()=>{assert.equal(spec('audiobooks-tokyobook.json'),undefined);});

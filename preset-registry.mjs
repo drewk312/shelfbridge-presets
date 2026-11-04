@@ -74,38 +74,6 @@ export const PRESET_REGISTRY = {
     "languageMode": "strict",
     "media": "ebook"
   },
-  "ebooks-bookracy": {
-    "sources": "bookracy",
-    "debrid": "direct",
-    "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
-    "media": "ebook"
-  },
-  "ebooks-mayberry": {
-    "sources": "mayberry",
-    "debrid": "direct",
-    "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
-    "media": "ebook"
-  },
-  "ebooks-oceanofpdf": {
-    "sources": "oceanofpdf",
-    "debrid": "direct",
-    "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
-    "media": "ebook"
-  },
-  "ebooks-elscione": {
-    "sources": "elscione",
-    "debrid": "direct",
-    "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
-    "media": "ebook"
-  },
   "ebooks-standardebooks": {
     "sources": "standardebooks",
     "debrid": "direct",
@@ -305,22 +273,6 @@ export const PRESET_REGISTRY = {
     "media": "comics",
     "comicShelf": "both"
   },
-  "webnovels": {
-    "sources": "royalroad",
-    "debrid": "direct",
-    "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
-    "media": "ebook"
-  },
-  "ebooks-openlib": {
-    "sources": "openlib",
-    "debrid": "direct",
-    "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
-    "media": "ebook"
-  },
   "ebooks-dbooks": {
     "sources": "dbooks",
     "debrid": "direct",
@@ -328,70 +280,6 @@ export const PRESET_REGISTRY = {
     "lang": "any",
     "languageMode": "any",
     "media": "ebook"
-  },
-  "ebooks-libgen2": {
-    "sources": "libgen",
-    "debrid": "direct",
-    "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
-    "media": "ebook"
-  },
-  "ebooks-libgenfiction": {
-    "sources": "libgenfiction",
-    "debrid": "direct",
-    "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
-    "media": "ebook"
-  },
-  "ebooks-manybooks": {
-    "sources": "manybooks",
-    "debrid": "direct",
-    "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
-    "media": "ebook"
-  },
-  "ebooks-feedbooks": {
-    "sources": "feedbooks",
-    "debrid": "direct",
-    "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
-    "media": "ebook"
-  },
-  "ebooks-pdfdrive": {
-    "sources": "pdfdrive",
-    "debrid": "direct",
-    "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
-    "media": "ebook"
-  },
-  "ebooks-archiveorg": {
-    "sources": "archiveorg",
-    "debrid": "direct",
-    "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
-    "media": "ebook"
-  },
-  "audiobooks-loyalbooks": {
-    "sources": "loyalbooks",
-    "debrid": "direct",
-    "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
-    "media": "audiobook"
-  },
-  "audiobooks-tokyobook": {
-    "sources": "tokybook",
-    "debrid": "direct",
-    "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
-    "media": "audiobook"
   },
   "audiobooks-golden": {
     "sources": "goldenaudiobooks",
@@ -401,22 +289,6 @@ export const PRESET_REGISTRY = {
     "languageMode": "any",
     "media": "audiobook"
   },
-  "audiobooks-bookaudiobooks": {
-    "sources": "bookaudiobooks",
-    "debrid": "direct",
-    "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
-    "media": "audiobook"
-  },
-  "audiobooks-4soul": {
-    "sources": "audiobooks4soul",
-    "debrid": "direct",
-    "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
-    "media": "audiobook"
-  },
   "audiobooks-fulllength": {
     "sources": "fulllengthaudiobooks",
     "debrid": "direct",
@@ -424,6 +296,24 @@ export const PRESET_REGISTRY = {
     "lang": "any",
     "languageMode": "any",
     "media": "audiobook"
+  },
+  "manga-nyaa": {
+    "sources": "nyaa",
+    "debrid": "torbox",
+    "profile": "best",
+    "lang": "any",
+    "languageMode": "any",
+    "media": "comics",
+    "comicShelf": "manga"
+  },
+  "ebooks-torrents": {
+    "sources": "torrentcsv,knaben",
+    "debrid": "torbox",
+    "profile": "best",
+    "lang": "any",
+    "languageMode": "any",
+    "media": "ebook",
+    "format": "epub"
   },
   "manga-mangadex": {
     "sources": "mangadex",
@@ -514,10 +404,6 @@ export const PRESET_ALIASES = {
   "shelfbridge-ebooks-annas-v1": "ebooks-annas",
   "shelfbridge-ebooks-zlib-v1": "ebooks-zlib",
   "shelfbridge-ebooks-libgen-v1": "ebooks-libgen",
-  "shelfbridge-ebooks-bookracy-v1": "ebooks-bookracy",
-  "shelfbridge-ebooks-mayberry-v1": "ebooks-mayberry",
-  "shelfbridge-ebooks-oceanofpdf-v1": "ebooks-oceanofpdf",
-  "shelfbridge-ebooks-elscione-v1": "ebooks-elscione",
   "shelfbridge-ebooks-standardebooks-v1": "ebooks-standardebooks",
   "shelfbridge-ebooks-gutenberg-v1": "ebooks-gutenberg",
   "shelfbridge-ebooks-es-v1": "ebooks-es",
@@ -542,21 +428,11 @@ export const PRESET_ALIASES = {
   "shelfbridge-manga-v1": "manga",
   "shelfbridge-comics-v1": "comics",
   "shelfbridge-comics-manga-v1": "comics-manga",
-  "shelfbridge-webnovels-v1": "webnovels",
-  "shelfbridge-ebooks-openlib-v1": "ebooks-openlib",
   "shelfbridge-ebooks-dbooks-v1": "ebooks-dbooks",
-  "shelfbridge-ebooks-libgenalt-v1": "ebooks-libgen2",
-  "shelfbridge-ebooks-libgenfiction-v1": "ebooks-libgenfiction",
-  "shelfbridge-ebooks-manybooks-v1": "ebooks-manybooks",
-  "shelfbridge-ebooks-feedbooks-v1": "ebooks-feedbooks",
-  "shelfbridge-ebooks-pdfdrive-v1": "ebooks-pdfdrive",
-  "shelfbridge-ebooks-archiveorg-v1": "ebooks-archiveorg",
-  "shelfbridge-audiobooks-loyalbooks-v1": "audiobooks-loyalbooks",
-  "shelfbridge-audiobooks-tokyobook-v1": "audiobooks-tokyobook",
   "shelfbridge-audiobooks-golden-v1": "audiobooks-golden",
-  "shelfbridge-audiobooks-bookaudiobooks-v1": "audiobooks-bookaudiobooks",
-  "shelfbridge-audiobooks-4soul-v1": "audiobooks-4soul",
   "shelfbridge-audiobooks-fulllength-v1": "audiobooks-fulllength",
+  "shelfbridge-manga-nyaa-v1": "manga-nyaa",
+  "shelfbridge-ebooks-torrents-v1": "ebooks-torrents",
   "shelfbridge-manga-mangadex-v1": "manga-mangadex",
   "shelfbridge-ebooks-torrentcsv-v1": "ebooks-torrentcsv",
   "shelfbridge-ebooks-nyaa-v1": "ebooks-nyaa",

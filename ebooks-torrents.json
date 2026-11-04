@@ -1,35 +1,36 @@
 {
   "schemaVersion": "1.0.0",
   "kind": "search",
-  "id": "shelfbridge-audiobooks-tokyobook-v1",
-  "name": "ShelfBridge — Tokybook",
-  "description": "Unavailable: the Tokybook hostname does not resolve from the search server.",
+  "id": "shelfbridge-ebooks-torrents-v1",
+  "name": "ShelfBridge — EPUB Torrents",
+  "description": "EPUB torrent results from TorrentCSV and Knaben. Check the edition and language.",
   "trustLabel": "User Added",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",
     "search"
   ],
-  "contentType": "audiobook",
+  "contentType": "ebook",
   "contentTypes": [
-    "audiobook"
+    "ebook"
   ],
-  "debrid": "direct",
-  "debridChoice": "direct",
+  "debrid": "torbox",
+  "debridChoice": "torbox",
   "debridServices": [
-    "direct",
     "realdebrid",
     "torbox"
   ],
-  "selectedDebridService": "direct",
-  "downloadService": "direct",
+  "selectedDebridService": "torbox",
+  "downloadService": "torbox",
   "resolverCompatibility": {
     "normalResults": [
-      "direct",
       "realdebrid",
       "torbox"
     ],
-    "torrentResults": [],
+    "torrentResults": [
+      "realdebrid",
+      "torbox"
+    ],
     "directResults": [
       "direct",
       "realdebrid",
@@ -44,25 +45,30 @@
   "meta": {
     "builtAt": "2026-11-02T00:00:00.000Z",
     "builder": "ShelfBridge build.mjs",
-    "language": "en",
+    "language": "any",
     "torboxTier": "standard",
     "coverageProfile": "best",
-    "resultLimit": 40,
+    "resultLimit": 60,
     "requestTimeout": 22000,
     "titleStyle": "clean",
-    "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-tokyobook.json",
+    "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-torrents.json",
     "searchArchitecture": "bounded-distinct-providers-v4",
-    "preset": "audiobooks-tokyobook",
-    "languageMode": "strict",
-    "standaloneSource": "tokybook",
-    "sources": [
-      "tokyobook"
+    "preset": "ebooks-torrents",
+    "languageMode": "any",
+    "selectedSources": [
+      "torrentcsv",
+      "knaben"
     ],
-    "sourceContract": "typed-media-v2"
+    "sources": [
+      "torrentcsv",
+      "knaben"
+    ],
+    "sourceContract": "typed-media-v2",
+    "formatTarget": "epub"
   },
   "rateLimit": {
-    "requestsPerMinute": 8,
-    "retryAfterMs": 7500
+    "requestsPerMinute": 10,
+    "retryAfterMs": 6000
   },
   "matching": {
     "algorithm": "fuzzy",
@@ -70,10 +76,10 @@
   },
   "adapters": {
     "source": {
-      "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/audiobook/debrid-notify",
+      "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=audiobook&sources=tokybook&lang=en&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=ebook&sources=torrentcsv%2Cknaben&lang=any&languageMode=any&format=epub",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -82,8 +88,9 @@
         "body": {
           "title": "{TITLE}",
           "author": "{AUTHOR}",
-          "limit": 40,
-          "contentType": "audiobook"
+          "limit": 60,
+          "contentType": "ebook",
+          "format": "epub"
         }
       },
       "response": {
@@ -199,10 +206,10 @@
       }
     },
     "search": {
-      "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/audiobook/debrid-notify",
+      "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=audiobook&sources=tokybook&lang=en&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=ebook&sources=torrentcsv%2Cknaben&lang=any&languageMode=any&format=epub",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -211,8 +218,9 @@
         "body": {
           "title": "{TITLE}",
           "author": "{AUTHOR}",
-          "limit": 40,
-          "contentType": "audiobook"
+          "limit": 60,
+          "contentType": "ebook",
+          "format": "epub"
         }
       },
       "response": {
@@ -329,10 +337,10 @@
     }
   },
   "search": {
-    "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/audiobook/debrid-notify",
+    "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=audiobook&sources=tokybook&lang=en&languageMode=strict",
+      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=ebook&sources=torrentcsv%2Cknaben&lang=any&languageMode=any&format=epub",
       "timeout": 22000,
       "headers": {
         "Accept": "application/json",
@@ -341,8 +349,9 @@
       "body": {
         "title": "{TITLE}",
         "author": "{AUTHOR}",
-        "limit": 40,
-        "contentType": "audiobook"
+        "limit": 60,
+        "contentType": "ebook",
+        "format": "epub"
       }
     },
     "response": {
@@ -457,12 +466,14 @@
       }
     }
   },
-  "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-tokyobook.json",
+  "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-torrents.json",
   "excludeTerms": [
     "1080p",
     "2160p",
     "480p",
     "720p",
+    "aac",
+    "aax",
     "azw",
     "azw3",
     "bdrip",
@@ -479,9 +490,9 @@
     "docx",
     "dvdrip",
     "dvdscr",
-    "epub",
     "excerpt",
     "fb2",
+    "flac",
     "h264",
     "h265",
     "hdcam",
@@ -489,8 +500,15 @@
     "hdtv",
     "hevc",
     "lit",
+    "m4a",
+    "m4b",
+    "m4v",
     "mobi",
+    "mp3",
+    "mp4",
     "ocr",
+    "ogg",
+    "opus",
     "pdb",
     "pdf",
     "preview",
@@ -501,6 +519,7 @@
     "scanned",
     "telesync",
     "txt",
+    "wav",
     "web-dl",
     "webrip",
     "x264",

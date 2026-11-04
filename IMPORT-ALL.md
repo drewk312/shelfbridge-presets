@@ -15,10 +15,6 @@ Pilot presets have incomplete verification. Candidates have unconfirmed backend 
 | ShelfBridge — Anna's Archive | direct | pilot | [ebooks-annas.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-annas.json) |
 | ShelfBridge — Z-Library | direct | pilot | [ebooks-zlib.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-zlib.json) |
 | ShelfBridge — LibGen | direct | pilot | [ebooks-libgen.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-libgen.json) |
-| ShelfBridge — Bookracy | direct | candidate | [ebooks-bookracy.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-bookracy.json) |
-| ShelfBridge — Mayberry | direct | candidate | [ebooks-mayberry.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-mayberry.json) |
-| ShelfBridge — OceanofPDF | direct | candidate | [ebooks-oceanofpdf.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-oceanofpdf.json) |
-| ShelfBridge — ElScione Server | direct | candidate | [ebooks-elscione.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-elscione.json) |
 | ShelfBridge — Standard Ebooks | direct | pilot | [ebooks-standardebooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-standardebooks.json) |
 | ShelfBridge — Project Gutenberg | direct | pilot | [ebooks-gutenberg.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-gutenberg.json) |
 | ShelfBridge — Ebooks (Spanish) | direct | candidate | [ebooks-es.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-es.json) |
@@ -43,21 +39,11 @@ Pilot presets have incomplete verification. Candidates have unconfirmed backend 
 | ShelfBridge — Manga | torbox | pilot | [manga.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga.json) |
 | ShelfBridge — Comics | direct | pilot | [comics.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/comics.json) |
 | ShelfBridge — Comics + Manga | torbox | pilot | [comics-manga.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/comics-manga.json) |
-| ShelfBridge — Web Fiction | direct | candidate | [webnovels.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/webnovels.json) |
-| ShelfBridge — OpenLibrary | direct | candidate | [ebooks-openlib.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-openlib.json) |
 | ShelfBridge — DBooks | direct | pilot | [ebooks-dbooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-dbooks.json) |
-| ShelfBridge — LibGen (alt) | direct | candidate | [ebooks-libgen2.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-libgen2.json) |
-| ShelfBridge — LibGen Fiction | direct | candidate | [ebooks-libgenfiction.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-libgenfiction.json) |
-| ShelfBridge — ManyBooks | direct | candidate | [ebooks-manybooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-manybooks.json) |
-| ShelfBridge — Feedbooks | direct | candidate | [ebooks-feedbooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-feedbooks.json) |
-| ShelfBridge — PDFDrive | direct | candidate | [ebooks-pdfdrive.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-pdfdrive.json) |
-| ShelfBridge — Internet Archive | direct | candidate | [ebooks-archiveorg.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-archiveorg.json) |
-| ShelfBridge — Loyal Books | direct | candidate | [audiobooks-loyalbooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-loyalbooks.json) |
-| ShelfBridge — Tokybook | direct | candidate | [audiobooks-tokyobook.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-tokyobook.json) |
 | ShelfBridge — Golden Audiobooks | direct | candidate | [audiobooks-golden.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-golden.json) |
-| ShelfBridge — BookAudiobooks | direct | candidate | [audiobooks-bookaudiobooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-bookaudiobooks.json) |
-| ShelfBridge — Audiobooks4Soul | direct | candidate | [audiobooks-4soul.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-4soul.json) |
 | ShelfBridge — FullLengthAudiobooks | direct | pilot | [audiobooks-fulllength.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-fulllength.json) |
+| ShelfBridge — Nyaa Manga | torbox | pilot | [manga-nyaa.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-nyaa.json) |
+| ShelfBridge — EPUB Torrents | torbox | pilot | [ebooks-torrents.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-torrents.json) |
 | ShelfBridge — MangaDex | direct | pilot | [manga-mangadex.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-mangadex.json) |
 | ShelfBridge — TorrentCSV EPUBs | torbox | pilot | [ebooks-torrentcsv.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-torrentcsv.json) |
 | ShelfBridge — Nyaa Light Novels | torbox | pilot | [ebooks-nyaa.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-nyaa.json) |

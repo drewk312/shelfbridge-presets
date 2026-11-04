@@ -2,7 +2,7 @@
 
 JSON source presets for **Lantern & Leaf** and **Ink & Echo**.
 
-Choose a file below. Its link opens the raw JSON URL to copy into your app. Import one provider at a time; 61 presets are listed.
+Choose a file below. Its link opens the raw JSON URL to copy into your app. Import one provider at a time; 47 presets are listed.
 
 [Validation](https://github.com/drewk312/shelfbridge-presets/actions/workflows/validate.yml) · [Source health](https://github.com/drewk312/shelfbridge-presets/actions/workflows/health.yml) · [Setup guide](DIY_SETUP.md) · [Coverage](COVERAGE.md)
 
@@ -47,6 +47,7 @@ The sections below contain pilot presets for testing. Source availability can ch
 | [ebooks-gutenberg.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-gutenberg.json) | Project Gutenberg | en | Direct |
 | [ebooks-any.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-any.json) | Anna's Archive, Z-Library, LibGen, Standard Ebooks, Project Gutenberg | any | Direct |
 | [ebooks-dbooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-dbooks.json) | DBooks | any | Direct |
+| [ebooks-torrents.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-torrents.json) | TorrentCSV, Knaben | any | Torrent resolver |
 | [ebooks-torrentcsv.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-torrentcsv.json) | TorrentCSV | any | Torrent resolver |
 | [ebooks-nyaa.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-nyaa.json) | Nyaa | any | Torrent resolver |
 | [ebooks-epub.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-epub.json) | Standard Ebooks, Project Gutenberg | en | Direct |
@@ -74,6 +75,7 @@ The sections below contain pilot presets for testing. Source availability can ch
 | [manga.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga.json) | Nyaa, Knaben | any | Torrent resolver |
 | [comics.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/comics.json) | GetComics | any | Direct |
 | [comics-manga.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/comics-manga.json) | Nyaa, Knaben | any | Torrent resolver |
+| [manga-nyaa.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-nyaa.json) | Nyaa | any | Torrent resolver |
 | [manga-mangadex.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-mangadex.json) | MangaDex | any | Direct |
 | [comics-knaben.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/comics-knaben.json) | Knaben | any | Torrent resolver |
 
@@ -94,14 +96,10 @@ The sections below contain pilot presets for testing. Source availability can ch
 Backend or download support is unconfirmed for these candidates.
 
 <details>
-<summary>Show 26 experimental .json presets</summary>
+<summary>Show 10 experimental .json presets</summary>
 
 | JSON preset | Sources | Language | Access |
 | --- | --- | --- | --- |
-| [ebooks-bookracy.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-bookracy.json) | Bookracy | en | Direct |
-| [ebooks-mayberry.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-mayberry.json) | Mayberry | en | Direct |
-| [ebooks-oceanofpdf.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-oceanofpdf.json) | OceanofPDF | en | Direct |
-| [ebooks-elscione.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-elscione.json) | ElScione Server | en | Direct |
 | [ebooks-es.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-es.json) | Anna's Archive, Z-Library, LibGen, Standard Ebooks, Project Gutenberg | es | Direct |
 | [ebooks-fr.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-fr.json) | Anna's Archive, Z-Library, LibGen, Standard Ebooks, Project Gutenberg | fr | Direct |
 | [ebooks-de.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-de.json) | Anna's Archive, Z-Library, LibGen, Standard Ebooks, Project Gutenberg | de | Direct |
@@ -111,19 +109,7 @@ Backend or download support is unconfirmed for these candidates.
 | [audiobooks-ar.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-ar.json) | AudioBookBay, Knaben | ar | Torrent resolver |
 | [mobilism-ro.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/mobilism-ro.json) | Mobilism | ro | Direct |
 | [mobilism-ar.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/mobilism-ar.json) | Mobilism | ar | Direct |
-| [webnovels.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/webnovels.json) | Royal Road | en | Direct |
-| [ebooks-openlib.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-openlib.json) | OpenLibrary | en | Direct |
-| [ebooks-libgen2.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-libgen2.json) | LibGen alt | en | Direct |
-| [ebooks-libgenfiction.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-libgenfiction.json) | LibGen Fiction | en | Direct |
-| [ebooks-manybooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-manybooks.json) | ManyBooks | en | Direct |
-| [ebooks-feedbooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-feedbooks.json) | Feedbooks | en | Direct |
-| [ebooks-pdfdrive.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-pdfdrive.json) | PDFDrive | en | Direct |
-| [ebooks-archiveorg.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-archiveorg.json) | Internet Archive | en | Direct |
-| [audiobooks-loyalbooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-loyalbooks.json) | Loyal Books | en | Direct |
-| [audiobooks-tokyobook.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-tokyobook.json) | Tokybook | en | Direct |
 | [audiobooks-golden.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-golden.json) | Golden Audiobooks | any | Direct |
-| [audiobooks-bookaudiobooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-bookaudiobooks.json) | BookAudiobooks | en | Direct |
-| [audiobooks-4soul.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-4soul.json) | Audiobooks4Soul | en | Direct |
 
 </details>
 

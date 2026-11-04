@@ -1,42 +1,43 @@
 {
   "schemaVersion": "1.0.0",
   "kind": "search",
-  "id": "shelfbridge-ebooks-libgenfiction-v1",
-  "name": "ShelfBridge — LibGen Fiction",
-  "description": "LibGen fiction index. Provider ID taken from the live backend; unproven until probed.",
+  "id": "shelfbridge-manga-nyaa-v1",
+  "name": "ShelfBridge — Nyaa Manga",
+  "description": "Manga torrents from Nyaa Literature. The reader app resolves magnets.",
   "trustLabel": "User Added",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
     "source",
     "search"
   ],
-  "contentType": "ebook",
+  "contentType": "manga",
   "contentTypes": [
-    "ebook"
+    "manga"
   ],
-  "debrid": "direct",
-  "debridChoice": "direct",
+  "debrid": "torbox",
+  "debridChoice": "torbox",
   "debridServices": [
-    "direct",
     "realdebrid",
     "torbox"
   ],
-  "selectedDebridService": "direct",
-  "downloadService": "direct",
+  "selectedDebridService": "torbox",
+  "downloadService": "torbox",
   "resolverCompatibility": {
     "normalResults": [
-      "direct",
       "realdebrid",
       "torbox"
     ],
-    "torrentResults": [],
+    "torrentResults": [
+      "realdebrid",
+      "torbox"
+    ],
     "directResults": [
       "direct",
       "realdebrid",
       "torbox"
     ],
     "usenetResults": [],
-    "note": "Direct files only."
+    "note": "Torrent CBZ/CBR. TorBox or compatible resolver required."
   },
   "discover": {
     "sections": []
@@ -44,37 +45,37 @@
   "meta": {
     "builtAt": "2026-11-02T00:00:00.000Z",
     "builder": "ShelfBridge build.mjs",
-    "language": "en",
+    "language": "any",
     "torboxTier": "standard",
     "coverageProfile": "best",
-    "resultLimit": 40,
-    "requestTimeout": 22000,
+    "resultLimit": 60,
+    "requestTimeout": 30000,
     "titleStyle": "clean",
-    "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-libgenfiction.json",
+    "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-nyaa.json",
     "searchArchitecture": "bounded-distinct-providers-v4",
-    "preset": "ebooks-libgenfiction",
-    "languageMode": "strict",
-    "standaloneSource": "libgenfiction",
+    "preset": "manga-nyaa",
+    "languageMode": "any",
+    "standaloneSource": "nyaa",
     "sources": [
-      "libgenfiction"
+      "nyaa"
     ],
     "sourceContract": "typed-media-v2"
   },
   "rateLimit": {
-    "requestsPerMinute": 6,
-    "retryAfterMs": 10000
+    "requestsPerMinute": 10,
+    "retryAfterMs": 6000
   },
   "matching": {
     "algorithm": "fuzzy",
-    "threshold": 0.4
+    "threshold": 0.3
   },
   "adapters": {
     "source": {
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=ebooks-libgenfiction&sources=libgenfiction&lang=en&languageMode=strict",
-        "timeout": 22000,
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=nyaa&lang=any&languageMode=any&comicShelf=manga",
+        "timeout": 30000,
         "headers": {
           "Accept": "application/json",
           "Content-Type": "application/json"
@@ -82,9 +83,10 @@
         "body": {
           "title": "{TITLE}",
           "author": "{AUTHOR}",
-          "limit": 40,
-          "contentType": "ebook",
-          "preset": "ebooks-libgenfiction"
+          "limit": 60,
+          "contentType": "comics",
+          "media": "comics",
+          "comicShelf": "manga"
         }
       },
       "response": {
@@ -203,8 +205,8 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=ebooks-libgenfiction&sources=libgenfiction&lang=en&languageMode=strict",
-        "timeout": 22000,
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=nyaa&lang=any&languageMode=any&comicShelf=manga",
+        "timeout": 30000,
         "headers": {
           "Accept": "application/json",
           "Content-Type": "application/json"
@@ -212,9 +214,10 @@
         "body": {
           "title": "{TITLE}",
           "author": "{AUTHOR}",
-          "limit": 40,
-          "contentType": "ebook",
-          "preset": "ebooks-libgenfiction"
+          "limit": 60,
+          "contentType": "comics",
+          "media": "comics",
+          "comicShelf": "manga"
         }
       },
       "response": {
@@ -334,8 +337,8 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=ebooks-libgenfiction&sources=libgenfiction&lang=en&languageMode=strict",
-      "timeout": 22000,
+      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=nyaa&lang=any&languageMode=any&comicShelf=manga",
+      "timeout": 30000,
       "headers": {
         "Accept": "application/json",
         "Content-Type": "application/json"
@@ -343,9 +346,10 @@
       "body": {
         "title": "{TITLE}",
         "author": "{AUTHOR}",
-        "limit": 40,
-        "contentType": "ebook",
-        "preset": "ebooks-libgenfiction"
+        "limit": 60,
+        "contentType": "comics",
+        "media": "comics",
+        "comicShelf": "manga"
       }
     },
     "response": {
@@ -460,14 +464,12 @@
       }
     }
   },
-  "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-libgenfiction.json",
+  "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-nyaa.json",
   "excludeTerms": [
     "1080p",
     "2160p",
     "480p",
     "720p",
-    "aac",
-    "aax",
     "bdrip",
     "blu-ray",
     "bluray",
@@ -477,28 +479,19 @@
     "dvdrip",
     "dvdscr",
     "excerpt",
-    "flac",
     "h264",
     "h265",
     "hdcam",
     "hdrip",
     "hdtv",
     "hevc",
-    "m4a",
-    "m4b",
-    "m4v",
-    "mp3",
-    "mp4",
     "ocr",
-    "ogg",
-    "opus",
     "preview",
     "remux",
     "retail",
     "sample",
     "scanned",
     "telesync",
-    "wav",
     "web-dl",
     "webrip",
     "x264",
