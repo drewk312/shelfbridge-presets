@@ -1,0 +1,22 @@
+diff --git a/../shelfbridge-diagnostics/vps_scraper.torrents-base.mjs b/../shelfbridge-diagnostics/vps_scraper.torrents.mjs
+index 547755a..3748587 100644
+--- a/../shelfbridge-diagnostics/vps_scraper.torrents-base.mjs
++++ b/../shelfbridge-diagnostics/vps_scraper.torrents.mjs
+@@ -2492,7 +2492,7 @@ async function fromOpenLib(title, author) {
+ async function fromNyaa(title, author, media = '') {
+   const q = [title, author].filter(Boolean).join(' ');
+   const res = await fetch(
+-    `https://nyaa.si/?page=rss&q=${encodeURIComponent(q)}&c=${media === 'comics' ? '3_0' : '0_0'}&f=0`,
++    `https://nyaa.si/?page=rss&q=${encodeURIComponent(q)}&c=${media === 'comics' ? '3_0' : media === 'ebook' ? '3_1' : '0_0'}&f=0`,
+     { signal: AbortSignal.timeout(5000) }
+   );
+   if (!res.ok) return [];
+@@ -3517,7 +3517,7 @@ async function handle(req, res, env) {
+     // Tier 2: Multi-source torrent aggregators
+     if (shouldRun('knaben'))                      tasks.push(sourceTaskVariants('knaben', title, q => fromKnaben(q, author, isAudio ? [1003000] : [9001000, 9000000])));
+     if (shouldRun('prowlarr'))                    tasks.push(sourceTask('prowlarr',       () => fromProwlarr(title, author, media === 'comics' ? 'comics' : isAudio && !isEbook ? 'audiobook' : isEbook && !isAudio ? 'ebook' : 'all', env)));
+-    if (media === 'comics' && shouldRun('nyaa')) tasks.push(sourceTask('nyaa', () => fromNyaa(title, author, media), 8000));
++    if ((media === 'comics' || media === 'ebook') && shouldRun('nyaa')) tasks.push(sourceTask('nyaa', () => fromNyaa(title, author, media), 8000));
+     if (shouldRun('tpb'))                         tasks.push(sourceTask('tpb',            () => fromTPB(title, author, isAudio ? 102 : 601)));
+     if (shouldRun('bitsearch'))                   tasks.push(sourceTask('bitsearch',      () => fromBitSearch(title, author, isAudio ? 8 : 9)));
+     if (shouldRun('tgalaxy'))                     tasks.push(sourceTask('torrentgalaxy',  () => fromTorrentGalaxy(title, author, isAudio ? 53 : 35)));

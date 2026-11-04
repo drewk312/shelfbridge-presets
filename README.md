@@ -2,7 +2,7 @@
 
 JSON source presets for **Lantern & Leaf** and **Ink & Echo**.
 
-Choose a file below. Its link opens the raw JSON URL to copy into your app. Import one provider at a time; 58 presets are listed.
+Choose a file below. Its link opens the raw JSON URL to copy into your app. Import one provider at a time; 60 presets are listed.
 
 [Validation](https://github.com/drewk312/shelfbridge-presets/actions/workflows/validate.yml) · [Source health](https://github.com/drewk312/shelfbridge-presets/actions/workflows/health.yml) · [Setup guide](DIY_SETUP.md) · [Coverage](COVERAGE.md)
 
@@ -46,6 +46,8 @@ The sections below contain pilot presets for testing. Source availability can ch
 | [ebooks-standardebooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-standardebooks.json) | Standard Ebooks | en | Direct |
 | [ebooks-gutenberg.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-gutenberg.json) | Project Gutenberg | en | Direct |
 | [ebooks-any.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-any.json) | Anna's Archive, Z-Library, LibGen, Standard Ebooks, Project Gutenberg | any | Direct |
+| [ebooks-torrentcsv.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-torrentcsv.json) | TorrentCSV | any | Torrent resolver |
+| [ebooks-nyaa.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-nyaa.json) | Nyaa | any | Torrent resolver |
 | [ebooks-epub.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-epub.json) | Standard Ebooks, Project Gutenberg | en | Direct |
 | [public-domain-ebooks-any.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/public-domain-ebooks-any.json) | Standard Ebooks, Project Gutenberg | any | Direct |
 | [ebooks-knaben.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-knaben.json) | Knaben | any | Torrent resolver |

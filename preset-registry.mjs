@@ -425,6 +425,24 @@ export const PRESET_REGISTRY = {
     "languageMode": "strict",
     "media": "audiobook"
   },
+  "ebooks-torrentcsv": {
+    "sources": "torrentcsv",
+    "debrid": "torbox",
+    "profile": "best",
+    "lang": "any",
+    "languageMode": "any",
+    "media": "ebook",
+    "format": "epub"
+  },
+  "ebooks-nyaa": {
+    "sources": "nyaa",
+    "debrid": "torbox",
+    "profile": "best",
+    "lang": "any",
+    "languageMode": "any",
+    "media": "ebook",
+    "format": "epub"
+  },
   "ebooks-epub": {
     "sources": "standardebooks,gutendex",
     "debrid": "direct",
@@ -530,6 +548,8 @@ export const PRESET_ALIASES = {
   "shelfbridge-audiobooks-bookaudiobooks-v1": "audiobooks-bookaudiobooks",
   "shelfbridge-audiobooks-4soul-v1": "audiobooks-4soul",
   "shelfbridge-audiobooks-fulllength-v1": "audiobooks-fulllength",
+  "shelfbridge-ebooks-torrentcsv-v1": "ebooks-torrentcsv",
+  "shelfbridge-ebooks-nyaa-v1": "ebooks-nyaa",
   "shelfbridge-ebooks-epub-v1": "ebooks-epub",
   "shelfbridge-public-domain-all-v1": "public-domain-all",
   "shelfbridge-public-domain-ebooks-any-v1": "public-domain-ebooks-any",

@@ -76,7 +76,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/all/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=standardebooks%2Cgutendex%2Clibrivox&lang=en&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=all&sources=standardebooks%2Cgutendex%2Clibrivox&lang=en&languageMode=strict",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -205,7 +205,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/all/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=standardebooks%2Cgutendex%2Clibrivox&lang=en&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=all&sources=standardebooks%2Cgutendex%2Clibrivox&lang=en&languageMode=strict",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -335,7 +335,7 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/all/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=standardebooks%2Cgutendex%2Clibrivox&lang=en&languageMode=strict",
+      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=all&sources=standardebooks%2Cgutendex%2Clibrivox&lang=en&languageMode=strict",
       "timeout": 22000,
       "headers": {
         "Accept": "application/json",

@@ -2,6 +2,7 @@
 // Rate limits are derived from the slowest member provider, never set by hand.
 
 export const PROVIDERS = {
+  torrentcsv: { label: 'TorrentCSV', media: 'ebook', method: 'torbox', rpm: 10, rowSource: 'torrentcsv', hosts: null, pathPattern: null, fileType: null },
   annas: { label: "Anna's Archive", media: 'ebook', method: 'direct', rpm: 4, rowSource: null, hosts: ['annas-archive.org','annas-archive.se','annas-archive.li','annas-archive.gl','annas-archive.gs'], pathPattern: null, fileType: null },
   zlib: { label: 'Z-Library', media: 'ebook', method: 'direct', rpm: 4, rowSource: 'zlib', hosts: null, pathPattern: null, fileType: null },
   libgenli: { label: 'LibGen', media: 'ebook', method: 'direct', rpm: 6, rowSource: 'libgenli', hosts: null, pathPattern: null, fileType: null },
@@ -96,6 +97,16 @@ export const PRESETS = [
 
 // Additional views over existing backend providers.
 const variants = [
+  ['ebooks-torrentcsv.json', 'ebooks-libgen.json', {
+    name: 'ShelfBridge — TorrentCSV EPUBs', sources: ['torrentcsv'], downloadMethod: 'torbox', routing: 'explicit', language: 'any', languageMode: 'any', format: 'epub',
+    description: 'EPUB torrents from TorrentCSV. Language is not reported by the source.',
+    compatNote: 'The reader app resolves the torrent. Check the edition and language.'
+  }],
+  ['ebooks-nyaa.json', 'ebooks-libgen.json', {
+    name: 'ShelfBridge — Nyaa Light Novels', sources: ['nyaa'], downloadMethod: 'torbox', routing: 'explicit', language: 'any', languageMode: 'any', format: 'epub',
+    description: 'EPUB torrents from Nyaa’s English-translated literature category.',
+    compatNote: 'The reader app resolves the torrent. EPUB results only.'
+  }],
   ['ebooks-epub.json', 'direct-ebooks.json', {
     name: 'ShelfBridge — EPUB Ebooks', format: 'epub',
     sources: ['standardebooks','gutenberg'],
