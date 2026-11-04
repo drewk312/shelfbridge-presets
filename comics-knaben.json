@@ -74,7 +74,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&preset=comics-knaben&sources=knaben&lang=any&languageMode=any&media=comics&comicShelf=both",
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=knaben&lang=any&languageMode=any&comicShelf=both",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -85,7 +85,6 @@
           "author": "{AUTHOR}",
           "limit": 80,
           "contentType": "comics",
-          "preset": "comics-knaben",
           "media": "comics",
           "comicShelf": "both"
         }
@@ -206,7 +205,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&preset=comics-knaben&sources=knaben&lang=any&languageMode=any&media=comics&comicShelf=both",
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=knaben&lang=any&languageMode=any&comicShelf=both",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -217,7 +216,6 @@
           "author": "{AUTHOR}",
           "limit": 80,
           "contentType": "comics",
-          "preset": "comics-knaben",
           "media": "comics",
           "comicShelf": "both"
         }
@@ -339,7 +337,7 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&preset=comics-knaben&sources=knaben&lang=any&languageMode=any&media=comics&comicShelf=both",
+      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=knaben&lang=any&languageMode=any&comicShelf=both",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",
@@ -350,7 +348,6 @@
         "author": "{AUTHOR}",
         "limit": 80,
         "contentType": "comics",
-        "preset": "comics-knaben",
         "media": "comics",
         "comicShelf": "both"
       }

@@ -1357,7 +1357,7 @@
       "name": "ShelfBridge — Manga",
       "file": "manga.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga.json",
-      "sha256": "65f960253f6b80cc32c7c502f1ec2cb88acffb72f84dfd582f88ec395c704201",
+      "sha256": "08161ddc371730dac9d1ac5f8d892410bcec1d955f641b00a55fb2886bf8a0d5",
       "status": "pilot",
       "contentTypes": [
         "manga"
@@ -1396,7 +1396,7 @@
       "name": "ShelfBridge — Comics",
       "file": "comics.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/comics.json",
-      "sha256": "c3709001e9eba69b82eabcb17c9a0bf580f597507463e0500250b5fc1fa53331",
+      "sha256": "deab8863742284293bb24966f29f07e397eeb2b99967293f83d12ba08c088f1b",
       "status": "pilot",
       "contentTypes": [
         "comic"
@@ -1434,7 +1434,7 @@
       "name": "ShelfBridge — Comics + Manga",
       "file": "comics-manga.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/comics-manga.json",
-      "sha256": "241fe7f830bd47df650a1e40b229533f451ffe7309c42c26ec20832b6346002e",
+      "sha256": "d3981c6b3e6041585d328bbbcdd7eb7b9c7719e58d81473e9d8c05e82090a91a",
       "status": "pilot",
       "contentTypes": [
         "comic",
@@ -2318,7 +2318,7 @@
       "name": "ShelfBridge — Knaben Comics and Manga",
       "file": "comics-knaben.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/comics-knaben.json",
-      "sha256": "0164004f23d807745c88169d0c73b319ed692894a1ee361a87467940bc60dd3d",
+      "sha256": "d6ed21ec6229c32d52aae131ed976d8ce3fa60754190bd0d5eb21b1c0d6dd189",
       "status": "pilot",
       "contentTypes": [
         "comic",
