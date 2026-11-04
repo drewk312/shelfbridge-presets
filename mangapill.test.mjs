@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {links,imageUrls,downloadMangapill} from './server/mangapill.mjs';
+test('MangaPill parses hyphenated chapter IDs and reader images',()=>{assert.equal(links('<a href="/chapters/2-11197000/one-piece-chapter-1197">Chapter 1197</a>','chapters').length,1);assert.deepEqual(imageUrls('<img class="js-page" data-src="https://cdn.readdetectiveconan.com/file/page.jpeg">'),['https://cdn.readdetectiveconan.com/file/page.jpeg']);});
+test('MangaPill rejects invalid download paths',async()=>assert.rejects(downloadMangapill('../secret'),/Invalid chapter/));

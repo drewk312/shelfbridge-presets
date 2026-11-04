@@ -1,0 +1,28 @@
+diff --git a/../shelfbridge-diagnostics/vps_scraper.mangapill-base.mjs b/../shelfbridge-diagnostics/vps_scraper.mangapill.mjs
+index 2c71c60..551a2a5 100644
+--- a/../shelfbridge-diagnostics/vps_scraper.mangapill-base.mjs
++++ b/../shelfbridge-diagnostics/vps_scraper.mangapill.mjs
+@@ -1,3 +1,4 @@
++import {searchMangapill,downloadMangapill} from './mangapill.mjs';
+ import {searchTcb,downloadTcb} from './tcbscans.mjs';
+ import {searchMangaDex,downloadChapter} from './mangadex.mjs';
+ import {searchMagazines,fetchMagazine} from './magazines.mjs';
+@@ -3511,6 +3512,7 @@ async function handle(req, res, env) {
+     if (shouldRun('archiveorg'))                  tasks.push(sourceTask('archiveorg',     () => fromArchiveOrg(title, author, isAudio ? 'audiobook' : 'ebook')));
+     if (shouldRun('gutenberg') && isEbook)        tasks.push(sourceTask('gutendex',       () => fromGutendex(title, author), 10500));
+     if (shouldRun('tcbscans') && media === 'comics') tasks.push(sourceTask('tcbscans',()=>searchTcb(title).then(rows=>rows.map(row=>({...norm(row),...row}))),13000));
++    if (shouldRun('mangapill') && media === 'comics') tasks.push(sourceTask('mangapill',()=>searchMangapill(title).then(rows=>rows.map(row=>({...norm(row),...row}))),13000));
+     if (shouldRun('mangadex') && media === 'comics') tasks.push(sourceTask('mangadex', () => searchMangaDex(title).then(rows=>rows.map(row=>({...norm(row),...row}))), 11000));
+     if (shouldRun('freemagazines')) tasks.push(sourceTask('freemagazines', () => searchMagazines(title).then(rows => rows.map(row => ({...norm(row),...row}))), 11000));
+     if (shouldRun('dbooks') && isEbook)           tasks.push(sourceTask('dbooks',         () => fromDBooks(title, author)));
+@@ -3587,6 +3589,10 @@ app.use(cors());
+ const audioZipper = createAudioZipper();
+ const downloadSlots = createDownloadSlots();
+ const dlLimiter = createFixedWindowLimiter({ limit: 120, windowMs: 60_000, maxClients: 10_000 });
++app.get('/dl/mangapill/:id/:file',async(req,res)=>{
++ if(!dlLimiter.take(req.ip))return res.status(429).send('Too many requests');const lease=downloadSlots.acquire('ebook',res);if(!lease)return res.status(503).send('Download server busy');
++ try{const slug=req.params.id+'/'+String(req.params.file).replace(/\.cbz$/,'');if(!/^[0-9-]+\/[a-z0-9.-]+$/.test(slug))return res.status(400).send('Invalid chapter');if(req.method==='HEAD')return res.set('Content-Type','application/vnd.comicbook+zip').end();const bytes=await downloadMangapill(slug,{signal:lease.signal});res.set('Content-Type','application/vnd.comicbook+zip').set('Content-Length',String(bytes.length)).send(bytes);}catch{if(!res.headersSent)res.status(502).send('Chapter unavailable');else res.destroy();}
++});
+ app.get('/dl/tcb/:id/:file',async(req,res)=>{
+  if(!dlLimiter.take(req.ip))return res.status(429).send('Too many requests');const lease=downloadSlots.acquire('ebook',res);if(!lease)return res.status(503).send('Download server busy');
+  try{const slug=req.params.id+'/'+String(req.params.file).replace(/\.cbz$/,'');if(!/^[0-9]+\/[a-z0-9.-]+$/.test(slug))return res.status(400).send('Invalid chapter');if(req.method==='HEAD')return res.set('Content-Type','application/vnd.comicbook+zip').end();const bytes=await downloadTcb(slug,{signal:lease.signal});res.set('Content-Type','application/vnd.comicbook+zip').set('Content-Length',String(bytes.length)).send(bytes);}catch{if(!res.headersSent)res.status(502).send('Chapter unavailable');else res.destroy();}

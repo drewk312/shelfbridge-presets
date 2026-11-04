@@ -1432,6 +1432,44 @@
       }
     },
     {
+      "id": "shelfbridge-manga-mangapill-v1",
+      "name": "ShelfBridge — MangaPill",
+      "file": "manga-mangapill.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-mangapill.json",
+      "sha256": "4b3e6254954435d9befe24ea4e7800ac450edf9c6612c8d060edb17252239e21",
+      "status": "pilot",
+      "contentTypes": [
+        "manga"
+      ],
+      "downloadMethod": "direct",
+      "requiresDebrid": false,
+      "language": "any",
+      "languageMode": "any",
+      "providers": [
+        "mangapill"
+      ],
+      "verification": {
+        "checkedOn": null,
+        "search": "pending",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
       "id": "shelfbridge-manga-tcbscans-v1",
       "name": "ShelfBridge — TCB Scans",
       "file": "manga-tcbscans.json",
