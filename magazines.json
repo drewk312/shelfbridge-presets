@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-magazines-v1",
   "name": "ShelfBridge — Magazines",
-  "description": "PDF magazines with covers and titles preserved. No account and no debrid. Provider ID assumed.",
+  "description": "PDF magazines served through the hosted download route. Language is not reported by the source.",
   "trustLabel": "User Added",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
@@ -40,7 +40,7 @@
   "meta": {
     "builtAt": "2026-11-02T00:00:00.000Z",
     "builder": "ShelfBridge build.mjs",
-    "language": "en",
+    "language": "any",
     "torboxTier": "standard",
     "coverageProfile": "best",
     "resultLimit": 40,
@@ -49,7 +49,7 @@
     "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/magazines.json",
     "searchArchitecture": "bounded-distinct-providers-v4",
     "preset": "magazines",
-    "languageMode": "strict",
+    "languageMode": "any",
     "standaloneSource": "freemagazines",
     "sources": [
       "freemagazines"
@@ -69,7 +69,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/all/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=magazines&sources=freemagazines&lang=en&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=freemagazines&lang=any&languageMode=any",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -79,8 +79,7 @@
           "title": "{TITLE}",
           "author": "{AUTHOR}",
           "limit": 40,
-          "contentType": "magazine",
-          "preset": "magazines"
+          "contentType": "magazine"
         }
       },
       "response": {
@@ -199,7 +198,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/all/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=magazines&sources=freemagazines&lang=en&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=freemagazines&lang=any&languageMode=any",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -209,8 +208,7 @@
           "title": "{TITLE}",
           "author": "{AUTHOR}",
           "limit": 40,
-          "contentType": "magazine",
-          "preset": "magazines"
+          "contentType": "magazine"
         }
       },
       "response": {
@@ -330,7 +328,7 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/all/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=magazines&sources=freemagazines&lang=en&languageMode=strict",
+      "url": "https://search.inkecho.duckdns.org/public/all/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=freemagazines&lang=any&languageMode=any",
       "timeout": 22000,
       "headers": {
         "Accept": "application/json",
@@ -340,8 +338,7 @@
         "title": "{TITLE}",
         "author": "{AUTHOR}",
         "limit": 40,
-        "contentType": "magazine",
-        "preset": "magazines"
+        "contentType": "magazine"
       }
     },
     "response": {

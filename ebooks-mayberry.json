@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-mayberry-v1",
   "name": "ShelfBridge — Mayberry",
-  "description": "Mayberry federated library network. No account required. Provider ID assumed; backend support unconfirmed.",
+  "description": "Mayberry requires an authenticated library account. The hosted backend adapter is not implemented.",
   "trustLabel": "User Added",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
@@ -32,7 +32,7 @@
       "torbox"
     ],
     "usenetResults": [],
-    "note": "Direct files only. No account required."
+    "note": "Mayberry account required. Hosted integration unavailable."
   },
   "discover": {
     "sections": []

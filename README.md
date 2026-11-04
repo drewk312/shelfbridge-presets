@@ -72,6 +72,12 @@ The sections below contain pilot presets for testing. Source availability can ch
 | [comics-manga.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/comics-manga.json) | Nyaa, Knaben | any | Torrent resolver |
 | [comics-knaben.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/comics-knaben.json) | Knaben | any | Torrent resolver |
 
+## Magazines and web fiction
+
+| JSON preset | Sources | Language | Access |
+| --- | --- | --- | --- |
+| [magazines.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/magazines.json) | FreeMagazines | any | Direct |
+
 ## Other bundles
 
 | JSON preset | Sources | Language | Access |
@@ -83,7 +89,7 @@ The sections below contain pilot presets for testing. Source availability can ch
 Backend or download support is unconfirmed for these candidates.
 
 <details>
-<summary>Show 29 experimental .json presets</summary>
+<summary>Show 28 experimental .json presets</summary>
 
 | JSON preset | Sources | Language | Access |
 | --- | --- | --- | --- |
@@ -100,7 +106,6 @@ Backend or download support is unconfirmed for these candidates.
 | [audiobooks-ar.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-ar.json) | AudioBookBay, LibriVox | ar | Torrent resolver |
 | [mobilism-ro.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/mobilism-ro.json) | Mobilism | ro | Direct |
 | [mobilism-ar.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/mobilism-ar.json) | Mobilism | ar | Direct |
-| [magazines.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/magazines.json) | FreeMagazines | en | Direct |
 | [webnovels.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/webnovels.json) | Royal Road | en | Direct |
 | [ebooks-openlib.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-openlib.json) | OpenLibrary | en | Direct |
 | [ebooks-dbooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-dbooks.json) | DBooks | en | Direct |

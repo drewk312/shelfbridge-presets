@@ -35,7 +35,7 @@ export function validateProbe(payload, source, language='en', requirements={}) {
       const formats=requirements.format==='kindle' ? ['mobi','azw','azw3'] : [requirements.format];
       if (!formats.includes(fileType)) throw new ProbeError('invalid-response','Result does not match requested format');
     }
-    const normalizeMedia=value=>value==='comic' || value==='manga' ? 'comics' : value;
+    const normalizeMedia=value=>value==='magazine' ? 'ebook' : value==='comic' || value==='manga' ? 'comics' : value;
     const requestedMedia=normalizeMedia(requirements.media);
     const reportedMedia=normalizeMedia(row.mediaType || row.mediaKind);
     if (requestedMedia && requestedMedia!=='all' && reportedMedia && reportedMedia!==requestedMedia) {

@@ -412,7 +412,7 @@
       "name": "ShelfBridge — Mayberry",
       "file": "ebooks-mayberry.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-mayberry.json",
-      "sha256": "a41e2ff46d812beb0bf524e83bb11583473de1bc3fa0a676b0ea613b90a21aa1",
+      "sha256": "f4cbe83222667e576b49ce6a57d7897ad0d7cd9391e4ce0dce76735e479e7927",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -1280,21 +1280,21 @@
       "name": "ShelfBridge — Magazines",
       "file": "magazines.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/magazines.json",
-      "sha256": "3b4e9c6aad1f8555043d3575022f080b7656fdffce8b5c430ee2ff7405e14ea4",
-      "status": "candidate",
+      "sha256": "6805fdcd657ecedf7559f6bb894b4f1e550dea15271383a660acad5d5305e152",
+      "status": "pilot",
       "contentTypes": [
         "magazine"
       ],
       "downloadMethod": "direct",
       "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
+      "language": "any",
+      "languageMode": "any",
       "providers": [
         "freemagazines"
       ],
       "verification": {
         "checkedOn": null,
-        "search": "unverified",
+        "search": "pending",
         "download": "unverified",
         "continuousMonitoring": false
       },

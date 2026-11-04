@@ -266,8 +266,8 @@ export const PRESET_REGISTRY = {
     "sources": "freemagazines",
     "debrid": "direct",
     "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
+    "lang": "any",
+    "languageMode": "any",
     "media": "ebook"
   },
   "mobilism": {

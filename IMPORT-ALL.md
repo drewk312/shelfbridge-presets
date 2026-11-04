@@ -38,7 +38,7 @@ Pilot presets have incomplete verification. Candidates have unconfirmed backend 
 | ShelfBridge — M4B Audiobooks | torbox | pilot | [audiobooks-m4b.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-m4b.json) |
 | ShelfBridge — Dolby Atmos M4B | torbox | pilot | [audiobooks-atmos-m4b.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-atmos-m4b.json) |
 | ShelfBridge — LibriVox Audiobook Archives | direct | pilot | [librivox-audiobooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/librivox-audiobooks.json) |
-| ShelfBridge — Magazines | direct | candidate | [magazines.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/magazines.json) |
+| ShelfBridge — Magazines | direct | pilot | [magazines.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/magazines.json) |
 | ShelfBridge — Mobilism Releases | direct | pilot | [mobilism.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/mobilism.json) |
 | ShelfBridge — Manga | torbox | pilot | [manga.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga.json) |
 | ShelfBridge — Comics | direct | pilot | [comics.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/comics.json) |
