@@ -1854,7 +1854,7 @@
       "name": "ShelfBridge — Tokybook",
       "file": "audiobooks-tokyobook.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-tokyobook.json",
-      "sha256": "44096c60b14ff0a00eb4f7133ed7940844fc8c6da819296f4c163806584fa538",
+      "sha256": "6d69414a3d71405a39d0fb6ed4e0054ff0d81dbbc09196bd32120f5a2d0a0c25",
       "status": "candidate",
       "contentTypes": [
         "audiobook"

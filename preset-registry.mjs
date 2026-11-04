@@ -386,7 +386,7 @@ export const PRESET_REGISTRY = {
     "media": "audiobook"
   },
   "audiobooks-tokyobook": {
-    "sources": "tokyobook",
+    "sources": "tokybook",
     "debrid": "direct",
     "profile": "best",
     "lang": "en",

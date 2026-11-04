@@ -52,7 +52,7 @@ for (const spec of PRESETS) {
       assert.equal(url.searchParams.get('preset'), spec.routing === 'explicit' ? null : spec.file.replace(/\.json$/, ''));
       assert.equal(p.search.request.body.preset, spec.routing === 'explicit' ? undefined : spec.file.replace(/\.json$/, ''));
     }
-    const legacyId = { abb: 'audiobookbay', solid: 'solidtorrents', tcsv: 'torrentcsv', tgalaxy: 'torrentgalaxy', gutenberg: 'gutendex' };
+    const legacyId = { abb: 'audiobookbay', solid: 'solidtorrents', tcsv: 'torrentcsv', tgalaxy: 'torrentgalaxy', gutenberg: 'gutendex', tokyobook: 'tokybook' };
     assert.equal(url.searchParams.get('sources'), spec.sources.map(s => legacyId[s] || s).join(','));
     const maxTimeout = spec.requestTimeout || 22000;
     assert.ok(p.search.request.timeout > 0 && p.search.request.timeout <= maxTimeout);

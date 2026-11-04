@@ -50,7 +50,7 @@
     "searchArchitecture": "bounded-distinct-providers-v4",
     "preset": "audiobooks-tokyobook",
     "languageMode": "strict",
-    "standaloneSource": "tokyobook",
+    "standaloneSource": "tokybook",
     "sources": [
       "tokyobook"
     ],
@@ -69,7 +69,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/audiobook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=audiobooks-tokyobook&sources=tokyobook&lang=en&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=tokybook&lang=en&languageMode=strict",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -79,8 +79,7 @@
           "title": "{TITLE}",
           "author": "{AUTHOR}",
           "limit": 40,
-          "contentType": "audiobook",
-          "preset": "audiobooks-tokyobook"
+          "contentType": "audiobook"
         }
       },
       "response": {
@@ -199,7 +198,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/audiobook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=audiobooks-tokyobook&sources=tokyobook&lang=en&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=tokybook&lang=en&languageMode=strict",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -209,8 +208,7 @@
           "title": "{TITLE}",
           "author": "{AUTHOR}",
           "limit": 40,
-          "contentType": "audiobook",
-          "preset": "audiobooks-tokyobook"
+          "contentType": "audiobook"
         }
       },
       "response": {
@@ -330,7 +328,7 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/audiobook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=audiobooks-tokyobook&sources=tokyobook&lang=en&languageMode=strict",
+      "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&sources=tokybook&lang=en&languageMode=strict",
       "timeout": 22000,
       "headers": {
         "Accept": "application/json",
@@ -340,8 +338,7 @@
         "title": "{TITLE}",
         "author": "{AUTHOR}",
         "limit": 40,
-        "contentType": "audiobook",
-        "preset": "audiobooks-tokyobook"
+        "contentType": "audiobook"
       }
     },
     "response": {
