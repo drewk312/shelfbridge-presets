@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-audiobooks-4soul-v1",
   "name": "ShelfBridge — Audiobooks4Soul",
-  "description": "Audiobooks4Soul host. Provider ID taken from the live backend; unproven until probed.",
+  "description": "Unavailable from the search server: upstream returns a browser challenge.",
   "trustLabel": "User Added",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [

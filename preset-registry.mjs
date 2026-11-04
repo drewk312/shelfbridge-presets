@@ -397,8 +397,8 @@ export const PRESET_REGISTRY = {
     "sources": "goldenaudiobooks",
     "debrid": "direct",
     "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
+    "lang": "any",
+    "languageMode": "any",
     "media": "audiobook"
   },
   "audiobooks-bookaudiobooks": {

@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-oceanofpdf-v1",
   "name": "ShelfBridge — OceanofPDF",
-  "description": "OceanofPDF EPUB and PDF results. Signed downloads with scoped clearance; may need an interactive check. Provider ID assumed.",
+  "description": "Unavailable from the search server: upstream returns a browser challenge.",
   "trustLabel": "User Added",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [

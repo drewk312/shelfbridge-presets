@@ -374,7 +374,7 @@
       "name": "ShelfBridge — Bookracy",
       "file": "ebooks-bookracy.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-bookracy.json",
-      "sha256": "ebd6c28f50593fbd35c6504497c25a6e3736a30b9a5dfc5240e6620eaf528b91",
+      "sha256": "bcd6dcd5dbd087712cf1b399ed63d46fa7e102e89eee29143630a48730981de6",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -412,7 +412,7 @@
       "name": "ShelfBridge — Mayberry",
       "file": "ebooks-mayberry.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-mayberry.json",
-      "sha256": "37dae9190d5d613ace4dcc38ca14032e33d624f515ab552e306ef0c8d3616a23",
+      "sha256": "73e79c3498496a232835dbd322e15668de06d77bc53f5e5faf33071ee8e26943",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -450,7 +450,7 @@
       "name": "ShelfBridge — OceanofPDF",
       "file": "ebooks-oceanofpdf.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-oceanofpdf.json",
-      "sha256": "d8981becdf601b8430a2a513503b39ba875ebeda6c0d1a812ea086cb45b8392c",
+      "sha256": "0d8e5668e2aa75d33ad78051cba9fbd5cb768e8bcd072fbde4713e0ae91a2ea0",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -488,7 +488,7 @@
       "name": "ShelfBridge — ElScione Server",
       "file": "ebooks-elscione.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-elscione.json",
-      "sha256": "efe1f8494326ce5278abc1df958a6946237feb1600b928d285078a29d32982ae",
+      "sha256": "83b872e56168318a4fe2df0e6535e388464bac04d5344fd555764d2ec1255539",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -1474,7 +1474,7 @@
       "name": "ShelfBridge — Web Fiction",
       "file": "webnovels.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/webnovels.json",
-      "sha256": "4856d09510534359f9345fe613fbe0fd40b1dba9b004d2d031ae4c1643f5f44b",
+      "sha256": "8e61df73281edb440b3cc862ab5416bc28dc6bce9b57cef09a565938f86844bb",
       "status": "candidate",
       "contentTypes": [
         "webnovel"
@@ -1664,7 +1664,7 @@
       "name": "ShelfBridge — ManyBooks",
       "file": "ebooks-manybooks.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-manybooks.json",
-      "sha256": "27f915269ba80b1932a1e17b26286b62b001e56d4511ced71b47d9bfa4e3d75c",
+      "sha256": "c46d8affb5bb1cb8c3081440eea96feb1bfbbf8be8c64eec764cb2b17712a274",
       "status": "candidate",
       "contentTypes": [
         "ebook"
@@ -1816,7 +1816,7 @@
       "name": "ShelfBridge — Loyal Books",
       "file": "audiobooks-loyalbooks.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-loyalbooks.json",
-      "sha256": "6e187f39dcc2d7fb4779137dc7d5ac80d476f37f47e30fc0fdd9d9e5c310525b",
+      "sha256": "663af552e0bd8e96be56089786ff74d16e45af4eb9fc54adb3aa3c748f1c5080",
       "status": "candidate",
       "contentTypes": [
         "audiobook"
@@ -1854,7 +1854,7 @@
       "name": "ShelfBridge — Tokybook",
       "file": "audiobooks-tokyobook.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-tokyobook.json",
-      "sha256": "668737ed7ceec1a15e7c8a15ee7a2b907bc5f92b4c37ba9aa33632ed16342f2d",
+      "sha256": "01592714fa7481727592f761542ccd0a03ecef2394cf50adba8faef07eaa2b50",
       "status": "candidate",
       "contentTypes": [
         "audiobook"
@@ -1892,15 +1892,15 @@
       "name": "ShelfBridge — Golden Audiobooks",
       "file": "audiobooks-golden.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-golden.json",
-      "sha256": "932b1adf4f12ba919f4f1583e9d32916f8a7777ed8661de7030e48bd483232f5",
+      "sha256": "36e9562dff5801c97aef6d7e448fa867d767cff4be74850dd952f7d53445e1e1",
       "status": "candidate",
       "contentTypes": [
         "audiobook"
       ],
       "downloadMethod": "direct",
       "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
+      "language": "any",
+      "languageMode": "any",
       "providers": [
         "goldenaudiobooks"
       ],
@@ -1968,7 +1968,7 @@
       "name": "ShelfBridge — Audiobooks4Soul",
       "file": "audiobooks-4soul.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-4soul.json",
-      "sha256": "26f419a739ff085041332cf90c67879c5b28d270b37d18514c195462578f80b7",
+      "sha256": "1656992223426be96546c5f8409bb940bcab49d88976dbcfb76d02aa8030565f",
       "status": "candidate",
       "contentTypes": [
         "audiobook"

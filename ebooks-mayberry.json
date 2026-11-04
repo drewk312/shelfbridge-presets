@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-ebooks-mayberry-v1",
   "name": "ShelfBridge — Mayberry",
-  "description": "Mayberry requires an authenticated library account. The hosted backend adapter is not implemented.",
+  "description": "Requires a Mayberry library account; the public endpoint returns HTTP 401.",
   "trustLabel": "User Added",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [

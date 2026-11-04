@@ -121,7 +121,7 @@ Backend or download support is unconfirmed for these candidates.
 | [ebooks-archiveorg.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-archiveorg.json) | Internet Archive | en | Direct |
 | [audiobooks-loyalbooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-loyalbooks.json) | Loyal Books | en | Direct |
 | [audiobooks-tokyobook.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-tokyobook.json) | Tokybook | en | Direct |
-| [audiobooks-golden.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-golden.json) | Golden Audiobooks | en | Direct |
+| [audiobooks-golden.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-golden.json) | Golden Audiobooks | any | Direct |
 | [audiobooks-bookaudiobooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-bookaudiobooks.json) | BookAudiobooks | en | Direct |
 | [audiobooks-4soul.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-4soul.json) | Audiobooks4Soul | en | Direct |
 
