@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-comics-v1",
   "name": "ShelfBridge — Comics",
-  "description": "Western comics and graphic novels from GetComics. A comic reader is required.",
+  "description": "Complete available GetComics search catalog, including issues and collected volumes. A comic reader is required.",
   "trustLabel": "User Added",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
@@ -48,7 +48,7 @@
     "torboxTier": "standard",
     "coverageProfile": "best",
     "resultLimit": 60,
-    "requestTimeout": 30000,
+    "requestTimeout": 120000,
     "titleStyle": "clean",
     "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/comics.json",
     "searchArchitecture": "bounded-distinct-providers-v4",
@@ -73,8 +73,8 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=getcomics&lang=any&languageMode=any&comicShelf=comics",
-        "timeout": 30000,
+        "url": "https://search.inkecho.duckdns.org/public/comics/catalog?debrid=direct&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=getcomics&lang=any&languageMode=any&comicShelf=comics",
+        "timeout": 120000,
         "headers": {
           "Accept": "application/json",
           "Content-Type": "application/json"
@@ -204,8 +204,8 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=getcomics&lang=any&languageMode=any&comicShelf=comics",
-        "timeout": 30000,
+        "url": "https://search.inkecho.duckdns.org/public/comics/catalog?debrid=direct&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=getcomics&lang=any&languageMode=any&comicShelf=comics",
+        "timeout": 120000,
         "headers": {
           "Accept": "application/json",
           "Content-Type": "application/json"
@@ -336,8 +336,8 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=getcomics&lang=any&languageMode=any&comicShelf=comics",
-      "timeout": 30000,
+      "url": "https://search.inkecho.duckdns.org/public/comics/catalog?debrid=direct&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=getcomics&lang=any&languageMode=any&comicShelf=comics",
+      "timeout": 120000,
       "headers": {
         "Accept": "application/json",
         "Content-Type": "application/json"

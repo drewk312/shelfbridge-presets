@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {fetchAllComicPosts} from './server/comics-catalog.mjs';
+test('comic catalog follows every source page',async()=>{const called=[];const rows=await fetchAllComicPosts('Batman',{fetchImpl:async u=>{const p=Number(new URL(u).searchParams.get('page'));called.push(p);return new Response(JSON.stringify([{id:p}]),{headers:{'x-wp-totalpages':'3'}})}});assert.deepEqual(called,[1,2,3]);assert.equal(rows.length,3);});
+test('a failed later page is not presented as a complete catalog',async()=>{await assert.rejects(fetchAllComicPosts('Batman',{fetchImpl:async u=>new URL(u).searchParams.get('page')==='1'?new Response('[{}]',{headers:{'x-wp-totalpages':'2'}}):new Response('',{status:503})}),/HTTP 503/);});

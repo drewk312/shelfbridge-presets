@@ -1,0 +1,21 @@
+diff --git a/../shelfbridge-diagnostics/vps_scraper.comics-base.mjs b/../shelfbridge-diagnostics/vps_scraper.comics.mjs
+index bea0ade..5467012 100644
+--- a/../shelfbridge-diagnostics/vps_scraper.comics-base.mjs
++++ b/../shelfbridge-diagnostics/vps_scraper.comics.mjs
+@@ -1,3 +1,4 @@
++import {fetchAllComicPosts} from './comics-catalog.mjs';
+ import {searchMangapill,downloadMangapill} from './mangapill.mjs';
+ import {searchTcb,downloadTcb} from './tcbscans.mjs';
+ import {searchMangaDex,downloadChapter} from './mangadex.mjs';
+@@ -3634,6 +3635,11 @@ async function sendChapter(req, res, kind, key, build) {
+  }
+  res.sendFile(file, {acceptRanges: true, cacheControl: false}, err => { if (err && !res.headersSent) res.status(err.status === 416 ? 416 : 502).end(); });
+ }
++app.post('/public/comics/catalog',express.json({limit:'32kb'}),async(req,res)=>{
++ if(!dlLimiter.take(req.ip))return res.status(429).json({error:'Too many requests'});
++ const title=String(req.body?.title||'').trim();if(!title||title.length>200)return res.status(400).json({error:'Invalid title'});
++ try{const posts=await fetchAllComicPosts(title);const parsed=parseGetComics(posts);const rows=parsed.filter(r=>r.accessType==='direct'&&r.downloadLocatorVerified).map(r=>({...r,mediaKind:'ebook',mediaType:'ebook',downloadUrl:r.url,downloadService:'direct',supportedServices:['direct','realdebrid','torbox']}));res.json({results:rows,resultCount:rows.length,complete:true,sourcePostCount:posts.length,unavailableCount:parsed.length-rows.length});}catch{res.status(502).json({error:'Could not retrieve the complete issue catalog',complete:false});}
++});
+ app.post('/public/manga/chapters',express.json({limit:'32kb'}),async(req,res)=>{
+  const title=String(req.body?.title||'').trim();if(!title||title.length>200)return res.status(400).json({error:'Invalid title'});
+  const wanted=String(req.query.sources||'').split(',');const tasks=[];if(wanted.includes('tcbscans'))tasks.push(searchTcb(title));if(wanted.includes('mangapill'))tasks.push(searchMangapill(title));if(wanted.includes('mangadex'))tasks.push(searchMangaDex(title));if(!tasks.length)return res.status(400).json({error:'Unsupported chapter source'});

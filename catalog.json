@@ -1244,7 +1244,7 @@
       "name": "ShelfBridge — Comics",
       "file": "comics.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/comics.json",
-      "sha256": "f97cc11b89ff3ee61f9f63dc115a76f77adaf4a28217f1cf259e43e9adb46218",
+      "sha256": "521db2b39048f871a5fc989c1d9ff8bc8cd43f56005df003e597f23553284ee3",
       "status": "pilot",
       "contentTypes": [
         "comic"
@@ -1475,7 +1475,7 @@
       "name": "ShelfBridge — Best Comics",
       "file": "best-comics.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/best-comics.json",
-      "sha256": "57d61c9a42efaf1290a0db8cdcaa0deb4eaec029f87f1526efc559bf6d182557",
+      "sha256": "d7e4d179b4da32a7c0bed9d2863d18d12c56e5ce5b2c5d5985baec09f26fcebb",
       "status": "pilot",
       "contentTypes": [
         "comic",

@@ -33,7 +33,7 @@ for (const spec of PRESETS) {
     const mediaSeg = p.contentType === 'ebook' || p.contentType === 'audiobook'
       ? p.contentType
       : comic ? 'ebook' : 'all';
-    assert.equal(url.pathname, spec.sources.every(id=>['tcbscans','mangapill','mangadex'].includes(id)) ? '/public/manga/chapters' : '/public/' + mediaSeg + '/search');
+    assert.equal(url.pathname, spec.sources.every(id=>['tcbscans','mangapill','mangadex'].includes(id)) ? '/public/manga/chapters' : spec.sources.length===1 && spec.sources[0]==='getcomics' ? '/public/comics/catalog' : '/public/' + mediaSeg + '/search');
     assert.equal(url.searchParams.get('debrid'), p.downloadService);
     if (comic) {
       assert.equal(url.searchParams.get('media'), 'comics');
