@@ -1,0 +1,15 @@
+diff --git a/../shelfbridge-diagnostics/vps_scraper.compat-base.mjs b/../shelfbridge-diagnostics/vps_scraper.compat.mjs
+index 5467012..3191acb 100644
+--- a/../shelfbridge-diagnostics/vps_scraper.compat-base.mjs
++++ b/../shelfbridge-diagnostics/vps_scraper.compat.mjs
+@@ -3640,7 +3640,9 @@ app.post('/public/comics/catalog',express.json({limit:'32kb'}),async(req,res)=>{
+  const title=String(req.body?.title||'').trim();if(!title||title.length>200)return res.status(400).json({error:'Invalid title'});
+  try{const posts=await fetchAllComicPosts(title);const parsed=parseGetComics(posts);const rows=parsed.filter(r=>r.accessType==='direct'&&r.downloadLocatorVerified).map(r=>({...r,mediaKind:'ebook',mediaType:'ebook',downloadUrl:r.url,downloadService:'direct',supportedServices:['direct','realdebrid','torbox']}));res.json({results:rows,resultCount:rows.length,complete:true,sourcePostCount:posts.length,unavailableCount:parsed.length-rows.length});}catch{res.status(502).json({error:'Could not retrieve the complete issue catalog',complete:false});}
+ });
+-app.post('/public/manga/chapters',express.json({limit:'32kb'}),async(req,res)=>{
++app.post(['/public/manga/chapters','/public/ebook/search'],express.json({limit:'32kb'}),async(req,res,next)=>{
++ if(req.path==='/public/ebook/search'){const ids=String(req.query.sources||'').split(',').filter(Boolean);if(!ids.length||!ids.every(id=>['tcbscans','mangapill','mangadex'].includes(id)))return next();}
++
+  const title=String(req.body?.title||'').trim();if(!title||title.length>200)return res.status(400).json({error:'Invalid title'});
+  const wanted=String(req.query.sources||'').split(',');const tasks=[];if(wanted.includes('tcbscans'))tasks.push(searchTcb(title));if(wanted.includes('mangapill'))tasks.push(searchMangapill(title));if(wanted.includes('mangadex'))tasks.push(searchMangaDex(title));if(!tasks.length)return res.status(400).json({error:'Unsupported chapter source'});
+  const settled=await Promise.allSettled(tasks);const rows=settled.flatMap(r=>r.status==='fulfilled'?r.value:[]).map(r=>({...r,originalTitle:r.title,mediaKind:'ebook',downloadService:'direct',supportedServices:['direct','realdebrid','torbox']}));
