@@ -1,0 +1,3 @@
+export function chapterQuery(query){const m=/^(.*?)\s+(?:chapter|ch\.?)\s*(\d+(?:\.\d+)?)\s*$/i.exec(query.trim());return m?{series:m[1].trim(),chapter:Number(m[2])}:{series:query.trim(),chapter:null};}
+export function chapterNumber(row){return Number(/(?:chapter|ch\.?)\s*(\d+(?:\.\d+)?)/i.exec(row.title)?.[1]??/chapter-(\d+(?:\.\d+)?)/i.exec(row.path)?.[1]??NaN);}
+export function selectChapters(rows,chapter=null){const all=[...new Map(rows.map(r=>[r.path,r])).values()].sort((a,b)=>chapterNumber(a)-chapterNumber(b));if(chapter!==null)return all.filter(r=>chapterNumber(r)===chapter);return [...new Map([...all.slice(0,20),...all.slice(-20)].map(r=>[r.path,r])).values()];}

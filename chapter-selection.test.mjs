@@ -1,0 +1,3 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {chapterQuery,selectChapters} from './server/chapter-selection.mjs';const rows=Array.from({length:276},(_,i)=>({path:'/chapters/'+(276-i)+'/slam-dunk-chapter-'+(276-i),title:'Chapter '+(276-i)}));
+test('long series include chapter one and latest chapter',()=>{const r=selectChapters(rows);assert.equal(r[0].title,'Chapter 1');assert.ok(r.some(x=>x.title==='Chapter 276'));assert.equal(r.length,40);});
+test('any middle chapter can be selected before result limits',()=>{const q=chapterQuery('Slam Dunk Chapter 50');assert.equal(q.series,'Slam Dunk');assert.deepEqual(selectChapters(rows,q.chapter).map(x=>x.title),['Chapter 50']);});

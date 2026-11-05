@@ -1592,7 +1592,7 @@
       "name": "ShelfBridge — MangaPill",
       "file": "manga-mangapill.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-mangapill.json",
-      "sha256": "4b3e6254954435d9befe24ea4e7800ac450edf9c6612c8d060edb17252239e21",
+      "sha256": "8a622b58ae35f340bb75f62e277b2aad3a10065b8c45fcbec609cbe441e2b270",
       "status": "pilot",
       "contentTypes": [
         "manga"
@@ -1630,7 +1630,7 @@
       "name": "ShelfBridge — TCB Scans",
       "file": "manga-tcbscans.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-tcbscans.json",
-      "sha256": "51869e085c6e991bed44683da40751a5379726cdd8e30517291dd4d153d16f3c",
+      "sha256": "0bedfc06ab587e755db77736c7f636d886bfd5564d0c7faf85986bb72e8d4c75",
       "status": "pilot",
       "contentTypes": [
         "manga"

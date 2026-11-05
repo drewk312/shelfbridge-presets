@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-manga-tcbscans-v1",
   "name": "ShelfBridge — TCB Scans",
-  "description": "TCB Scans English manga chapters as CBZ files. Returns up to 20 recent chapters per matching series.",
+  "description": "TCB Scans English manga chapters as CBZ files. Includes beginning and recent chapters. Search a title plus Chapter N to find middle chapters.",
   "trustLabel": "User Added",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
