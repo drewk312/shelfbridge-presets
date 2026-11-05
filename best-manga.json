@@ -77,7 +77,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=fast&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=tcbscans%2Cmangapill&lang=any&languageMode=any&comicShelf=manga",
+        "url": "https://search.inkecho.duckdns.org/public/manga/chapters?debrid=direct&profile=fast&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=tcbscans%2Cmangapill&lang=any&languageMode=any&comicShelf=manga",
         "timeout": 45000,
         "headers": {
           "Accept": "application/json",
@@ -208,7 +208,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=fast&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=tcbscans%2Cmangapill&lang=any&languageMode=any&comicShelf=manga",
+        "url": "https://search.inkecho.duckdns.org/public/manga/chapters?debrid=direct&profile=fast&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=tcbscans%2Cmangapill&lang=any&languageMode=any&comicShelf=manga",
         "timeout": 45000,
         "headers": {
           "Accept": "application/json",
@@ -340,7 +340,7 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=fast&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=tcbscans%2Cmangapill&lang=any&languageMode=any&comicShelf=manga",
+      "url": "https://search.inkecho.duckdns.org/public/manga/chapters?debrid=direct&profile=fast&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=tcbscans%2Cmangapill&lang=any&languageMode=any&comicShelf=manga",
       "timeout": 45000,
       "headers": {
         "Accept": "application/json",

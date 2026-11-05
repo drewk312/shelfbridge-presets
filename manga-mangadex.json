@@ -3,7 +3,7 @@
   "kind": "search",
   "id": "shelfbridge-manga-mangadex-v1",
   "name": "ShelfBridge — MangaDex",
-  "description": "English MangaDex chapters packaged as CBZ files. Searches return up to 20 chapters per series.",
+  "description": "English MangaDex chapters packaged as CBZ files. Returns the complete available chapter list.",
   "trustLabel": "User Added",
   "icon": "https://i.ibb.co/wJ13Y1y/logo.png",
   "provides": [
@@ -73,7 +73,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=mangadex&lang=any&languageMode=any&comicShelf=manga",
+        "url": "https://search.inkecho.duckdns.org/public/manga/chapters?debrid=direct&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=mangadex&lang=any&languageMode=any&comicShelf=manga",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -204,7 +204,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=mangadex&lang=any&languageMode=any&comicShelf=manga",
+        "url": "https://search.inkecho.duckdns.org/public/manga/chapters?debrid=direct&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=mangadex&lang=any&languageMode=any&comicShelf=manga",
         "timeout": 30000,
         "headers": {
           "Accept": "application/json",
@@ -336,7 +336,7 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=mangadex&lang=any&languageMode=any&comicShelf=manga",
+      "url": "https://search.inkecho.duckdns.org/public/manga/chapters?debrid=direct&profile=best&client=ink-hosted&cacheBust=comics-preset-resolve-v1&torboxTier=standard&titleStyle=clean&media=comics&sources=mangadex&lang=any&languageMode=any&comicShelf=manga",
       "timeout": 30000,
       "headers": {
         "Accept": "application/json",

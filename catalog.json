@@ -1436,7 +1436,7 @@
       "name": "ShelfBridge — Best Manga",
       "file": "best-manga.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/best-manga.json",
-      "sha256": "16d4afaa26db279c67d924a6509a28ef1f915de949ce93f30552e5c6ab11360b",
+      "sha256": "f07309a10f48094a4a19c9fe5b85eff6b06a4f3d1369e74d945a4e255e6a98f5",
       "status": "pilot",
       "contentTypes": [
         "manga"
@@ -1592,7 +1592,7 @@
       "name": "ShelfBridge — MangaPill",
       "file": "manga-mangapill.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-mangapill.json",
-      "sha256": "8a622b58ae35f340bb75f62e277b2aad3a10065b8c45fcbec609cbe441e2b270",
+      "sha256": "ad3d5e0023ae6f786e542c21dbc48a352772f1ec61e9158d5b0af2ffe5504416",
       "status": "pilot",
       "contentTypes": [
         "manga"
@@ -1630,7 +1630,7 @@
       "name": "ShelfBridge — TCB Scans",
       "file": "manga-tcbscans.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-tcbscans.json",
-      "sha256": "0bedfc06ab587e755db77736c7f636d886bfd5564d0c7faf85986bb72e8d4c75",
+      "sha256": "f925941d4702440b97d963a32f02a68b028bd03140012fec31c3d322e2dd76b5",
       "status": "pilot",
       "contentTypes": [
         "manga"
@@ -1746,7 +1746,7 @@
       "name": "ShelfBridge — MangaDex",
       "file": "manga-mangadex.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-mangadex.json",
-      "sha256": "5b9359fa4405554ac99f27e22b7eeb765de09508fbaa04c694be005876c47b59",
+      "sha256": "125415b463340e8565f8e35b1f9d45627ba156f262c51bc6aaad8a5c5da66765",
       "status": "pilot",
       "contentTypes": [
         "manga"
