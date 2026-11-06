@@ -1,0 +1,29 @@
+diff --git a/../shelfbridge-diagnostics/vps_scraper.epub-base.mjs b/../shelfbridge-diagnostics/vps_scraper.epub.mjs
+index c8f12fa..eec6302 100644
+--- a/../shelfbridge-diagnostics/vps_scraper.epub-base.mjs
++++ b/../shelfbridge-diagnostics/vps_scraper.epub.mjs
+@@ -1,3 +1,4 @@
++import {prepareEbookResponse} from './ebook-response.mjs';
+ import {fetchAllComicPosts} from './comics-catalog.mjs';
+ import {searchMangapill,downloadMangapill} from './mangapill.mjs';
+ import {searchTcb,downloadTcb} from './tcbscans.mjs';
+@@ -3735,14 +3736,12 @@ app.get(['/dl/md5/:md5', '/dl/annas/:md5'], async (req, res) => {
+       const len = Number(up.headers.get('content-length') || 0);
+       if (!up.ok || /text\/html|json/i.test(type) || (len > 0 && len < 2048)) { await up.body?.cancel().catch(() => {}); continue; }
+       if (len > MAX_BYTES) { await up.body?.cancel().catch(() => {}); return res.status(413).send('File too large'); }
++      let prepared;try{prepared=await prepareEbookResponse(up,{filename:String(req.params.md5),maxBytes:MAX_BYTES});}catch{continue;}
+       res.status(200);
+-      res.set('Content-Type', type || 'application/octet-stream');
+-      if (len) res.set('Content-Length', String(len));
+-      const cd = up.headers.get('content-disposition');
+-      if (cd) res.set('Content-Disposition', cd);
+-      if (req.method === 'HEAD') { await up.body?.cancel().catch(() => {}); return res.end(); }
+-      const { Readable } = await import('node:stream');
+-      lease.streaming();return Readable.fromWeb(up.body).on('data',lease.touch).on('error', () => res.destroy()).pipe(res);
++      for(const key of ['content-type','content-length','content-disposition','cache-control','x-content-type-options'])if(prepared.headers.has(key))res.set(key,prepared.headers.get(key));
++      if(req.method==='HEAD'){await prepared.body.cancel();return res.end();}
++      const {Readable}=await import('node:stream');
++      lease.streaming();return Readable.fromWeb(prepared.body).on('data',lease.touch).on('error',()=>res.destroy()).pipe(res);
+     }
+     return res.status(502).send('Upstream did not return the file');
+   } catch { if (!res.headersSent) res.status(502).send('Upstream error'); else res.destroy(); }
