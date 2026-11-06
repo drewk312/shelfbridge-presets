@@ -1,0 +1,29 @@
+diff --git a/../shelfbridge-diagnostics/vps_scraper.mobilism-current.mjs b/../shelfbridge-diagnostics/vps_scraper.mobilism-errors.mjs
+index 3191acb..c8f12fa 100644
+--- a/../shelfbridge-diagnostics/vps_scraper.mobilism-current.mjs
++++ b/../shelfbridge-diagnostics/vps_scraper.mobilism-errors.mjs
+@@ -3478,6 +3478,7 @@ async function handle(req, res, env) {
+       validated = selectComicResults(validated, req.body, url, Math.max(1, Math.min(Number(limit) || 80, 150)));
+       if (validated.length === 0) CACHE.delete(key);
+       const sourceWarnings = [];
++      if(reqSources?.includes('mobilism')&&HEALTH.mobilism?.ok===false)sourceWarnings.push({source:'mobilism',code:/challenge/i.test(HEALTH.mobilism.error||'')?'upstream_challenge':'upstream_unavailable',message:/challenge/i.test(HEALTH.mobilism.error||'')?'Mobilism requires an authorized interactive browser session. The source remains enabled.':'Mobilism is temporarily unavailable; retry after its recovery interval.'});
+       if (reqSources?.includes('abb') && HEALTH.audiobookbay?.ok === false) sourceWarnings.push({ source: 'audiobookbay', code: 'upstream_unavailable', message: 'AudioBookBay could not be reached from the search server.' });
+       const payload={ ...ready, results: validated, cached, profile, sourceWarnings, rankingVersion: 'genre-v1', downloadContract: 'resolved-target-v2' };
+       if(typeof persistentSearch !== 'undefined' && Array.isArray(payload?.results) && payload.results.length)persistentSearch?.remember(url,{...(req.body||{}),title,author,limit},payload);
+@@ -4054,6 +4055,7 @@ async function mobContext() {
+   await mobCtx.addInitScript(() => { Object.defineProperty(navigator, 'webdriver', { get: () => false }); });
+   mobPage = await mobCtx.newPage();
+   await mobPage.goto('https://forum.mobilism.org/index.php', { waitUntil: 'commit', timeout: 45000 }).catch(() => {});
++  if (/just a moment|attention required/i.test(await mobPage.title())) throw new Error('Mobilism upstream browser challenge requires an authorized interactive session');
+   for (let i = 0; i < 25; i++) {
+     const ck = await mobCtx.cookies();
+     if (ck.find(x => x.name === 'cf_clearance')) break;
+@@ -4138,7 +4140,7 @@ async function fromMobilismRaw(title, author) {
+       sourcePageUrl: 'https://forum.mobilism.org/viewtopic.php?t=' + id,
+       tags: [audio ? 'audiobook' : 'ebook'] });
+     row.accessType = 'direct';
+-    row.downloadVerified = true;
++    row.downloadVerified = false;
+     row.downloadLocatorVerified = true;
+     out.push(row);
+   }
