@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { PRESETS, PROVIDERS } from './sources.mjs';
 import { ALLOWED_MAPPINGS, LANGUAGE_LABELS } from './mapping.mjs';
-import { rpmFor } from './lib/preset.mjs';
+import { rpmFor, isChapterSource } from './lib/preset.mjs';
 
 for (const spec of PRESETS) {
   test(spec.file + ' is contract-clean and self-consistent', () => {
@@ -33,7 +33,7 @@ for (const spec of PRESETS) {
     const mediaSeg = p.contentType === 'ebook' || p.contentType === 'audiobook'
       ? p.contentType
       : comic ? 'ebook' : 'all';
-    assert.equal(url.pathname, spec.sources.every(id=>['tcbscans','mangapill','mangadex'].includes(id)) ? '/public/manga/chapters' : spec.sources.length===1 && spec.sources[0]==='getcomics' ? '/public/comics/catalog' : '/public/' + mediaSeg + '/search');
+    assert.equal(url.pathname, spec.sources.every(isChapterSource) ? '/public/manga/chapters' : spec.sources.length===1 && spec.sources[0]==='getcomics' ? '/public/comics/catalog' : '/public/' + mediaSeg + '/search');
     assert.equal(url.searchParams.get('debrid'), p.downloadService);
     if (comic) {
       assert.equal(url.searchParams.get('media'), 'comics');
@@ -112,4 +112,11 @@ test('every provider is registered with a sane rate limit', () => {
 
 test('language codes used by presets all have an accepted-label pattern', () => {
   for (const spec of PRESETS) assert.ok(LANGUAGE_LABELS[spec.language], 'missing labels for ' + spec.language);
+});
+
+test('direct CBZ manga presets route to the chapter service', () => {
+  for (const file of ['manga-mangapark.json', 'manga-mangapill.json', 'manga-mangadex.json']) {
+    const url = new URL(JSON.parse(readFileSync(new URL(file, import.meta.url), 'utf8')).search.request.url);
+    assert.equal(url.pathname, '/public/manga/chapters', file);
+  }
 });

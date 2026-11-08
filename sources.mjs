@@ -2,6 +2,7 @@
 // Rate limits are derived from the slowest member provider, never set by hand.
 
 export const PROVIDERS = {
+ mangapark:{label:'MangaPark',media:'manga',method:'direct',rpm:6,rowSource:'mangapark',hosts:['search.inkecho.duckdns.org'],pathPattern:'^/dl/mangapark/[A-Za-z0-9_-]+[.]cbz$',fileType:'cbz'},
  mangapill:{label:'MangaPill',media:'manga',method:'direct',rpm:6,rowSource:'mangapill',hosts:['search.inkecho.duckdns.org'],pathPattern:'^/dl/mangapill/[0-9-]+/[a-z0-9.-]+[.]cbz$',fileType:'cbz'},
   tcbscans: {label:'TCB Scans',media:'manga',method:'direct',rpm:6,rowSource:'tcbscans',hosts:['search.inkecho.duckdns.org'],pathPattern:'^/dl/tcb/[0-9]+/[a-z0-9.-]+[.]cbz$',fileType:'cbz'},
   torrentcsv: { label: 'TorrentCSV', media: 'ebook', method: 'torbox', rpm: 10, rowSource: 'torrentcsv', hosts: null, pathPattern: null, fileType: null },
@@ -72,6 +73,7 @@ const variants = [
  ['best-audiobooks.json','audiobooks.json',{name:'ShelfBridge — Best Audiobooks',sources:['abb','knaben'],profile:'fast',routing:'explicit',language:'any',requestTimeout:45000,description:'Audiobook torrents from AudioBookBay and Knaben. Fast search profile.',compatNote:'Real-Debrid or TorBox resolves torrents. Check narrator, edition and language.'}],
  ['best-ebooks.json','direct-ebooks.json',{name:'ShelfBridge — Best Ebooks',sources:['torrentcsv','knaben'],downloadMethod:'torbox',profile:'fast',routing:'explicit',language:'any',requestTimeout:45000,description:'Ebook torrents from TorrentCSV and Knaben. Fast search profile.',compatNote:'Real-Debrid or TorBox resolves torrents. Check edition, format and language.'}],
  ['manga-mangapill.json','manga.json',{name:'ShelfBridge — MangaPill',sources:['mangapill'],downloadMethod:'direct',routing:'explicit',description:'MangaPill English manga chapters as CBZ files. Returns the complete available chapter list.',compatNote:'Direct CBZ chapters. Comic reader required.'}],
+ ['manga-mangapark.json','manga.json',{name:'ShelfBridge — MangaPark (18+)',sources:['mangapark'],downloadMethod:'direct',routing:'explicit',description:'MangaPark (mangapark.tv) manhwa chapters as CBZ files. Adult catalogue, mostly 18+ BL. Returns the complete available chapter list.',compatNote:'Direct CBZ chapters. Comic reader required. Adult content.'}],
  ['manga-tcbscans.json','manga.json',{name:'ShelfBridge — TCB Scans',sources:['tcbscans'],downloadMethod:'direct',routing:'explicit',description:'TCB Scans English manga chapters as CBZ files. Returns the complete available chapter list.',compatNote:'Direct CBZ chapters. Comic reader required.'}],
  ['manga-nyaa.json','manga.json',{name:'ShelfBridge — Nyaa Manga',sources:['nyaa'],routing:'explicit',description:'Manga torrents from Nyaa Literature. The reader app resolves magnets.'}],
  ['ebooks-torrents.json','ebooks-libgen.json',{name:'ShelfBridge — EPUB Torrents',sources:['torrentcsv','knaben'],downloadMethod:'torbox',language:'any',format:'epub',routing:'explicit',description:'EPUB torrent results from TorrentCSV and Knaben. Check the edition and language.'}],

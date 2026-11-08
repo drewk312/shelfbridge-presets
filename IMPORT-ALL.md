@@ -47,6 +47,7 @@ Pilot presets have incomplete verification. Candidates have unconfirmed backend 
 | ShelfBridge — Best Audiobooks | torbox | pilot | [best-audiobooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/best-audiobooks.json) |
 | ShelfBridge — Best Ebooks | torbox | pilot | [best-ebooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/best-ebooks.json) |
 | ShelfBridge — MangaPill | direct | pilot | [manga-mangapill.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-mangapill.json) |
+| ShelfBridge — MangaPark (18+) | direct | pilot | [manga-mangapark.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-mangapark.json) |
 | ShelfBridge — TCB Scans | direct | pilot | [manga-tcbscans.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-tcbscans.json) |
 | ShelfBridge — Nyaa Manga | torbox | pilot | [manga-nyaa.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-nyaa.json) |
 | ShelfBridge — EPUB Torrents | torbox | pilot | [ebooks-torrents.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-torrents.json) |

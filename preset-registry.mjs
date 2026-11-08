@@ -340,6 +340,15 @@ export const PRESET_REGISTRY = {
     "media": "comics",
     "comicShelf": "manga"
   },
+  "manga-mangapark": {
+    "sources": "mangapark",
+    "debrid": "direct",
+    "profile": "best",
+    "lang": "any",
+    "languageMode": "any",
+    "media": "comics",
+    "comicShelf": "manga"
+  },
   "manga-tcbscans": {
     "sources": "tcbscans",
     "debrid": "direct",
@@ -488,6 +497,7 @@ export const PRESET_ALIASES = {
   "shelfbridge-best-audiobooks-v1": "best-audiobooks",
   "shelfbridge-best-ebooks-v1": "best-ebooks",
   "shelfbridge-manga-mangapill-v1": "manga-mangapill",
+  "shelfbridge-manga-mangapark-v1": "manga-mangapark",
   "shelfbridge-manga-tcbscans-v1": "manga-tcbscans",
   "shelfbridge-manga-nyaa-v1": "manga-nyaa",
   "shelfbridge-ebooks-torrents-v1": "ebooks-torrents",

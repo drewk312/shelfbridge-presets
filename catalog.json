@@ -1626,6 +1626,44 @@
       }
     },
     {
+      "id": "shelfbridge-manga-mangapark-v1",
+      "name": "ShelfBridge — MangaPark (18+)",
+      "file": "manga-mangapark.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-mangapark.json",
+      "sha256": "b9586343189938cbc3696b7bf4ad0130536260aa5a52ed70f973c850c8a3122d",
+      "status": "pilot",
+      "contentTypes": [
+        "manga"
+      ],
+      "downloadMethod": "direct",
+      "requiresDebrid": false,
+      "language": "any",
+      "languageMode": "any",
+      "providers": [
+        "mangapark"
+      ],
+      "verification": {
+        "checkedOn": null,
+        "search": "pending",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
       "id": "shelfbridge-manga-tcbscans-v1",
       "name": "ShelfBridge — TCB Scans",
       "file": "manga-tcbscans.json",
