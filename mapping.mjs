@@ -1,7 +1,7 @@
 // Canonical result-field map. Superset of what the shipping Ink & Echo presets
 // already send, so nothing the backend returns is discarded.
 export const MAPPING = {
-  title: "fileTypeTitle",
+  title: "title",
   fileTypeTitle: "fileTypeTitle",
   displayTitle: "displayTitle",
   cleanTitle: "cleanTitle",
@@ -13,7 +13,7 @@ export const MAPPING = {
   authorStatus: "authorStatus",
   narrator: "narrator",
   sizeBytes: "sizeBytes",
-  size: "size",
+  size: "sizeBytes",
   bytes: "bytes",
   fileSize: "fileSize",
   fileSizeBytes: "fileSizeBytes",
