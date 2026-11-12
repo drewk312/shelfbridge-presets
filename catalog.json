@@ -1436,7 +1436,7 @@
       "name": "ShelfBridge — Best Manga",
       "file": "best-manga.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/best-manga.json",
-      "sha256": "0fbec0161101a4a304009ea65be953f1e350b4456aa03b6fa864baf7cd997f21",
+      "sha256": "b26a6862742a3d4156adb0037a1e6f1c51efd26203ec9426cfeb993b4199b04c",
       "status": "pilot",
       "contentTypes": [
         "manga"
@@ -1447,7 +1447,9 @@
       "languageMode": "any",
       "providers": [
         "tcbscans",
-        "mangapill"
+        "mangapill",
+        "mangafire",
+        "comick"
       ],
       "verification": {
         "checkedOn": null,
@@ -1795,6 +1797,120 @@
       "languageMode": "any",
       "providers": [
         "mangadex"
+      ],
+      "verification": {
+        "checkedOn": null,
+        "search": "pending",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
+      "id": "shelfbridge-manga-mangafire-v1",
+      "name": "ShelfBridge — MangaFire",
+      "file": "manga-mangafire.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-mangafire.json",
+      "sha256": "483234516ff123b0d7e42c98e19e0f6bf13b68fd164ce186134012fb792c1cd9",
+      "status": "pilot",
+      "contentTypes": [
+        "manga"
+      ],
+      "downloadMethod": "direct",
+      "requiresDebrid": false,
+      "language": "any",
+      "languageMode": "any",
+      "providers": [
+        "mangafire"
+      ],
+      "verification": {
+        "checkedOn": null,
+        "search": "pending",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
+      "id": "shelfbridge-manga-comick-v1",
+      "name": "ShelfBridge — Comick",
+      "file": "manga-comick.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-comick.json",
+      "sha256": "d09c1918ccfc35b49cdbdd7785c4f3a92852a6520bec5dfc01f139b50e77b728",
+      "status": "pilot",
+      "contentTypes": [
+        "manga"
+      ],
+      "downloadMethod": "direct",
+      "requiresDebrid": false,
+      "language": "any",
+      "languageMode": "any",
+      "providers": [
+        "comick"
+      ],
+      "verification": {
+        "checkedOn": null,
+        "search": "pending",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
+      "id": "shelfbridge-manga-weebcentral-v1",
+      "name": "ShelfBridge — WeebCentral",
+      "file": "manga-weebcentral.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-weebcentral.json",
+      "sha256": "a277ccfe88f16b925f88491f0189ac496bc8d92ab51f9742a79f36116b772048",
+      "status": "pilot",
+      "contentTypes": [
+        "manga"
+      ],
+      "downloadMethod": "direct",
+      "requiresDebrid": false,
+      "language": "any",
+      "languageMode": "any",
+      "providers": [
+        "weebcentral"
       ],
       "verification": {
         "checkedOn": null,

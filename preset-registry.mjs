@@ -298,7 +298,7 @@ export const PRESET_REGISTRY = {
     "media": "audiobook"
   },
   "best-manga": {
-    "sources": "tcbscans,mangapill",
+    "sources": "tcbscans,mangapill,mangafire,comick",
     "debrid": "direct",
     "profile": "fast",
     "lang": "any",
@@ -378,6 +378,33 @@ export const PRESET_REGISTRY = {
   },
   "manga-mangadex": {
     "sources": "mangadex",
+    "debrid": "direct",
+    "profile": "best",
+    "lang": "any",
+    "languageMode": "any",
+    "media": "comics",
+    "comicShelf": "manga"
+  },
+  "manga-mangafire": {
+    "sources": "mangafire",
+    "debrid": "direct",
+    "profile": "best",
+    "lang": "any",
+    "languageMode": "any",
+    "media": "comics",
+    "comicShelf": "manga"
+  },
+  "manga-comick": {
+    "sources": "comick",
+    "debrid": "direct",
+    "profile": "best",
+    "lang": "any",
+    "languageMode": "any",
+    "media": "comics",
+    "comicShelf": "manga"
+  },
+  "manga-weebcentral": {
+    "sources": "weebcentral",
     "debrid": "direct",
     "profile": "best",
     "lang": "any",
@@ -502,6 +529,9 @@ export const PRESET_ALIASES = {
   "shelfbridge-manga-nyaa-v1": "manga-nyaa",
   "shelfbridge-ebooks-torrents-v1": "ebooks-torrents",
   "shelfbridge-manga-mangadex-v1": "manga-mangadex",
+  "shelfbridge-manga-mangafire-v1": "manga-mangafire",
+  "shelfbridge-manga-comick-v1": "manga-comick",
+  "shelfbridge-manga-weebcentral-v1": "manga-weebcentral",
   "shelfbridge-ebooks-torrentcsv-v1": "ebooks-torrentcsv",
   "shelfbridge-ebooks-nyaa-v1": "ebooks-nyaa",
   "shelfbridge-ebooks-epub-v1": "ebooks-epub",

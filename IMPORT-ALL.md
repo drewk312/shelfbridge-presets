@@ -52,6 +52,9 @@ Pilot presets have incomplete verification. Candidates have unconfirmed backend 
 | ShelfBridge — Nyaa Manga | torbox | pilot | [manga-nyaa.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-nyaa.json) |
 | ShelfBridge — EPUB Torrents | torbox | pilot | [ebooks-torrents.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-torrents.json) |
 | ShelfBridge — MangaDex | direct | pilot | [manga-mangadex.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-mangadex.json) |
+| ShelfBridge — MangaFire | direct | pilot | [manga-mangafire.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-mangafire.json) |
+| ShelfBridge — Comick | direct | pilot | [manga-comick.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-comick.json) |
+| ShelfBridge — WeebCentral | direct | pilot | [manga-weebcentral.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/manga-weebcentral.json) |
 | ShelfBridge — TorrentCSV EPUBs | torbox | pilot | [ebooks-torrentcsv.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-torrentcsv.json) |
 | ShelfBridge — Nyaa Light Novels | torbox | pilot | [ebooks-nyaa.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-nyaa.json) |
 | ShelfBridge — EPUB Ebooks | direct | pilot | [ebooks-epub.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-epub.json) |
