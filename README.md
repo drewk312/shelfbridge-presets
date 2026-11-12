@@ -45,7 +45,7 @@ The sections below contain pilot presets for testing. Source availability can ch
 | [ebooks-kindle.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-kindle.json) | Anna's Archive, Z-Library, LibGen, Standard Ebooks, Project Gutenberg | en | Direct |
 | [ebooks-pdf.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-pdf.json) | Anna's Archive, Z-Library, LibGen | en | Direct |
 | [ebooks-annas.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-annas.json) | Anna's Archive | en | Direct |
-| [ebooks-zlib.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-zlib.json) | Z-Library | en | Direct |
+| [ebooks-zlib.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-zlib.json) | Z-Library | any | Direct |
 | [ebooks-libgen.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-libgen.json) | LibGen | en | Direct |
 | [ebooks-standardebooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-standardebooks.json) | Standard Ebooks | en | Direct |
 | [ebooks-gutenberg.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-gutenberg.json) | Project Gutenberg | en | Direct |
@@ -65,7 +65,7 @@ The sections below contain pilot presets for testing. Source availability can ch
 | [audiobooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks.json) | AudioBookBay, Knaben | en | Torrent resolver |
 | [audiobooks-any.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-any.json) | AudioBookBay, Knaben | any | Torrent resolver |
 | [fast-audiobooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/fast-audiobooks.json) | AudioBookBay | en | Torrent resolver |
-| [audiobooks-abb.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-abb.json) | AudioBookBay | en | Torrent resolver |
+| [audiobooks-abb.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-abb.json) | AudioBookBay | any | Torrent resolver |
 | [audiobooks-m4b.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-m4b.json) | AudioBookBay | en | Torrent resolver |
 | [audiobooks-atmos-m4b.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-atmos-m4b.json) | AudioBookBay | en | Torrent resolver |
 | [librivox-audiobooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/librivox-audiobooks.json) | LibriVox | en | Direct |

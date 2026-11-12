@@ -74,7 +74,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/audiobook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=audiobooks-knaben&sources=knaben&lang=any&languageMode=any",
+        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=audiobook&sources=knaben&lang=any&languageMode=any",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -84,8 +84,7 @@
           "title": "{TITLE}",
           "author": "{AUTHOR}",
           "limit": 40,
-          "contentType": "audiobook",
-          "preset": "audiobooks-knaben"
+          "contentType": "audiobook"
         }
       },
       "response": {
@@ -204,7 +203,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/audiobook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=audiobooks-knaben&sources=knaben&lang=any&languageMode=any",
+        "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=audiobook&sources=knaben&lang=any&languageMode=any",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -214,8 +213,7 @@
           "title": "{TITLE}",
           "author": "{AUTHOR}",
           "limit": 40,
-          "contentType": "audiobook",
-          "preset": "audiobooks-knaben"
+          "contentType": "audiobook"
         }
       },
       "response": {
@@ -335,7 +333,7 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/audiobook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=audiobooks-knaben&sources=knaben&lang=any&languageMode=any",
+      "url": "https://search.inkecho.duckdns.org/public/audiobook/search?debrid=torbox&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=audiobook&sources=knaben&lang=any&languageMode=any",
       "timeout": 22000,
       "headers": {
         "Accept": "application/json",
@@ -345,8 +343,7 @@
         "title": "{TITLE}",
         "author": "{AUTHOR}",
         "limit": 40,
-        "contentType": "audiobook",
-        "preset": "audiobooks-knaben"
+        "contentType": "audiobook"
       }
     },
     "response": {

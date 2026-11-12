@@ -44,7 +44,7 @@
   "meta": {
     "builtAt": "2026-11-02T00:00:00.000Z",
     "builder": "ShelfBridge build.mjs",
-    "language": "en",
+    "language": "any",
     "torboxTier": "standard",
     "coverageProfile": "best",
     "resultLimit": 60,
@@ -53,7 +53,7 @@
     "hostedProviderUrl": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-zlib.json",
     "searchArchitecture": "bounded-distinct-providers-v4",
     "preset": "ebooks-zlib",
-    "languageMode": "strict",
+    "languageMode": "any",
     "standaloneSource": "zlib",
     "sources": [
       "zlib"
@@ -73,7 +73,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=ebooks-zlib&sources=zlib&lang=en&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=ebook&sources=zlib&lang=any&languageMode=any",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -83,8 +83,7 @@
           "title": "{TITLE}",
           "author": "{AUTHOR}",
           "limit": 60,
-          "contentType": "ebook",
-          "preset": "ebooks-zlib"
+          "contentType": "ebook"
         }
       },
       "response": {
@@ -203,7 +202,7 @@
       "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
       "request": {
         "method": "POST",
-        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=ebooks-zlib&sources=zlib&lang=en&languageMode=strict",
+        "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=ebook&sources=zlib&lang=any&languageMode=any",
         "timeout": 22000,
         "headers": {
           "Accept": "application/json",
@@ -213,8 +212,7 @@
           "title": "{TITLE}",
           "author": "{AUTHOR}",
           "limit": 60,
-          "contentType": "ebook",
-          "preset": "ebooks-zlib"
+          "contentType": "ebook"
         }
       },
       "response": {
@@ -334,7 +332,7 @@
     "cacheNotifyUrl": "https://search.inkecho.duckdns.org/public/ebook/debrid-notify",
     "request": {
       "method": "POST",
-      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&preset=ebooks-zlib&sources=zlib&lang=en&languageMode=strict",
+      "url": "https://search.inkecho.duckdns.org/public/ebook/search?debrid=direct&profile=best&client=ink-hosted&cacheBust=source-speed-v4&torboxTier=standard&titleStyle=clean&media=ebook&sources=zlib&lang=any&languageMode=any",
       "timeout": 22000,
       "headers": {
         "Accept": "application/json",
@@ -344,8 +342,7 @@
         "title": "{TITLE}",
         "author": "{AUTHOR}",
         "limit": 60,
-        "contentType": "ebook",
-        "preset": "ebooks-zlib"
+        "contentType": "ebook"
       }
     },
     "response": {

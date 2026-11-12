@@ -298,15 +298,15 @@
       "name": "ShelfBridge — Z-Library",
       "file": "ebooks-zlib.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-zlib.json",
-      "sha256": "c81e342722ed70e92fad93aa2119cfbb006e8c1e0a969ade96dbb101a5da18d7",
+      "sha256": "d75bc05417301dbbd78e27925eebb24c3f6b36ffdbb4ec4af38bdc325473574e",
       "status": "pilot",
       "contentTypes": [
         "ebook"
       ],
       "downloadMethod": "direct",
       "requiresDebrid": false,
-      "language": "en",
-      "languageMode": "strict",
+      "language": "any",
+      "languageMode": "any",
       "providers": [
         "zlib"
       ],
@@ -974,15 +974,15 @@
       "name": "ShelfBridge — AudioBookBay",
       "file": "audiobooks-abb.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-abb.json",
-      "sha256": "328abba8e54938f26bc183d614964c7244b48075c16b90d16c4a2b2a445641c5",
+      "sha256": "0765cb3d6eead190de1773813c307f27c013626e0b5220125d60b5890a5582de",
       "status": "pilot",
       "contentTypes": [
         "audiobook"
       ],
       "downloadMethod": "torbox",
       "requiresDebrid": true,
-      "language": "en",
-      "languageMode": "strict",
+      "language": "any",
+      "languageMode": "any",
       "providers": [
         "abb"
       ],
@@ -2174,7 +2174,7 @@
       "name": "ShelfBridge — Knaben Audiobooks",
       "file": "audiobooks-knaben.json",
       "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-knaben.json",
-      "sha256": "d1e3e156b8480013778fd9c33d0cbd1c6eb49ebfc6b9ca511d2a49d5016f7f59",
+      "sha256": "a96dd0f23315ca658471ad5f813ca6d04f8ce1804073d21b47672aafc62603e8",
       "status": "pilot",
       "contentTypes": [
         "audiobook"

@@ -62,8 +62,8 @@ export const PRESET_REGISTRY = {
     "sources": "zlib",
     "debrid": "direct",
     "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
+    "lang": "any",
+    "languageMode": "any",
     "media": "ebook"
   },
   "ebooks-libgen": {
@@ -198,8 +198,8 @@ export const PRESET_REGISTRY = {
     "sources": "audiobookbay",
     "debrid": "torbox",
     "profile": "best",
-    "lang": "en",
-    "languageMode": "strict",
+    "lang": "any",
+    "languageMode": "any",
     "media": "audiobook"
   },
   "audiobooks-m4b": {
