@@ -2170,6 +2170,44 @@
       }
     },
     {
+      "id": "shelfbridge-audiobooks-extto-v1",
+      "name": "ShelfBridge — EXT Torrents",
+      "file": "audiobooks-extto.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-extto.json",
+      "sha256": "ea9f6a7a5192fe3aabd9e168b640bef4a4719e0717ebb5c240ec549f3329d982",
+      "status": "pilot",
+      "contentTypes": [
+        "audiobook"
+      ],
+      "downloadMethod": "torbox",
+      "requiresDebrid": true,
+      "language": "any",
+      "languageMode": "any",
+      "providers": [
+        "extto"
+      ],
+      "verification": {
+        "checkedOn": null,
+        "search": "pending",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
       "id": "shelfbridge-audiobooks-knaben-v1",
       "name": "ShelfBridge — Knaben Audiobooks",
       "file": "audiobooks-knaben.json",

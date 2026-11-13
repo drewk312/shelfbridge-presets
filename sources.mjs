@@ -11,6 +11,7 @@ export const PROVIDERS = {
   libgenli: { label: 'LibGen', media: 'ebook', method: 'direct', rpm: 6, rowSource: 'libgenli', hosts: null, pathPattern: null, fileType: null },
   standardebooks: { label: 'Standard Ebooks', media: 'ebook', method: 'direct', rpm: 10, rowSource: 'standardebooks', hosts: ['standardebooks.org'], pathPattern: '^\\/ebooks\\/.+\\/downloads\\/[^/]+\\.epub$', fileType: 'epub' },
   gutenberg: { label: 'Project Gutenberg', media: 'ebook', method: 'direct', rpm: 10, rowSource: 'gutendex', hosts: ['www.gutenberg.org'], pathPattern: '^\\/ebooks\\/\\d+\\.epub[\\w.]*$', fileType: 'epub' },
+  extto: { label: 'EXT Torrents', media: 'audiobook', method: 'torbox', rpm: 6, rowSource: 'extto', hosts: null, pathPattern: null, fileType: null },
   abb: { label: 'AudioBookBay', media: 'audiobook', method: 'torbox', rpm: 8, rowSource: 'abb', hosts: ['audiobookbay.lu','audiobookbay.is'], pathPattern: null, fileType: null },
   librivox: { label: 'LibriVox', media: 'audiobook', method: 'direct', rpm: 10, rowSource: 'librivox', hosts: ['archive.org'], pathPattern: '^\\/(compress|download)\\/.+\\.zip$', fileType: 'zip' },
   mobilism: { label: 'Mobilism', media: 'all', method: 'direct', rpm: 30, rowSource: 'mobilism', hosts: null, pathPattern: null, fileType: null },
@@ -115,6 +116,11 @@ const variants = [
     name: 'ShelfBridge — Knaben Ebooks', sources: ['knaben'], downloadMethod: 'torbox', language: 'any', languageMode: 'any',
     description: 'Ebook torrent results from Knaben. All languages; upstream language labels are often missing.',
     compatNote: 'Requires a torrent resolver. Verify the language before downloading.'
+  }],
+  ['audiobooks-extto.json', 'audiobooks-abb.json', {
+    name: 'ShelfBridge — EXT Torrents', sources: ['extto'],
+    description: 'Search the EXT Torrents Books category through Prowlarr.',
+    compatNote: 'Torrent results. Requires a torrent resolver.'
   }],
   ['audiobooks-knaben.json', 'audiobooks-abb.json', {
     name: 'ShelfBridge — Knaben Audiobooks', sources: ['knaben'], language: 'any', languageMode: 'any',

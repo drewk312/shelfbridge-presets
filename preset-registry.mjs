@@ -463,6 +463,14 @@ export const PRESET_REGISTRY = {
     "languageMode": "any",
     "media": "ebook"
   },
+  "audiobooks-extto": {
+    "sources": "extto",
+    "debrid": "torbox",
+    "profile": "best",
+    "lang": "any",
+    "languageMode": "any",
+    "media": "audiobook"
+  },
   "audiobooks-knaben": {
     "sources": "knaben",
     "debrid": "torbox",
@@ -538,6 +546,7 @@ export const PRESET_ALIASES = {
   "shelfbridge-public-domain-all-v1": "public-domain-all",
   "shelfbridge-public-domain-ebooks-any-v1": "public-domain-ebooks-any",
   "shelfbridge-ebooks-knaben-v1": "ebooks-knaben",
+  "shelfbridge-audiobooks-extto-v1": "audiobooks-extto",
   "shelfbridge-audiobooks-knaben-v1": "audiobooks-knaben",
   "shelfbridge-comics-knaben-v1": "comics-knaben",
   "comics": "comics",

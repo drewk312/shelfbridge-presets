@@ -2,7 +2,7 @@
 
 JSON source presets for **Lantern & Leaf** and **Ink & Echo**.
 
-Choose a file below. Its link opens the raw JSON URL to copy into your app. Import one provider at a time; 57 presets are listed.
+Choose a file below. Its link opens the raw JSON URL to copy into your app. Import one provider at a time; 58 presets are listed.
 
 [Validation](https://github.com/drewk312/shelfbridge-presets/actions/workflows/validate.yml) · [Source health](https://github.com/drewk312/shelfbridge-presets/actions/workflows/health.yml) · [Setup guide](DIY_SETUP.md) · [Coverage](COVERAGE.md)
 
@@ -70,6 +70,7 @@ The sections below contain pilot presets for testing. Source availability can ch
 | [audiobooks-atmos-m4b.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-atmos-m4b.json) | AudioBookBay | en | Torrent resolver |
 | [librivox-audiobooks.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/librivox-audiobooks.json) | LibriVox | en | Direct |
 | [audiobooks-fulllength.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-fulllength.json) | FullLengthAudiobooks | any | Direct |
+| [audiobooks-extto.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-extto.json) | EXT Torrents | any | Torrent resolver |
 | [audiobooks-knaben.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-knaben.json) | Knaben | any | Torrent resolver |
 
 ## Comics and manga
