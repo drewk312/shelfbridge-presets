@@ -127,6 +127,7 @@ export const LANGUAGE_LABELS = {
   "de": "^(de(-[a-z]+)?|german|deutsch)$",
   "ro": "^(ro(-[a-z]+)?|ron|rum|romanian|romana|română)$",
   "ar": "^(ar(-[a-z]+)?|ara|arabic|عربي|العربية)$",
+  "ru": "^(ru(-[a-z]+)?|rus|russian|русский|русский язык)$",
   "any": ".*"
 };
 
