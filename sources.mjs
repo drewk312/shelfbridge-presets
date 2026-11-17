@@ -11,6 +11,7 @@ export const PROVIDERS = {
   libgenli: { label: 'LibGen', media: 'ebook', method: 'direct', rpm: 6, rowSource: 'libgenli', hosts: null, pathPattern: null, fileType: null },
   standardebooks: { label: 'Standard Ebooks', media: 'ebook', method: 'direct', rpm: 10, rowSource: 'standardebooks', hosts: ['standardebooks.org'], pathPattern: '^\\/ebooks\\/.+\\/downloads\\/[^/]+\\.epub$', fileType: 'epub' },
   gutenberg: { label: 'Project Gutenberg', media: 'ebook', method: 'direct', rpm: 10, rowSource: 'gutendex', hosts: ['www.gutenberg.org'], pathPattern: '^\\/ebooks\\/\\d+\\.epub[\\w.]*$', fileType: 'epub' },
+  rutor: { label: 'RuTor', media: 'audiobook', method: 'torbox', rpm: 6, rowSource: 'rutor', hosts: null, pathPattern: null, fileType: null },
   extto: { label: 'EXT Torrents', media: 'audiobook', method: 'torbox', rpm: 6, rowSource: 'extto', hosts: null, pathPattern: null, fileType: null },
   abb: { label: 'AudioBookBay', media: 'audiobook', method: 'torbox', rpm: 8, rowSource: 'abb', hosts: ['audiobookbay.lu','audiobookbay.is'], pathPattern: null, fileType: null },
   librivox: { label: 'LibriVox', media: 'audiobook', method: 'direct', rpm: 10, rowSource: 'librivox', hosts: ['archive.org'], pathPattern: '^\\/(compress|download)\\/.+\\.zip$', fileType: 'zip' },
@@ -116,6 +117,17 @@ const variants = [
     name: 'ShelfBridge — Knaben Ebooks', sources: ['knaben'], downloadMethod: 'torbox', language: 'any', languageMode: 'any',
     description: 'Ebook torrent results from Knaben. All languages; upstream language labels are often missing.',
     compatNote: 'Requires a torrent resolver. Verify the language before downloading.'
+  }],
+  ['ebooks-ru.json', 'ebooks-ro.json', {
+    name: 'ShelfBridge — Ebooks (Russian)', language: 'ru', routing: 'explicit',
+    sources: ['zlib', 'annas'], format: 'epub', limit: 20,
+    description: "Russian EPUB search across Z-Library and Anna's Archive.",
+    compatNote: 'Direct EPUB downloads. Availability depends on the source.'
+  }],
+  ['audiobooks-ru.json', 'audiobooks-ro.json', {
+    name: 'ShelfBridge — Audiobooks (Russian)', language: 'ru', sources: ['rutor'],
+    description: 'Russian audiobook torrents from RuTor.',
+    compatNote: 'Requires TorBox or Real-Debrid. Availability depends on the swarm or resolver cache.'
   }],
   ['audiobooks-extto.json', 'audiobooks-abb.json', {
     name: 'ShelfBridge — EXT Torrents', sources: ['extto'],

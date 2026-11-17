@@ -2,7 +2,7 @@
 
 JSON source presets for **Lantern & Leaf** and **Ink & Echo**.
 
-Choose a file below. Its link opens the raw JSON URL to copy into your app. Import one provider at a time; 58 presets are listed.
+Choose a file below. Its link opens the raw JSON URL to copy into your app. Import one provider at a time; 60 presets are listed.
 
 [Validation](https://github.com/drewk312/shelfbridge-presets/actions/workflows/validate.yml) · [Source health](https://github.com/drewk312/shelfbridge-presets/actions/workflows/health.yml) · [Setup guide](DIY_SETUP.md) · [Coverage](COVERAGE.md)
 
@@ -107,7 +107,7 @@ The sections below contain pilot presets for testing. Source availability can ch
 Backend or download support is unconfirmed for these candidates.
 
 <details>
-<summary>Show 10 experimental .json presets</summary>
+<summary>Show 12 experimental .json presets</summary>
 
 | JSON preset | Sources | Language | Access |
 | --- | --- | --- | --- |
@@ -121,6 +121,8 @@ Backend or download support is unconfirmed for these candidates.
 | [mobilism-ro.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/mobilism-ro.json) | Mobilism | ro | Direct |
 | [mobilism-ar.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/mobilism-ar.json) | Mobilism | ar | Direct |
 | [audiobooks-golden.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-golden.json) | Golden Audiobooks | any | Direct |
+| [ebooks-ru.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-ru.json) | Z-Library, Anna's Archive | ru | Direct |
+| [audiobooks-ru.json](https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-ru.json) | RuTor | ru | Torrent resolver |
 
 </details>
 

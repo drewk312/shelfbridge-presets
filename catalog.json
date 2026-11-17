@@ -2170,6 +2170,84 @@
       }
     },
     {
+      "id": "shelfbridge-ebooks-ru-v1",
+      "name": "ShelfBridge — Ebooks (Russian)",
+      "file": "ebooks-ru.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/ebooks-ru.json",
+      "sha256": "6808f6cc18b6fa002f0ac0222f5a78f234de2c331082359f48440901da404401",
+      "status": "candidate",
+      "contentTypes": [
+        "ebook"
+      ],
+      "downloadMethod": "direct",
+      "requiresDebrid": false,
+      "language": "ru",
+      "languageMode": "strict",
+      "providers": [
+        "zlib",
+        "annas"
+      ],
+      "format": "epub",
+      "verification": {
+        "checkedOn": null,
+        "search": "unverified",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
+      "id": "shelfbridge-audiobooks-ru-v1",
+      "name": "ShelfBridge — Audiobooks (Russian)",
+      "file": "audiobooks-ru.json",
+      "url": "https://raw.githubusercontent.com/drewk312/shelfbridge-presets/main/audiobooks-ru.json",
+      "sha256": "1de4324b1ca97afa0479b3254728c208fbe79871e47ae1bcff5a178c31708c72",
+      "status": "candidate",
+      "contentTypes": [
+        "audiobook"
+      ],
+      "downloadMethod": "torbox",
+      "requiresDebrid": true,
+      "language": "ru",
+      "languageMode": "strict",
+      "providers": [
+        "rutor"
+      ],
+      "verification": {
+        "checkedOn": null,
+        "search": "unverified",
+        "download": "unverified",
+        "continuousMonitoring": false
+      },
+      "compatibility": {
+        "lantern-and-leaf": {
+          "status": "not-tested"
+        },
+        "ink-and-echo": {
+          "status": "not-tested"
+        },
+        "bokumi": {
+          "status": "not-tested"
+        },
+        "manga-comics-app": {
+          "status": "not-tested"
+        }
+      }
+    },
+    {
       "id": "shelfbridge-audiobooks-extto-v1",
       "name": "ShelfBridge — EXT Torrents",
       "file": "audiobooks-extto.json",
